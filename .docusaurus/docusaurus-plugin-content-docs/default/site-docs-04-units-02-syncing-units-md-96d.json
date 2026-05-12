@@ -1,0 +1,28 @@
+{
+  "id": "units/syncing-units",
+  "title": "Syncing units",
+  "description": "Scheduled sync, Run sync now, per-unit sync actions, locks, skipped counts, and sync enabled behaviour.",
+  "source": "@site/docs/04-units/02-syncing-units.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/syncing-units",
+  "permalink": "/docs/units/syncing-units",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Syncing units",
+    "sidebar_label": "Syncing units",
+    "description": "Scheduled sync, Run sync now, per-unit sync actions, locks, skipped counts, and sync enabled behaviour."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Units overview",
+    "permalink": "/docs/units/units-overview"
+  },
+  "next": {
+    "title": "Editing a unit",
+    "permalink": "/docs/units/editing-a-unit"
+  }
+}

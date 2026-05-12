@@ -1,0 +1,28 @@
+{
+  "id": "bookings-and-checkout/checkout-flow",
+  "title": "Checkout flow",
+  "description": "External booking engine hand-off GET vs POST checkout URL construction multiple rates and Continue button behaviour.",
+  "source": "@site/docs/05-bookings-and-checkout/03-checkout-flow.md",
+  "sourceDirName": "05-bookings-and-checkout",
+  "slug": "/bookings-and-checkout/checkout-flow",
+  "permalink": "/docs/bookings-and-checkout/checkout-flow",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Checkout flow",
+    "sidebar_label": "Checkout flow",
+    "description": "External booking engine hand-off GET vs POST checkout URL construction multiple rates and Continue button behaviour."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Availability & quotes",
+    "permalink": "/docs/bookings-and-checkout/availability-and-quotes"
+  },
+  "next": {
+    "title": "Fallback mode",
+    "permalink": "/docs/bookings-and-checkout/fallback-mode"
+  }
+}

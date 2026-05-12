@@ -1,0 +1,28 @@
+{
+  "id": "providers/providers-overview",
+  "title": "Panoramica provider",
+  "description": "Un solo motore di prenotazione attivo alla volta, credenziali in Connection e come le estensioni registrano nuovi motori.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/03-providers/01-providers-overview.md",
+  "sourceDirName": "03-providers",
+  "slug": "/providers/providers-overview",
+  "permalink": "/it/docs/providers/providers-overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Panoramica provider",
+    "sidebar_label": "Panoramica provider",
+    "description": "Un solo motore di prenotazione attivo alla volta, credenziali in Connection e come le estensioni registrano nuovi motori."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Ricerca e prenotazione sulle pagine",
+    "permalink": "/it/docs/getting-started/add-search-and-booking-to-pages"
+  },
+  "next": {
+    "title": "Kross Booking",
+    "permalink": "/it/docs/providers/kross-booking"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "providers/providers-overview",
+  "title": "Providers overview",
+  "description": "One active booking provider at a time, credentials on Connection, and how extensions register new engines.",
+  "source": "@site/docs/03-providers/01-providers-overview.md",
+  "sourceDirName": "03-providers",
+  "slug": "/providers/providers-overview",
+  "permalink": "/docs/providers/providers-overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Providers overview",
+    "sidebar_label": "Providers overview",
+    "description": "One active booking provider at a time, credentials on Connection, and how extensions register new engines."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Add search & booking to pages",
+    "permalink": "/docs/getting-started/add-search-and-booking-to-pages"
+  },
+  "next": {
+    "title": "Kross Booking",
+    "permalink": "/docs/providers/kross-booking"
+  }
+}

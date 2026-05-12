@@ -1,0 +1,28 @@
+{
+  "id": "styling/theme-variables-and-custom-css",
+  "title": "Theme variables & custom CSS",
+  "description": "Reference list of CSS class hooks for search booking summary checkout fallback amenities bedrooms targeting Extra CSS fields.",
+  "source": "@site/docs/07-styling/04-theme-variables-and-custom-css.md",
+  "sourceDirName": "07-styling",
+  "slug": "/styling/theme-variables-and-custom-css",
+  "permalink": "/docs/styling/theme-variables-and-custom-css",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Theme variables & custom CSS",
+    "sidebar_label": "Theme variables & custom CSS",
+    "description": "Reference list of CSS class hooks for search booking summary checkout fallback amenities bedrooms targeting Extra CSS fields."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Booking summary presets",
+    "permalink": "/docs/styling/booking-summary-presets"
+  },
+  "next": {
+    "title": "Common issues",
+    "permalink": "/docs/troubleshooting/common-issues"
+  }
+}

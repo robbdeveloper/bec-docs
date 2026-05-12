@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/connect-your-provider",
+  "title": "Collega il provider",
+  "description": "Schermata Booking Engine Connection — scelta provider, credenziali Kross, Verifica connessione e impostazioni ospiti del modulo di ricerca.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/02-getting-started/02-connect-your-provider.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/connect-your-provider",
+  "permalink": "/it/docs/getting-started/connect-your-provider",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Collega il provider",
+    "sidebar_label": "Collega il provider",
+    "description": "Schermata Booking Engine Connection — scelta provider, credenziali Kross, Verifica connessione e impostazioni ospiti del modulo di ricerca."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Installazione",
+    "permalink": "/it/docs/getting-started/installation"
+  },
+  "next": {
+    "title": "Prima sincronizzazione",
+    "permalink": "/it/docs/getting-started/run-your-first-sync"
+  }
+}

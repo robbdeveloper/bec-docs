@@ -1,0 +1,28 @@
+{
+  "id": "units/gallery-images",
+  "title": "Gallery images",
+  "description": "How remote gallery images import into WordPress Media Library, filename prefix and suffix, rename tools, featured image rules.",
+  "source": "@site/docs/04-units/04-gallery-images.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/gallery-images",
+  "permalink": "/docs/units/gallery-images",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Gallery images",
+    "sidebar_label": "Gallery images",
+    "description": "How remote gallery images import into WordPress Media Library, filename prefix and suffix, rename tools, featured image rules."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Editing a unit",
+    "permalink": "/docs/units/editing-a-unit"
+  },
+  "next": {
+    "title": "Permalinks & archive",
+    "permalink": "/docs/units/permalinks-and-archive"
+  }
+}

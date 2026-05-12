@@ -1,0 +1,28 @@
+{
+  "id": "troubleshooting/uninstalling",
+  "title": "Disinstallazione",
+  "description": "Booking Engine Connector — disattivazione vs eliminazione, uninstall, BEC_UNINSTALL_DELETE_DATA, tabella log API, wp-config.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/08-troubleshooting/03-uninstalling.md",
+  "sourceDirName": "08-troubleshooting",
+  "slug": "/troubleshooting/uninstalling",
+  "permalink": "/it/docs/troubleshooting/uninstalling",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Disinstallazione",
+    "sidebar_label": "Disinstallazione",
+    "description": "Booking Engine Connector — disattivazione vs eliminazione, uninstall, BEC_UNINSTALL_DELETE_DATA, tabella log API, wp-config."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "API Log",
+    "permalink": "/it/docs/troubleshooting/using-the-api-log"
+  },
+  "next": {
+    "title": "Architettura",
+    "permalink": "/it/docs/developer-reference/architecture"
+  }
+}

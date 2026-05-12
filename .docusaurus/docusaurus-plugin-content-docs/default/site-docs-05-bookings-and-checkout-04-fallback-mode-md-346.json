@@ -1,0 +1,28 @@
+{
+  "id": "bookings-and-checkout/fallback-mode",
+  "title": "Fallback mode",
+  "description": "Enable fallback always fallback inline vs link triggers empty availability provider errors PublicContentBlocks vs bec_fallback shortcode.",
+  "source": "@site/docs/05-bookings-and-checkout/04-fallback-mode.md",
+  "sourceDirName": "05-bookings-and-checkout",
+  "slug": "/bookings-and-checkout/fallback-mode",
+  "permalink": "/docs/bookings-and-checkout/fallback-mode",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Fallback mode",
+    "sidebar_label": "Fallback mode",
+    "description": "Enable fallback always fallback inline vs link triggers empty availability provider errors PublicContentBlocks vs bec_fallback shortcode."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Checkout flow",
+    "permalink": "/docs/bookings-and-checkout/checkout-flow"
+  },
+  "next": {
+    "title": "Shortcodes overview",
+    "permalink": "/docs/shortcodes/shortcodes-overview"
+  }
+}

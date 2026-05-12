@@ -1,0 +1,28 @@
+{
+  "id": "bookings-and-checkout/search-context-and-urls",
+  "title": "Search context and URLs",
+  "description": "bec_checkin bec_checkout guests child ages rate ID query parameters and complete search context for Booking Engine Connector shortcodes.",
+  "source": "@site/docs/05-bookings-and-checkout/01-search-context-and-urls.md",
+  "sourceDirName": "05-bookings-and-checkout",
+  "slug": "/bookings-and-checkout/search-context-and-urls",
+  "permalink": "/docs/bookings-and-checkout/search-context-and-urls",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Search context and URLs",
+    "sidebar_label": "Search context & URLs",
+    "description": "bec_checkin bec_checkout guests child ages rate ID query parameters and complete search context for Booking Engine Connector shortcodes."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Permalinks & archive",
+    "permalink": "/docs/units/permalinks-and-archive"
+  },
+  "next": {
+    "title": "Availability & quotes",
+    "permalink": "/docs/bookings-and-checkout/availability-and-quotes"
+  }
+}

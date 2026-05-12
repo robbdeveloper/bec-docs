@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/elementor-loop-grid-availability-filter",
+  "title": "Elementor — hide units with no availability",
+  "description": "Use a custom Query ID on Elementor’s Loop Grid so listing cards only show units available for the current search dates.",
+  "source": "@site/docs/06-shortcodes/11-elementor-loop-grid-availability-filter.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/elementor-loop-grid-availability-filter",
+  "permalink": "/docs/shortcodes/elementor-loop-grid-availability-filter",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Elementor — hide units with no availability",
+    "sidebar_label": "Elementor Loop Grid filter",
+    "description": "Use a custom Query ID on Elementor’s Loop Grid so listing cards only show units available for the current search dates."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_version",
+    "permalink": "/docs/shortcodes/bec-version"
+  },
+  "next": {
+    "title": "Styling overview",
+    "permalink": "/docs/styling/styling-overview"
+  }
+}

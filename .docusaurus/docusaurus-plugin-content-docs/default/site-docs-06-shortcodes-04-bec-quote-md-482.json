@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-quote",
+  "title": "[bec_quote] shortcode",
+  "description": "Compact quote shortcode unit_id show_rates CSS hooks bec-shortcode-quote archive cards.",
+  "source": "@site/docs/06-shortcodes/04-bec-quote.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-quote",
+  "permalink": "/docs/shortcodes/bec-quote",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "[bec_quote] shortcode",
+    "sidebar_label": "bec_quote",
+    "description": "Compact quote shortcode unit_id show_rates CSS hooks bec-shortcode-quote archive cards."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_dates",
+    "permalink": "/docs/shortcodes/bec-dates"
+  },
+  "next": {
+    "title": "bec_checkout",
+    "permalink": "/docs/shortcodes/bec-checkout"
+  }
+}

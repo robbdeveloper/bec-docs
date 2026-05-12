@@ -1,0 +1,28 @@
+{
+  "id": "styling/theme-variables-and-custom-css",
+  "title": "Variabili tema e CSS personalizzato",
+  "description": "Elenco di riferimento classi CSS per ricerca, riepilogo prenotazione, checkout, fallback, servizi, camere — targeting campi Extra CSS.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/07-styling/04-theme-variables-and-custom-css.md",
+  "sourceDirName": "07-styling",
+  "slug": "/styling/theme-variables-and-custom-css",
+  "permalink": "/it/docs/styling/theme-variables-and-custom-css",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Variabili tema e CSS personalizzato",
+    "sidebar_label": "Variabili tema e CSS",
+    "description": "Elenco di riferimento classi CSS per ricerca, riepilogo prenotazione, checkout, fallback, servizi, camere — targeting campi Extra CSS."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Preset riepilogo prenotazione",
+    "permalink": "/it/docs/styling/booking-summary-presets"
+  },
+  "next": {
+    "title": "Problemi comuni",
+    "permalink": "/it/docs/troubleshooting/common-issues"
+  }
+}

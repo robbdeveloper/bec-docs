@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/kross-api",
+  "title": "Kross Booking API reference",
+  "description": "Kross API v5 auth get-token calendar book get-room-types mapping BEC plugin filters HTTP WordPress POST JSON body.",
+  "source": "@site/docs/09-developer-reference/05-kross-api.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/kross-api",
+  "permalink": "/docs/developer-reference/kross-api",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Kross Booking API reference",
+    "sidebar_label": "Kross API",
+    "description": "Kross API v5 auth get-token calendar book get-room-types mapping BEC plugin filters HTTP WordPress POST JSON body."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Canonical unit fields",
+    "permalink": "/docs/developer-reference/canonical-unit-fields"
+  },
+  "next": {
+    "title": "Adding a provider",
+    "permalink": "/docs/developer-reference/adding-a-provider"
+  }
+}

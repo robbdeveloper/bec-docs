@@ -1,0 +1,28 @@
+{
+  "id": "providers/kross-booking",
+  "title": "Kross Booking",
+  "description": "Kross API credentials, Verify connection, booking engine base URL, GET vs POST checkout, and how this differs from API keys.",
+  "source": "@site/docs/03-providers/02-kross-booking.md",
+  "sourceDirName": "03-providers",
+  "slug": "/providers/kross-booking",
+  "permalink": "/docs/providers/kross-booking",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Kross Booking",
+    "sidebar_label": "Kross Booking",
+    "description": "Kross API credentials, Verify connection, booking engine base URL, GET vs POST checkout, and how this differs from API keys."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Providers overview",
+    "permalink": "/docs/providers/providers-overview"
+  },
+  "next": {
+    "title": "Units overview",
+    "permalink": "/docs/units/units-overview"
+  }
+}

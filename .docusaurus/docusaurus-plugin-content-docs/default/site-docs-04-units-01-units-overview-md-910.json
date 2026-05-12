@@ -1,0 +1,28 @@
+{
+  "id": "units/units-overview",
+  "title": "Units overview",
+  "description": "What a Unit is in WordPress, the Units admin menu, public URLs, featured images, and relation to your booking provider.",
+  "source": "@site/docs/04-units/01-units-overview.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/units-overview",
+  "permalink": "/docs/units/units-overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Units overview",
+    "sidebar_label": "Units overview",
+    "description": "What a Unit is in WordPress, the Units admin menu, public URLs, featured images, and relation to your booking provider."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Kross Booking",
+    "permalink": "/docs/providers/kross-booking"
+  },
+  "next": {
+    "title": "Syncing units",
+    "permalink": "/docs/units/syncing-units"
+  }
+}

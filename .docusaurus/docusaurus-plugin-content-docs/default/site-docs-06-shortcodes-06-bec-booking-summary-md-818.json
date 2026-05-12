@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-booking-summary",
+  "title": "[bec_booking_summary] shortcode",
+  "description": "Full booking summary shortcode attributes incomplete quote fallback mobile drawer accordions enquiry styling preset compact.",
+  "source": "@site/docs/06-shortcodes/06-bec-booking-summary.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-booking-summary",
+  "permalink": "/docs/shortcodes/bec-booking-summary",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "[bec_booking_summary] shortcode",
+    "sidebar_label": "bec_booking_summary",
+    "description": "Full booking summary shortcode attributes incomplete quote fallback mobile drawer accordions enquiry styling preset compact."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_checkout",
+    "permalink": "/docs/shortcodes/bec-checkout"
+  },
+  "next": {
+    "title": "bec_unit_url",
+    "permalink": "/docs/shortcodes/bec-unit-url"
+  }
+}

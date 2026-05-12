@@ -1,0 +1,28 @@
+{
+  "id": "bookings-and-checkout/fallback-mode",
+  "title": "Modalità fallback",
+  "description": "Abilitazione fallback, sempre fallback, contenuto inline vs link, trigger disponibilità vuota errori provider PublicContentBlocks vs shortcode bec_fallback.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/05-bookings-and-checkout/04-fallback-mode.md",
+  "sourceDirName": "05-bookings-and-checkout",
+  "slug": "/bookings-and-checkout/fallback-mode",
+  "permalink": "/it/docs/bookings-and-checkout/fallback-mode",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Modalità fallback",
+    "sidebar_label": "Modalità fallback",
+    "description": "Abilitazione fallback, sempre fallback, contenuto inline vs link, trigger disponibilità vuota errori provider PublicContentBlocks vs shortcode bec_fallback."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Flusso di checkout",
+    "permalink": "/it/docs/bookings-and-checkout/checkout-flow"
+  },
+  "next": {
+    "title": "Panoramica shortcode",
+    "permalink": "/it/docs/shortcodes/shortcodes-overview"
+  }
+}

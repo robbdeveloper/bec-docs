@@ -1,0 +1,26 @@
+{
+  "id": "intro",
+  "title": "Booking Engine Connector documentation",
+  "description": "Connect WordPress to your booking engine—sync units, search, quotes, checkout, and styling from one plugin.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Booking Engine Connector documentation",
+    "slug": "/",
+    "sidebar_label": "Home",
+    "sidebar_position": 1,
+    "description": "Connect WordPress to your booking engine—sync units, search, quotes, checkout, and styling from one plugin."
+  },
+  "sidebar": "docsSidebar",
+  "next": {
+    "title": "What is BEC?",
+    "permalink": "/docs/introduction/what-is-bec"
+  }
+}

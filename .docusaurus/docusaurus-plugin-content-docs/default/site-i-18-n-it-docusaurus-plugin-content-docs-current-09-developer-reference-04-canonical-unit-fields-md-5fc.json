@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/canonical-unit-fields",
+  "title": "Campi canonici unità",
+  "description": "bec_core_meta CoreUnitSemantic import gallery servizi JSON filtri bec_sync_apply_core_unit_fields RemoteGalleryImporter riferimento sviluppatori.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/09-developer-reference/04-canonical-unit-fields.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/canonical-unit-fields",
+  "permalink": "/it/docs/developer-reference/canonical-unit-fields",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Campi canonici unità",
+    "sidebar_label": "Campi canonici unità",
+    "description": "bec_core_meta CoreUnitSemantic import gallery servizi JSON filtri bec_sync_apply_core_unit_fields RemoteGalleryImporter riferimento sviluppatori."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Riferimento post meta",
+    "permalink": "/it/docs/developer-reference/post-meta-reference"
+  },
+  "next": {
+    "title": "API Kross",
+    "permalink": "/it/docs/developer-reference/kross-api"
+  }
+}

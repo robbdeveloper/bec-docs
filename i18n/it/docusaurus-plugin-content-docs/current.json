@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Attuale",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Introduction": {
+    "message": "Introduzione",
+    "description": "The label for category 'Introduction' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Getting started": {
+    "message": "Per iniziare",
+    "description": "The label for category 'Getting started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Providers": {
+    "message": "Provider",
+    "description": "The label for category 'Providers' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Units": {
+    "message": "Unità",
+    "description": "The label for category 'Units' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Bookings & checkout": {
+    "message": "Prenotazioni e checkout",
+    "description": "The label for category 'Bookings & checkout' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Shortcodes": {
+    "message": "Shortcode",
+    "description": "The label for category 'Shortcodes' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Styling": {
+    "message": "Stile",
+    "description": "The label for category 'Styling' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Troubleshooting": {
+    "message": "Risoluzione dei problemi",
+    "description": "The label for category 'Troubleshooting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Developer reference": {
+    "message": "Riferimento per sviluppatori",
+    "description": "The label for category 'Developer reference' in sidebar 'docsSidebar'"
+  }
+}

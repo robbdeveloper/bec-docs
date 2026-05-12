@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/add-search-and-booking-to-pages",
+  "title": "Add search and booking to pages",
+  "description": "Quick tutorial — place bec_search on a landing page and bec_booking_summary on unit pages using the block editor or classic editor.",
+  "source": "@site/docs/02-getting-started/04-add-search-and-booking-to-pages.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/add-search-and-booking-to-pages",
+  "permalink": "/docs/getting-started/add-search-and-booking-to-pages",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Add search and booking to pages",
+    "sidebar_label": "Add search & booking to pages",
+    "description": "Quick tutorial — place bec_search on a landing page and bec_booking_summary on unit pages using the block editor or classic editor."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Run your first sync",
+    "permalink": "/docs/getting-started/run-your-first-sync"
+  },
+  "next": {
+    "title": "Providers overview",
+    "permalink": "/docs/providers/providers-overview"
+  }
+}

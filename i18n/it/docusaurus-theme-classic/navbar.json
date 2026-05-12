@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Booking Engine Connector",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Booking Engine Connector",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Documentazione",
+    "description": "Navbar item with label Documentation"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "bookings-and-checkout/search-context-and-urls",
+  "title": "Contesto di ricerca e URL",
+  "description": "Parametri bec_checkin bec_checkout ospiti età bambini rate ID e contesto di ricerca completo per gli shortcode Booking Engine Connector.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/05-bookings-and-checkout/01-search-context-and-urls.md",
+  "sourceDirName": "05-bookings-and-checkout",
+  "slug": "/bookings-and-checkout/search-context-and-urls",
+  "permalink": "/it/docs/bookings-and-checkout/search-context-and-urls",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Contesto di ricerca e URL",
+    "sidebar_label": "Contesto ricerca e URL",
+    "description": "Parametri bec_checkin bec_checkout ospiti età bambini rate ID e contesto di ricerca completo per gli shortcode Booking Engine Connector."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Permalink e archivio",
+    "permalink": "/it/docs/units/permalinks-and-archive"
+  },
+  "next": {
+    "title": "Disponibilità e preventivi",
+    "permalink": "/it/docs/bookings-and-checkout/availability-and-quotes"
+  }
+}

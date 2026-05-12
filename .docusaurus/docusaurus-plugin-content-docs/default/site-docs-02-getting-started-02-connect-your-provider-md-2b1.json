@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/connect-your-provider",
+  "title": "Connect your provider",
+  "description": "Booking Engine Connection screen — provider choice, Kross credentials, Verify connection, and search form guest settings.",
+  "source": "@site/docs/02-getting-started/02-connect-your-provider.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/connect-your-provider",
+  "permalink": "/docs/getting-started/connect-your-provider",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Connect your provider",
+    "sidebar_label": "Connect your provider",
+    "description": "Booking Engine Connection screen — provider choice, Kross credentials, Verify connection, and search form guest settings."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/getting-started/installation"
+  },
+  "next": {
+    "title": "Run your first sync",
+    "permalink": "/docs/getting-started/run-your-first-sync"
+  }
+}

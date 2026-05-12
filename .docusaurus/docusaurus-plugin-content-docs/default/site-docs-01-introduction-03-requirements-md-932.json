@@ -1,0 +1,28 @@
+{
+  "id": "introduction/requirements",
+  "title": "Requirements",
+  "description": "Supported WordPress and PHP versions plus credentials and URLs needed for Kross Booking.",
+  "source": "@site/docs/01-introduction/03-requirements.md",
+  "sourceDirName": "01-introduction",
+  "slug": "/introduction/requirements",
+  "permalink": "/docs/introduction/requirements",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Requirements",
+    "sidebar_label": "Requirements",
+    "description": "Supported WordPress and PHP versions plus credentials and URLs needed for Kross Booking."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "How it works",
+    "permalink": "/docs/introduction/how-it-works"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/docs/getting-started/installation"
+  }
+}

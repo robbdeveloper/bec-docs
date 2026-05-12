@@ -1,0 +1,14 @@
+# Coolify 4.x + Nixpacks: Node install/build for this Docusaurus site.
+# In Coolify UI: Build pack Nixpacks → type "Static"; Publish / Output Directory: build (see DEPLOY_COOLIFY.md).
+
+providers = ["node"]
+
+[variables]
+# Match Coolify’s common default (22); Node 20+ satisfies package.json engines.
+NIXPACKS_NODE_VERSION = "22"
+
+[phases.install]
+cmds = ["npm ci"]
+
+[phases.build]
+cmds = ["npm run build"]

@@ -1,0 +1,28 @@
+{
+  "id": "troubleshooting/common-issues",
+  "title": "Problemi comuni",
+  "description": "Risoluzione problemi Booking Engine Connector — verifica connessione, sync, checkout, cron, fallback, preventivi vuoti, pulsante prenotazione assente.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/08-troubleshooting/01-common-issues.md",
+  "sourceDirName": "08-troubleshooting",
+  "slug": "/troubleshooting/common-issues",
+  "permalink": "/it/docs/troubleshooting/common-issues",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Problemi comuni",
+    "sidebar_label": "Problemi comuni",
+    "description": "Risoluzione problemi Booking Engine Connector — verifica connessione, sync, checkout, cron, fallback, preventivi vuoti, pulsante prenotazione assente."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Variabili tema e CSS",
+    "permalink": "/it/docs/styling/theme-variables-and-custom-css"
+  },
+  "next": {
+    "title": "API Log",
+    "permalink": "/it/docs/troubleshooting/using-the-api-log"
+  }
+}

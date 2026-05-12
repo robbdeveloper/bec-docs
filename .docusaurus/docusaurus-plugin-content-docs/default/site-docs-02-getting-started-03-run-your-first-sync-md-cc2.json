@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/run-your-first-sync",
+  "title": "Run your first sync",
+  "description": "Booking Engine Sync page — interval, gallery filename options, Run sync now, and where to find Units in WordPress.",
+  "source": "@site/docs/02-getting-started/03-run-your-first-sync.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/run-your-first-sync",
+  "permalink": "/docs/getting-started/run-your-first-sync",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Run your first sync",
+    "sidebar_label": "Run your first sync",
+    "description": "Booking Engine Sync page — interval, gallery filename options, Run sync now, and where to find Units in WordPress."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Connect your provider",
+    "permalink": "/docs/getting-started/connect-your-provider"
+  },
+  "next": {
+    "title": "Add search & booking to pages",
+    "permalink": "/docs/getting-started/add-search-and-booking-to-pages"
+  }
+}

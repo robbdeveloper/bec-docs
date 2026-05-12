@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/installation",
+  "title": "Installazione",
+  "description": "Carica, attiva Booking Engine Connector e trova il menu Booking Engine nell’amministrazione WordPress.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/02-getting-started/01-installation.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/installation",
+  "permalink": "/it/docs/getting-started/installation",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Installazione",
+    "sidebar_label": "Installazione",
+    "description": "Carica, attiva Booking Engine Connector e trova il menu Booking Engine nell’amministrazione WordPress."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Requisiti",
+    "permalink": "/it/docs/introduction/requirements"
+  },
+  "next": {
+    "title": "Collega il provider",
+    "permalink": "/it/docs/getting-started/connect-your-provider"
+  }
+}

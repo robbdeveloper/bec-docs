@@ -1,0 +1,28 @@
+{
+  "id": "introduction/requirements",
+  "title": "Requisiti",
+  "description": "Versioni supportate di WordPress e PHP, più credenziali e URL necessari per Kross Booking.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/01-introduction/03-requirements.md",
+  "sourceDirName": "01-introduction",
+  "slug": "/introduction/requirements",
+  "permalink": "/it/docs/introduction/requirements",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Requisiti",
+    "sidebar_label": "Requisiti",
+    "description": "Versioni supportate di WordPress e PHP, più credenziali e URL necessari per Kross Booking."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Come funziona",
+    "permalink": "/it/docs/introduction/how-it-works"
+  },
+  "next": {
+    "title": "Installazione",
+    "permalink": "/it/docs/getting-started/installation"
+  }
+}

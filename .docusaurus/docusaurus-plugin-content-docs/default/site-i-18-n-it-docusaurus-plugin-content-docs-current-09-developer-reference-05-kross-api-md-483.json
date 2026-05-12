@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/kross-api",
+  "title": "Riferimento API Kross Booking",
+  "description": "API Kross v5 auth get-token calendar book get-room-types mapping plugin BEC filtri HTTP WordPress POST corpo JSON.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/09-developer-reference/05-kross-api.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/kross-api",
+  "permalink": "/it/docs/developer-reference/kross-api",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Riferimento API Kross Booking",
+    "sidebar_label": "API Kross",
+    "description": "API Kross v5 auth get-token calendar book get-room-types mapping plugin BEC filtri HTTP WordPress POST corpo JSON."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Campi canonici unità",
+    "permalink": "/it/docs/developer-reference/canonical-unit-fields"
+  },
+  "next": {
+    "title": "Aggiungere un provider",
+    "permalink": "/it/docs/developer-reference/adding-a-provider"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/adding-a-provider",
+  "title": "Adding a provider",
+  "description": "Implement ProviderInterface BulkQuoteProviderInterface ProviderRegistry bec_registered_providers bec_provider_instance CredentialField sync quotes checkout unit info renderers.",
+  "source": "@site/docs/09-developer-reference/06-adding-a-provider.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/adding-a-provider",
+  "permalink": "/docs/developer-reference/adding-a-provider",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Adding a provider",
+    "sidebar_label": "Adding a provider",
+    "description": "Implement ProviderInterface BulkQuoteProviderInterface ProviderRegistry bec_registered_providers bec_provider_instance CredentialField sync quotes checkout unit info renderers."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Kross API",
+    "permalink": "/docs/developer-reference/kross-api"
+  },
+  "next": {
+    "title": "Unit info renderers",
+    "permalink": "/docs/developer-reference/unit-info-renderers"
+  }
+}

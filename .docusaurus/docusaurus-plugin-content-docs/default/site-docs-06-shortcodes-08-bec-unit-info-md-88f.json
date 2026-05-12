@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-unit-info",
+  "title": "[bec_unit_info] shortcode",
+  "description": "Provider-specific unit HTML from sync payload keys amenities_grid bedroom_arrangements unit_id default developer extend bec_unit_info_renderers.",
+  "source": "@site/docs/06-shortcodes/08-bec-unit-info.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-unit-info",
+  "permalink": "/docs/shortcodes/bec-unit-info",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "[bec_unit_info] shortcode",
+    "sidebar_label": "bec_unit_info",
+    "description": "Provider-specific unit HTML from sync payload keys amenities_grid bedroom_arrangements unit_id default developer extend bec_unit_info_renderers."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_unit_url",
+    "permalink": "/docs/shortcodes/bec-unit-url"
+  },
+  "next": {
+    "title": "bec_fallback",
+    "permalink": "/docs/shortcodes/bec-fallback"
+  }
+}

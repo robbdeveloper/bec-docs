@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/architecture",
+  "title": "Architecture (developer reference)",
+  "description": "Booking Engine Connector plugin bootstrap layers modules Mermaid diagrams PHP namespaces BookingEngineConnector.",
+  "source": "@site/docs/09-developer-reference/01-architecture.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/architecture",
+  "permalink": "/docs/developer-reference/architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Architecture (developer reference)",
+    "sidebar_label": "Architecture",
+    "description": "Booking Engine Connector plugin bootstrap layers modules Mermaid diagrams PHP namespaces BookingEngineConnector."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Uninstalling",
+    "permalink": "/docs/troubleshooting/uninstalling"
+  },
+  "next": {
+    "title": "Sync hooks & filters",
+    "permalink": "/docs/developer-reference/sync-hooks-and-filters"
+  }
+}

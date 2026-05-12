@@ -1,0 +1,28 @@
+{
+  "id": "introduction/what-is-bec",
+  "title": "Cos’è Booking Engine Connector?",
+  "description": "Panoramica su unità, provider, ricerca, preventivi, checkout e modalità fallback per siti WordPress.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/01-introduction/01-what-is-bec.md",
+  "sourceDirName": "01-introduction",
+  "slug": "/introduction/what-is-bec",
+  "permalink": "/it/docs/introduction/what-is-bec",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Cos’è Booking Engine Connector?",
+    "sidebar_label": "Cos’è BEC?",
+    "description": "Panoramica su unità, provider, ricerca, preventivi, checkout e modalità fallback per siti WordPress."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Home",
+    "permalink": "/it/docs/"
+  },
+  "next": {
+    "title": "Come funziona",
+    "permalink": "/it/docs/introduction/how-it-works"
+  }
+}

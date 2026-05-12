@@ -1,0 +1,10 @@
+node_modules
+build
+.docusaurus
+.git
+.cursor
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log

@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-checkout",
+  "title": "Shortcode `[bec_checkout]`",
+  "description": "Shortcode CTA checkout — link o modulo POST, unit_id, CSS bec-shortcode-checkout bec-checkout-cta.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/05-bec-checkout.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-checkout",
+  "permalink": "/it/docs/shortcodes/bec-checkout",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Shortcode `[bec_checkout]`",
+    "sidebar_label": "bec_checkout",
+    "description": "Shortcode CTA checkout — link o modulo POST, unit_id, CSS bec-shortcode-checkout bec-checkout-cta."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_quote",
+    "permalink": "/it/docs/shortcodes/bec-quote"
+  },
+  "next": {
+    "title": "bec_booking_summary",
+    "permalink": "/it/docs/shortcodes/bec-booking-summary"
+  }
+}

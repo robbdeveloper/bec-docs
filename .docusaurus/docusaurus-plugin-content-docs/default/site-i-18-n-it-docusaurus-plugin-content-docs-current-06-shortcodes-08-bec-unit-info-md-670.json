@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-unit-info",
+  "title": "Shortcode `[bec_unit_info]`",
+  "description": "HTML unità specifico del provider da payload sync — chiavi amenities_grid bedroom_arrangements unit_id, estensione sviluppatori bec_unit_info_renderers.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/08-bec-unit-info.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-unit-info",
+  "permalink": "/it/docs/shortcodes/bec-unit-info",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Shortcode `[bec_unit_info]`",
+    "sidebar_label": "bec_unit_info",
+    "description": "HTML unità specifico del provider da payload sync — chiavi amenities_grid bedroom_arrangements unit_id, estensione sviluppatori bec_unit_info_renderers."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_unit_url",
+    "permalink": "/it/docs/shortcodes/bec-unit-url"
+  },
+  "next": {
+    "title": "bec_fallback",
+    "permalink": "/it/docs/shortcodes/bec-fallback"
+  }
+}

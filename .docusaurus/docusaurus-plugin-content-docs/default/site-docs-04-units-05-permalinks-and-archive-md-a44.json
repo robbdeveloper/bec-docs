@@ -1,0 +1,28 @@
+{
+  "id": "units/permalinks-and-archive",
+  "title": "Permalinks and archive",
+  "description": "Booking Engine Units permalinks — public URL slug segment and optional unit archive listing.",
+  "source": "@site/docs/04-units/05-permalinks-and-archive.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/permalinks-and-archive",
+  "permalink": "/docs/units/permalinks-and-archive",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Permalinks and archive",
+    "sidebar_label": "Permalinks & archive",
+    "description": "Booking Engine Units permalinks — public URL slug segment and optional unit archive listing."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Gallery images",
+    "permalink": "/docs/units/gallery-images"
+  },
+  "next": {
+    "title": "Search context & URLs",
+    "permalink": "/docs/bookings-and-checkout/search-context-and-urls"
+  }
+}

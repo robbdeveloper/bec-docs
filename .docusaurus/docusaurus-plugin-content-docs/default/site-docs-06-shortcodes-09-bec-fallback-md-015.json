@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-fallback",
+  "title": "[bec_fallback] shortcode",
+  "description": "Fallback contact UI shortcode inline rich text or link mode CSS bec-fallback Booking Engine Checkout fallback settings.",
+  "source": "@site/docs/06-shortcodes/09-bec-fallback.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-fallback",
+  "permalink": "/docs/shortcodes/bec-fallback",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "[bec_fallback] shortcode",
+    "sidebar_label": "bec_fallback",
+    "description": "Fallback contact UI shortcode inline rich text or link mode CSS bec-fallback Booking Engine Checkout fallback settings."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_unit_info",
+    "permalink": "/docs/shortcodes/bec-unit-info"
+  },
+  "next": {
+    "title": "bec_version",
+    "permalink": "/docs/shortcodes/bec-version"
+  }
+}

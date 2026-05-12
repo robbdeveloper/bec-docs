@@ -1,0 +1,28 @@
+{
+  "id": "troubleshooting/common-issues",
+  "title": "Common issues",
+  "description": "Troubleshooting Booking Engine Connector verify connection sync checkout cron fallback quotes empty booking button missing.",
+  "source": "@site/docs/08-troubleshooting/01-common-issues.md",
+  "sourceDirName": "08-troubleshooting",
+  "slug": "/troubleshooting/common-issues",
+  "permalink": "/docs/troubleshooting/common-issues",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Common issues",
+    "sidebar_label": "Common issues",
+    "description": "Troubleshooting Booking Engine Connector verify connection sync checkout cron fallback quotes empty booking button missing."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Theme variables & custom CSS",
+    "permalink": "/docs/styling/theme-variables-and-custom-css"
+  },
+  "next": {
+    "title": "Using the API log",
+    "permalink": "/docs/troubleshooting/using-the-api-log"
+  }
+}

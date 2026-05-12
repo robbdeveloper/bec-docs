@@ -1,0 +1,24 @@
+{
+  "id": "developer-reference/unit-info-renderers",
+  "title": "Renderer unit info ([bec_unit_info])",
+  "description": "ProviderInterface getUnitInfoRenderers bec_unit_info_renderers bec_kross_unit_info_renderers amenities_grid bedroom_arrangements sicurezza escaping.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/09-developer-reference/07-unit-info-renderers.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/unit-info-renderers",
+  "permalink": "/it/docs/developer-reference/unit-info-renderers",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Renderer unit info ([bec_unit_info])",
+    "sidebar_label": "Renderer unit info",
+    "description": "ProviderInterface getUnitInfoRenderers bec_unit_info_renderers bec_kross_unit_info_renderers amenities_grid bedroom_arrangements sicurezza escaping."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Aggiungere un provider",
+    "permalink": "/it/docs/developer-reference/adding-a-provider"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "units/units-overview",
+  "title": "Panoramica unità",
+  "description": "Cos’è un’Unità in WordPress, menu admin Unità, URL pubblici, immagine in evidenza e rapporto con il provider di prenotazione.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/04-units/01-units-overview.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/units-overview",
+  "permalink": "/it/docs/units/units-overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Panoramica unità",
+    "sidebar_label": "Panoramica unità",
+    "description": "Cos’è un’Unità in WordPress, menu admin Unità, URL pubblici, immagine in evidenza e rapporto con il provider di prenotazione."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Kross Booking",
+    "permalink": "/it/docs/providers/kross-booking"
+  },
+  "next": {
+    "title": "Sincronizzazione unità",
+    "permalink": "/it/docs/units/syncing-units"
+  }
+}

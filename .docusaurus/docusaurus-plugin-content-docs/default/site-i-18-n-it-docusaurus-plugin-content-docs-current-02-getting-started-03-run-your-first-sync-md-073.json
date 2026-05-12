@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/run-your-first-sync",
+  "title": "Esegui la prima sincronizzazione",
+  "description": "Pagina Booking Engine Sync — intervallo, opzioni nomi file gallery, Esegui sincronizzazione ora e dove trovare le Unità in WordPress.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/02-getting-started/03-run-your-first-sync.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/run-your-first-sync",
+  "permalink": "/it/docs/getting-started/run-your-first-sync",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Esegui la prima sincronizzazione",
+    "sidebar_label": "Prima sincronizzazione",
+    "description": "Pagina Booking Engine Sync — intervallo, opzioni nomi file gallery, Esegui sincronizzazione ora e dove trovare le Unità in WordPress."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Collega il provider",
+    "permalink": "/it/docs/getting-started/connect-your-provider"
+  },
+  "next": {
+    "title": "Ricerca e prenotazione sulle pagine",
+    "permalink": "/it/docs/getting-started/add-search-and-booking-to-pages"
+  }
+}

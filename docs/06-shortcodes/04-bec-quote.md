@@ -1,0 +1,64 @@
+---
+title: '[bec_quote] shortcode'
+sidebar_label: bec_quote
+description: Compact quote shortcode unit_id show_rates CSS hooks bec-shortcode-quote archive cards.
+---
+
+# `[bec_quote]`
+
+Shows a **compact availability / price line** using the cached quote service—ideal beside thumbnails on archives or lightweight layouts.
+
+---
+
+## Where to put it
+
+Unit archive loops, Related Units grids, hero strips—anywhere `[bec_booking_summary]` would feel too heavy.
+
+---
+
+## Attributes
+
+| Attribute | Default | Meaning |
+|-----------|---------|---------|
+| **`unit_id`** | `0` | Target Units post ID; `0` uses current loop post. |
+| **`show_rates`** | `auto` | Controls optional multi-rate list below the headline price. Recognised truthy values include `1`, `always`, `yes`, `true`; falsy includes `0`, `never`, `no`, `false`. **`auto`** lists rates only when more than one exists. |
+
+---
+
+## Examples
+
+```
+[bec_quote]
+```
+
+```
+[bec_quote show_rates="always"]
+```
+
+```
+[bec_quote unit_id="456" show_rates="0"]
+```
+
+---
+
+## Visitor output
+
+Requires **complete** URL context—otherwise empty.
+
+{/* SCREENSHOT: Archive card with quote line */}
+![bec_quote on archive card](/img/bec-screenshot-placeholder.svg)
+{/* Intended screenshot (add file at `docs/img/06-shortcodes/bec-quote-archive.png`): bec-quote-archive.png */}
+
+---
+
+## CSS hooks
+
+- Root: `bec-shortcode-quote`
+- Rate list: `bec-shortcode-quote__rates`, `bec-shortcode-quote__rate`, `bec-shortcode-quote__rate--selected`
+- Labels: `bec-shortcode-quote__rate-name`, `bec-shortcode-quote__rate-price`
+
+---
+
+## Tips
+
+Developers can adjust wording/HTML via **`bec_shortcode_quote_text`** / **`bec_shortcode_quote_html`** filters.

@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/elementor-loop-grid-availability-filter",
+  "title": "Elementor — nascondere unità senza disponibilità",
+  "description": "Usa un Query ID personalizzato sul Loop Grid di Elementor così le schede elenco mostrano solo unità disponibili per le date di ricerca correnti.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/11-elementor-loop-grid-availability-filter.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/elementor-loop-grid-availability-filter",
+  "permalink": "/it/docs/shortcodes/elementor-loop-grid-availability-filter",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Elementor — nascondere unità senza disponibilità",
+    "sidebar_label": "Filtro Elementor Loop Grid",
+    "description": "Usa un Query ID personalizzato sul Loop Grid di Elementor così le schede elenco mostrano solo unità disponibili per le date di ricerca correnti."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_version",
+    "permalink": "/it/docs/shortcodes/bec-version"
+  },
+  "next": {
+    "title": "Panoramica stile",
+    "permalink": "/it/docs/styling/styling-overview"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "styling/styling-overview",
+  "title": "Styling overview",
+  "description": "Booking Engine Styling admin page theme variables search and booking summary presets accordions extra CSS screenshots.",
+  "source": "@site/docs/07-styling/01-styling-overview.md",
+  "sourceDirName": "07-styling",
+  "slug": "/styling/styling-overview",
+  "permalink": "/docs/styling/styling-overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Styling overview",
+    "sidebar_label": "Styling overview",
+    "description": "Booking Engine Styling admin page theme variables search and booking summary presets accordions extra CSS screenshots."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Elementor Loop Grid filter",
+    "permalink": "/docs/shortcodes/elementor-loop-grid-availability-filter"
+  },
+  "next": {
+    "title": "Search form presets",
+    "permalink": "/docs/styling/search-form-presets"
+  }
+}

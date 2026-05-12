@@ -1,0 +1,28 @@
+{
+  "id": "bookings-and-checkout/availability-and-quotes",
+  "title": "Disponibilità e preventivi",
+  "description": "Cos’è un preventivo, cache transiente ~5 minuti, nessuna disponibilità vs errori di validazione, preventivi bulk sugli archivi.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/05-bookings-and-checkout/02-availability-and-quotes.md",
+  "sourceDirName": "05-bookings-and-checkout",
+  "slug": "/bookings-and-checkout/availability-and-quotes",
+  "permalink": "/it/docs/bookings-and-checkout/availability-and-quotes",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Disponibilità e preventivi",
+    "sidebar_label": "Disponibilità e preventivi",
+    "description": "Cos’è un preventivo, cache transiente ~5 minuti, nessuna disponibilità vs errori di validazione, preventivi bulk sugli archivi."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Contesto ricerca e URL",
+    "permalink": "/it/docs/bookings-and-checkout/search-context-and-urls"
+  },
+  "next": {
+    "title": "Flusso di checkout",
+    "permalink": "/it/docs/bookings-and-checkout/checkout-flow"
+  }
+}

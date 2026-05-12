@@ -1,0 +1,28 @@
+{
+  "id": "units/gallery-images",
+  "title": "Immagini gallery",
+  "description": "Come le immagini remote importano nella Libreria media, prefisso e suffisso nome file, strumenti rinomina, regole immagine in evidenza.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/04-units/04-gallery-images.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/gallery-images",
+  "permalink": "/it/docs/units/gallery-images",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Immagini gallery",
+    "sidebar_label": "Immagini gallery",
+    "description": "Come le immagini remote importano nella Libreria media, prefisso e suffisso nome file, strumenti rinomina, regole immagine in evidenza."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Modificare un’unità",
+    "permalink": "/it/docs/units/editing-a-unit"
+  },
+  "next": {
+    "title": "Permalink e archivio",
+    "permalink": "/it/docs/units/permalinks-and-archive"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "units/editing-a-unit",
+  "title": "Modificare un’unità",
+  "description": "Meta box campi canonici, dati sincronizzati in sola lettura, campi unità opzionali e cosa sovrascrive la sync.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/04-units/03-editing-a-unit.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/editing-a-unit",
+  "permalink": "/it/docs/units/editing-a-unit",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Modificare un’unità",
+    "sidebar_label": "Modificare un’unità",
+    "description": "Meta box campi canonici, dati sincronizzati in sola lettura, campi unità opzionali e cosa sovrascrive la sync."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Sincronizzazione unità",
+    "permalink": "/it/docs/units/syncing-units"
+  },
+  "next": {
+    "title": "Immagini gallery",
+    "permalink": "/it/docs/units/gallery-images"
+  }
+}

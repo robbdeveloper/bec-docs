@@ -1,0 +1,28 @@
+{
+  "id": "styling/booking-summary-presets",
+  "title": "Preset riepilogo prenotazione",
+  "description": "Riepilogo prenotazione Default vs Compact, screenshot, interruttori accordion inclusioni condizioni.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/07-styling/03-booking-summary-presets.md",
+  "sourceDirName": "07-styling",
+  "slug": "/styling/booking-summary-presets",
+  "permalink": "/it/docs/styling/booking-summary-presets",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Preset riepilogo prenotazione",
+    "sidebar_label": "Preset riepilogo prenotazione",
+    "description": "Riepilogo prenotazione Default vs Compact, screenshot, interruttori accordion inclusioni condizioni."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Preset modulo di ricerca",
+    "permalink": "/it/docs/styling/search-form-presets"
+  },
+  "next": {
+    "title": "Variabili tema e CSS",
+    "permalink": "/it/docs/styling/theme-variables-and-custom-css"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "styling/search-form-presets",
+  "title": "Preset modulo di ricerca",
+  "description": "Barra di ricerca Enhanced vs Classic, screenshot anteprima, hook CSS bec-search-form-wrap Enhanced Classic.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/07-styling/02-search-form-presets.md",
+  "sourceDirName": "07-styling",
+  "slug": "/styling/search-form-presets",
+  "permalink": "/it/docs/styling/search-form-presets",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Preset modulo di ricerca",
+    "sidebar_label": "Preset modulo di ricerca",
+    "description": "Barra di ricerca Enhanced vs Classic, screenshot anteprima, hook CSS bec-search-form-wrap Enhanced Classic."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Panoramica stile",
+    "permalink": "/it/docs/styling/styling-overview"
+  },
+  "next": {
+    "title": "Preset riepilogo prenotazione",
+    "permalink": "/it/docs/styling/booking-summary-presets"
+  }
+}

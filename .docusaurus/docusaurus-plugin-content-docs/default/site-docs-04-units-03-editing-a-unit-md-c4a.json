@@ -1,0 +1,28 @@
+{
+  "id": "units/editing-a-unit",
+  "title": "Editing a unit",
+  "description": "Canonical core fields metabox, read-only synced data, optional unit fields, and what sync overwrites.",
+  "source": "@site/docs/04-units/03-editing-a-unit.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/editing-a-unit",
+  "permalink": "/docs/units/editing-a-unit",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Editing a unit",
+    "sidebar_label": "Editing a unit",
+    "description": "Canonical core fields metabox, read-only synced data, optional unit fields, and what sync overwrites."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Syncing units",
+    "permalink": "/docs/units/syncing-units"
+  },
+  "next": {
+    "title": "Gallery images",
+    "permalink": "/docs/units/gallery-images"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "introduction/how-it-works",
+  "title": "Come funziona",
+  "description": "Panoramica visuale di sincronizzazione, unità, contesto URL di ricerca, preventivi, checkout e fallback in Booking Engine Connector.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/01-introduction/02-how-it-works.md",
+  "sourceDirName": "01-introduction",
+  "slug": "/introduction/how-it-works",
+  "permalink": "/it/docs/introduction/how-it-works",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Come funziona",
+    "sidebar_label": "Come funziona",
+    "description": "Panoramica visuale di sincronizzazione, unità, contesto URL di ricerca, preventivi, checkout e fallback in Booking Engine Connector."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Cos’è BEC?",
+    "permalink": "/it/docs/introduction/what-is-bec"
+  },
+  "next": {
+    "title": "Requisiti",
+    "permalink": "/it/docs/introduction/requirements"
+  }
+}

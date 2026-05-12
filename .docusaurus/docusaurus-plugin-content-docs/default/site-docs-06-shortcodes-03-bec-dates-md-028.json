@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-dates",
+  "title": "[bec_dates] shortcode",
+  "description": "Readable stay dates from URL search context shortcode bec_dates CSS bec-shortcode-dates.",
+  "source": "@site/docs/06-shortcodes/03-bec-dates.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-dates",
+  "permalink": "/docs/shortcodes/bec-dates",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "[bec_dates] shortcode",
+    "sidebar_label": "bec_dates",
+    "description": "Readable stay dates from URL search context shortcode bec_dates CSS bec-shortcode-dates."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_search",
+    "permalink": "/docs/shortcodes/bec-search"
+  },
+  "next": {
+    "title": "bec_quote",
+    "permalink": "/docs/shortcodes/bec-quote"
+  }
+}

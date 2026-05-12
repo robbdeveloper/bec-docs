@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/sync-hooks-and-filters",
+  "title": "Hook e filtri sync",
+  "description": "Comportamento sync, hook bec_before_unit_sync bec_after_unit_sync, filtri riga remota titolo contenuto campi core, provider_remote_units Kross.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/09-developer-reference/02-sync-hooks-and-filters.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/sync-hooks-and-filters",
+  "permalink": "/it/docs/developer-reference/sync-hooks-and-filters",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Hook e filtri sync",
+    "sidebar_label": "Hook e filtri sync",
+    "description": "Comportamento sync, hook bec_before_unit_sync bec_after_unit_sync, filtri riga remota titolo contenuto campi core, provider_remote_units Kross."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Architettura",
+    "permalink": "/it/docs/developer-reference/architecture"
+  },
+  "next": {
+    "title": "Riferimento post meta",
+    "permalink": "/it/docs/developer-reference/post-meta-reference"
+  }
+}

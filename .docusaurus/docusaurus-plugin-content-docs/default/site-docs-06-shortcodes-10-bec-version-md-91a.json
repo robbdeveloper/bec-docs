@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-version",
+  "title": "[bec_version] shortcode",
+  "description": "Outputs Booking Engine Connector plugin version string for support pages footers debugging.",
+  "source": "@site/docs/06-shortcodes/10-bec-version.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-version",
+  "permalink": "/docs/shortcodes/bec-version",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "[bec_version] shortcode",
+    "sidebar_label": "bec_version",
+    "description": "Outputs Booking Engine Connector plugin version string for support pages footers debugging."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_fallback",
+    "permalink": "/docs/shortcodes/bec-fallback"
+  },
+  "next": {
+    "title": "Elementor Loop Grid filter",
+    "permalink": "/docs/shortcodes/elementor-loop-grid-availability-filter"
+  }
+}

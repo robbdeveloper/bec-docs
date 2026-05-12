@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/canonical-unit-fields",
+  "title": "Canonical unit fields",
+  "description": "bec_core_meta CoreUnitSemantic gallery import amenities JSON filters bec_sync_apply_core_unit_fields RemoteGalleryImporter developer reference.",
+  "source": "@site/docs/09-developer-reference/04-canonical-unit-fields.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/canonical-unit-fields",
+  "permalink": "/docs/developer-reference/canonical-unit-fields",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Canonical unit fields",
+    "sidebar_label": "Canonical unit fields",
+    "description": "bec_core_meta CoreUnitSemantic gallery import amenities JSON filters bec_sync_apply_core_unit_fields RemoteGalleryImporter developer reference."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Post meta reference",
+    "permalink": "/docs/developer-reference/post-meta-reference"
+  },
+  "next": {
+    "title": "Kross API",
+    "permalink": "/docs/developer-reference/kross-api"
+  }
+}

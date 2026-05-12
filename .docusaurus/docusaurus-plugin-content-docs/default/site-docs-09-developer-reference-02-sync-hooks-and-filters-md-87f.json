@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/sync-hooks-and-filters",
+  "title": "Sync hooks & filters",
+  "description": "Sync behaviour hooks bec_before_unit_sync bec_after_unit_sync filters remote unit title content core fields mapped fields Kross provider_remote_units.",
+  "source": "@site/docs/09-developer-reference/02-sync-hooks-and-filters.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/sync-hooks-and-filters",
+  "permalink": "/docs/developer-reference/sync-hooks-and-filters",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Sync hooks & filters",
+    "sidebar_label": "Sync hooks & filters",
+    "description": "Sync behaviour hooks bec_before_unit_sync bec_after_unit_sync filters remote unit title content core fields mapped fields Kross provider_remote_units."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Architecture",
+    "permalink": "/docs/developer-reference/architecture"
+  },
+  "next": {
+    "title": "Post meta reference",
+    "permalink": "/docs/developer-reference/post-meta-reference"
+  }
+}

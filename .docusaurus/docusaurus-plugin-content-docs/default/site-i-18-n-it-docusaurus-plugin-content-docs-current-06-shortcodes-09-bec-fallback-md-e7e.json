@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-fallback",
+  "title": "Shortcode `[bec_fallback]`",
+  "description": "UI contatto fallback — contenuto inline ricco o modalità solo link, CSS bec-fallback, impostazioni Booking Engine Checkout fallback.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/09-bec-fallback.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-fallback",
+  "permalink": "/it/docs/shortcodes/bec-fallback",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Shortcode `[bec_fallback]`",
+    "sidebar_label": "bec_fallback",
+    "description": "UI contatto fallback — contenuto inline ricco o modalità solo link, CSS bec-fallback, impostazioni Booking Engine Checkout fallback."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_unit_info",
+    "permalink": "/it/docs/shortcodes/bec-unit-info"
+  },
+  "next": {
+    "title": "bec_version",
+    "permalink": "/it/docs/shortcodes/bec-version"
+  }
+}

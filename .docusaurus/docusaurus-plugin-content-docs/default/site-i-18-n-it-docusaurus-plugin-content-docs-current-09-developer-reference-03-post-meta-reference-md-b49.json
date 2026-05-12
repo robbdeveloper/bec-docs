@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/post-meta-reference",
+  "title": "Riferimento post meta",
+  "description": "Chiavi meta post bec_unit, allegati gallery, opzioni prefisso/suffisso, campi core bec_core_*, REST, sviluppatori.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/09-developer-reference/03-post-meta-reference.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/post-meta-reference",
+  "permalink": "/it/docs/developer-reference/post-meta-reference",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Riferimento post meta",
+    "sidebar_label": "Riferimento post meta",
+    "description": "Chiavi meta post bec_unit, allegati gallery, opzioni prefisso/suffisso, campi core bec_core_*, REST, sviluppatori."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Hook e filtri sync",
+    "permalink": "/it/docs/developer-reference/sync-hooks-and-filters"
+  },
+  "next": {
+    "title": "Campi canonici unità",
+    "permalink": "/it/docs/developer-reference/canonical-unit-fields"
+  }
+}

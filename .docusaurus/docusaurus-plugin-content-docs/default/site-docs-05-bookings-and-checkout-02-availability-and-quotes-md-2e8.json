@@ -1,0 +1,28 @@
+{
+  "id": "bookings-and-checkout/availability-and-quotes",
+  "title": "Availability and quotes",
+  "description": "What a quote is, transient caching about five minutes, no availability vs validation errors, bulk quotes on archives.",
+  "source": "@site/docs/05-bookings-and-checkout/02-availability-and-quotes.md",
+  "sourceDirName": "05-bookings-and-checkout",
+  "slug": "/bookings-and-checkout/availability-and-quotes",
+  "permalink": "/docs/bookings-and-checkout/availability-and-quotes",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Availability and quotes",
+    "sidebar_label": "Availability & quotes",
+    "description": "What a quote is, transient caching about five minutes, no availability vs validation errors, bulk quotes on archives."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Search context & URLs",
+    "permalink": "/docs/bookings-and-checkout/search-context-and-urls"
+  },
+  "next": {
+    "title": "Checkout flow",
+    "permalink": "/docs/bookings-and-checkout/checkout-flow"
+  }
+}

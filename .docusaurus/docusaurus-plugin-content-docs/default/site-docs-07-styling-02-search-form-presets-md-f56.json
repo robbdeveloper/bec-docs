@@ -1,0 +1,28 @@
+{
+  "id": "styling/search-form-presets",
+  "title": "Search form presets",
+  "description": "Enhanced vs Classic search bar presets preview screenshots bec-search-form-wrap Enhanced Classic CSS hooks.",
+  "source": "@site/docs/07-styling/02-search-form-presets.md",
+  "sourceDirName": "07-styling",
+  "slug": "/styling/search-form-presets",
+  "permalink": "/docs/styling/search-form-presets",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Search form presets",
+    "sidebar_label": "Search form presets",
+    "description": "Enhanced vs Classic search bar presets preview screenshots bec-search-form-wrap Enhanced Classic CSS hooks."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Styling overview",
+    "permalink": "/docs/styling/styling-overview"
+  },
+  "next": {
+    "title": "Booking summary presets",
+    "permalink": "/docs/styling/booking-summary-presets"
+  }
+}

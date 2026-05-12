@@ -1,0 +1,28 @@
+{
+  "id": "introduction/how-it-works",
+  "title": "How it works",
+  "description": "Visual overview of sync, units, search URL context, quotes, checkout, and fallback in Booking Engine Connector.",
+  "source": "@site/docs/01-introduction/02-how-it-works.md",
+  "sourceDirName": "01-introduction",
+  "slug": "/introduction/how-it-works",
+  "permalink": "/docs/introduction/how-it-works",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "How it works",
+    "sidebar_label": "How it works",
+    "description": "Visual overview of sync, units, search URL context, quotes, checkout, and fallback in Booking Engine Connector."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "What is BEC?",
+    "permalink": "/docs/introduction/what-is-bec"
+  },
+  "next": {
+    "title": "Requirements",
+    "permalink": "/docs/introduction/requirements"
+  }
+}

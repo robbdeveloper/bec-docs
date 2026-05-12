@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-version",
+  "title": "Shortcode `[bec_version]`",
+  "description": "Stampa la stringa versione del plugin Booking Engine Connector per pagine supporto, footer, debug.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/10-bec-version.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-version",
+  "permalink": "/it/docs/shortcodes/bec-version",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Shortcode `[bec_version]`",
+    "sidebar_label": "bec_version",
+    "description": "Stampa la stringa versione del plugin Booking Engine Connector per pagine supporto, footer, debug."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_fallback",
+    "permalink": "/it/docs/shortcodes/bec-fallback"
+  },
+  "next": {
+    "title": "Filtro Elementor Loop Grid",
+    "permalink": "/it/docs/shortcodes/elementor-loop-grid-availability-filter"
+  }
+}

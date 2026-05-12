@@ -1,0 +1,28 @@
+{
+  "id": "developer-reference/architecture",
+  "title": "Architettura (riferimento sviluppatori)",
+  "description": "Bootstrap del plugin Booking Engine Connector, strati, moduli, diagrammi Mermaid, namespace PHP BookingEngineConnector.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/09-developer-reference/01-architecture.md",
+  "sourceDirName": "09-developer-reference",
+  "slug": "/developer-reference/architecture",
+  "permalink": "/it/docs/developer-reference/architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Architettura (riferimento sviluppatori)",
+    "sidebar_label": "Architettura",
+    "description": "Bootstrap del plugin Booking Engine Connector, strati, moduli, diagrammi Mermaid, namespace PHP BookingEngineConnector."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Disinstallazione",
+    "permalink": "/it/docs/troubleshooting/uninstalling"
+  },
+  "next": {
+    "title": "Hook e filtri sync",
+    "permalink": "/it/docs/developer-reference/sync-hooks-and-filters"
+  }
+}

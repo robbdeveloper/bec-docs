@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/add-search-and-booking-to-pages",
+  "title": "Aggiungi ricerca e prenotazione alle pagine",
+  "description": "Tutorial rapido — posiziona bec_search su una landing e bec_booking_summary sulle pagine unità con editor a blocchi o classico.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/02-getting-started/04-add-search-and-booking-to-pages.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/add-search-and-booking-to-pages",
+  "permalink": "/it/docs/getting-started/add-search-and-booking-to-pages",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Aggiungi ricerca e prenotazione alle pagine",
+    "sidebar_label": "Ricerca e prenotazione sulle pagine",
+    "description": "Tutorial rapido — posiziona bec_search su una landing e bec_booking_summary sulle pagine unità con editor a blocchi o classico."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Prima sincronizzazione",
+    "permalink": "/it/docs/getting-started/run-your-first-sync"
+  },
+  "next": {
+    "title": "Panoramica provider",
+    "permalink": "/it/docs/providers/providers-overview"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-unit-url",
+  "title": "[bec_unit_url] shortcode",
+  "description": "Outputs unit permalink with search params preserved shortcode unit_id href usage filter bec_shortcode_unit_url.",
+  "source": "@site/docs/06-shortcodes/07-bec-unit-url.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-unit-url",
+  "permalink": "/docs/shortcodes/bec-unit-url",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "[bec_unit_url] shortcode",
+    "sidebar_label": "bec_unit_url",
+    "description": "Outputs unit permalink with search params preserved shortcode unit_id href usage filter bec_shortcode_unit_url."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_booking_summary",
+    "permalink": "/docs/shortcodes/bec-booking-summary"
+  },
+  "next": {
+    "title": "bec_unit_info",
+    "permalink": "/docs/shortcodes/bec-unit-info"
+  }
+}

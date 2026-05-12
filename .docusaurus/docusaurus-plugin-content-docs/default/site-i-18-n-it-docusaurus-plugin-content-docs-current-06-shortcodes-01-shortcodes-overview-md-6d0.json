@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/shortcodes-overview",
+  "title": "Panoramica shortcode",
+  "description": "Elenco completo degli shortcode Booking Engine Connector, flusso contesto ricerca URL e regole attributo unit_id.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/01-shortcodes-overview.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/shortcodes-overview",
+  "permalink": "/it/docs/shortcodes/shortcodes-overview",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Panoramica shortcode",
+    "sidebar_label": "Panoramica shortcode",
+    "description": "Elenco completo degli shortcode Booking Engine Connector, flusso contesto ricerca URL e regole attributo unit_id."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Modalità fallback",
+    "permalink": "/it/docs/bookings-and-checkout/fallback-mode"
+  },
+  "next": {
+    "title": "bec_search",
+    "permalink": "/it/docs/shortcodes/bec-search"
+  }
+}

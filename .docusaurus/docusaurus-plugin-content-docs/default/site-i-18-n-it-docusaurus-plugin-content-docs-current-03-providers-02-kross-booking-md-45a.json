@@ -1,0 +1,28 @@
+{
+  "id": "providers/kross-booking",
+  "title": "Kross Booking",
+  "description": "Credenziali API Kross, Verifica connessione, URL base motore prenotazione, checkout GET vs POST e differenze rispetto alle API key.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/03-providers/02-kross-booking.md",
+  "sourceDirName": "03-providers",
+  "slug": "/providers/kross-booking",
+  "permalink": "/it/docs/providers/kross-booking",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Kross Booking",
+    "sidebar_label": "Kross Booking",
+    "description": "Credenziali API Kross, Verifica connessione, URL base motore prenotazione, checkout GET vs POST e differenze rispetto alle API key."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Panoramica provider",
+    "permalink": "/it/docs/providers/providers-overview"
+  },
+  "next": {
+    "title": "Panoramica unità",
+    "permalink": "/it/docs/units/units-overview"
+  }
+}

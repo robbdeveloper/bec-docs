@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-search",
+  "title": "Shortcode `[bec_search]`",
+  "description": "Modulo ricerca disponibilità, attributi, form_id, hook CSS, preset Enhanced vs Classic.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/02-bec-search.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-search",
+  "permalink": "/it/docs/shortcodes/bec-search",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Shortcode `[bec_search]`",
+    "sidebar_label": "bec_search",
+    "description": "Modulo ricerca disponibilità, attributi, form_id, hook CSS, preset Enhanced vs Classic."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Panoramica shortcode",
+    "permalink": "/it/docs/shortcodes/shortcodes-overview"
+  },
+  "next": {
+    "title": "bec_dates",
+    "permalink": "/it/docs/shortcodes/bec-dates"
+  }
+}

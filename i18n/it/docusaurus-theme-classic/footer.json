@@ -1,0 +1,22 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentazione",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.item.label.Home": {
+    "message": "Home",
+    "description": "The label of footer link with label=Home linking to /docs/"
+  },
+  "link.item.label.Getting started": {
+    "message": "Per iniziare",
+    "description": "The label of footer link with label=Getting started linking to /docs/getting-started/installation"
+  },
+  "link.item.label.Troubleshooting": {
+    "message": "Risoluzione dei problemi",
+    "description": "The label of footer link with label=Troubleshooting linking to /docs/troubleshooting/common-issues"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Documentazione Booking Engine Connector.",
+    "description": "The footer copyright"
+  }
+}

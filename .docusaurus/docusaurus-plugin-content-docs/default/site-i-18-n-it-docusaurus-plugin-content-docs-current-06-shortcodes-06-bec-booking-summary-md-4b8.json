@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-booking-summary",
+  "title": "Shortcode `[bec_booking_summary]`",
+  "description": "Riepilogo prenotazione completo — attributi, preventivo incompleto, fallback, drawer mobile, fisarmoniche, enquiry, preset compatto.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/06-bec-booking-summary.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-booking-summary",
+  "permalink": "/it/docs/shortcodes/bec-booking-summary",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Shortcode `[bec_booking_summary]`",
+    "sidebar_label": "bec_booking_summary",
+    "description": "Riepilogo prenotazione completo — attributi, preventivo incompleto, fallback, drawer mobile, fisarmoniche, enquiry, preset compatto."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_checkout",
+    "permalink": "/it/docs/shortcodes/bec-checkout"
+  },
+  "next": {
+    "title": "bec_unit_url",
+    "permalink": "/it/docs/shortcodes/bec-unit-url"
+  }
+}

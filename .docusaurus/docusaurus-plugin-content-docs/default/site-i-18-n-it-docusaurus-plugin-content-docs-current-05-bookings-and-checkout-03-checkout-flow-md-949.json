@@ -1,0 +1,28 @@
+{
+  "id": "bookings-and-checkout/checkout-flow",
+  "title": "Flusso di checkout",
+  "description": "Passaggio al motore di prenotazione esterno checkout GET vs POST costruzione URL più tariffe e comportamento pulsante Continua.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/05-bookings-and-checkout/03-checkout-flow.md",
+  "sourceDirName": "05-bookings-and-checkout",
+  "slug": "/bookings-and-checkout/checkout-flow",
+  "permalink": "/it/docs/bookings-and-checkout/checkout-flow",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Flusso di checkout",
+    "sidebar_label": "Flusso di checkout",
+    "description": "Passaggio al motore di prenotazione esterno checkout GET vs POST costruzione URL più tariffe e comportamento pulsante Continua."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Disponibilità e preventivi",
+    "permalink": "/it/docs/bookings-and-checkout/availability-and-quotes"
+  },
+  "next": {
+    "title": "Modalità fallback",
+    "permalink": "/it/docs/bookings-and-checkout/fallback-mode"
+  }
+}

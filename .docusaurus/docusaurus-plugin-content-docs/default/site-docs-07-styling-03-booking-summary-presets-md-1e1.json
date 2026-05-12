@@ -1,0 +1,28 @@
+{
+  "id": "styling/booking-summary-presets",
+  "title": "Booking summary presets",
+  "description": "Default vs Compact booking summary preset screenshots accordion toggles inclusions conditions styling settings.",
+  "source": "@site/docs/07-styling/03-booking-summary-presets.md",
+  "sourceDirName": "07-styling",
+  "slug": "/styling/booking-summary-presets",
+  "permalink": "/docs/styling/booking-summary-presets",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Booking summary presets",
+    "sidebar_label": "Booking summary presets",
+    "description": "Default vs Compact booking summary preset screenshots accordion toggles inclusions conditions styling settings."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Search form presets",
+    "permalink": "/docs/styling/search-form-presets"
+  },
+  "next": {
+    "title": "Theme variables & custom CSS",
+    "permalink": "/docs/styling/theme-variables-and-custom-css"
+  }
+}

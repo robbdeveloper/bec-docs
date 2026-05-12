@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="t">
+  <title id="t">Screenshot placeholder</title>
+  <rect width="800" height="450" fill="#f4f6f8" stroke="#c8d0da" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="400" y="210" text-anchor="middle" fill="#6b7785" font-family="system-ui, sans-serif" font-size="22">Screenshot coming soon</text>
+  <text x="400" y="250" text-anchor="middle" fill="#9aa5b1" font-family="system-ui, sans-serif" font-size="14">Add the image to docs/img (same path as in the HTML comment below)</text>
+</svg>
