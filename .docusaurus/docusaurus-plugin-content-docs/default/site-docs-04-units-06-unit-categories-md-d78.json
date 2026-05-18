@@ -1,0 +1,28 @@
+{
+  "id": "units/unit-categories",
+  "title": "Unit categories",
+  "description": "Optional bec_unit_category taxonomy — enable on permalinks screen, URL slug, sync from Kross, public archives and multilingual labels.",
+  "source": "@site/docs/04-units/06-unit-categories.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/unit-categories",
+  "permalink": "/docs/units/unit-categories",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Unit categories",
+    "sidebar_label": "Unit categories",
+    "description": "Optional bec_unit_category taxonomy — enable on permalinks screen, URL slug, sync from Kross, public archives and multilingual labels."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Permalinks & archive",
+    "permalink": "/docs/units/permalinks-and-archive"
+  },
+  "next": {
+    "title": "Search context & URLs",
+    "permalink": "/docs/bookings-and-checkout/search-context-and-urls"
+  }
+}

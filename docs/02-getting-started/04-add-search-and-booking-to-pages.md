@@ -22,7 +22,9 @@ This is a **minimal** layout many sites use: search everywhere you need it, rich
 
 4. **Update** the page.
 
-When a visitor submits the form, the browser reloads with dates and guest counts in the **URL**. Other shortcodes on the destination page read the same values.
+**Where the search sends visitors:** with plain **`[bec_search]`**, submitting goes to the **units archive** by default (your public units listing), **not** back to the homepage—so the listing can read **`bec_*`** from the URL. If the archive is disabled, WordPress falls back to the **home** URL; enable **Unit archive** under **Booking Engine → Units — permalinks** or add **`redirect_url="/your-page/"`** to the shortcode. Details: **[bec_search](../06-shortcodes/02-bec-search.md)**.
+
+When a visitor submits the form, the browser loads the destination with dates and guest counts in the **URL**. Other shortcodes on **that** page read the same values.
 
 {/* SCREENSHOT: Front-end Enhanced or Classic search bar in a page header */}
 ![Front-end search bar shortcode](/img/bec-screenshot-placeholder.svg)

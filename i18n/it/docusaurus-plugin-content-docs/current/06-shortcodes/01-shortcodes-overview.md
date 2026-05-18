@@ -10,7 +10,7 @@ Gli shortcode sono scorciatoie WordPress che inserisci in pagine, pattern o temp
 
 | Shortcode | Scopo |
 |-----------|--------|
-| `[bec_search]` | Modulo ricerca disponibilità (GET) — imposta i parametri URL. |
+| `[bec_search]` | Modulo ricerca (GET). Imposta i parametri URL **`bec_*`** sul **`action`** del form — predefinito **archivio unità** (oppure **`redirect_url`** per un’altra pagina). |
 | `[bec_dates]` | Riepilogo date di soggiorno leggibile dall’URL. |
 | `[bec_quote]` | Riga compatta disponibilità / prezzo (elenco tariffe opzionale). |
 | `[bec_checkout]` | Pulsante checkout esterno o modulo POST. |

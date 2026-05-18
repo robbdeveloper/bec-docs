@@ -1,7 +1,7 @@
 {
   "id": "developer-reference/post-meta-reference",
   "title": "Riferimento post meta",
-  "description": "Chiavi meta post bec_unit, allegati gallery, opzioni prefisso/suffisso, campi core bec_core_*, REST, sviluppatori.",
+  "description": "Chiavi meta post bec_unit, allegati gallery, opzioni e tassonomia categorie, motori Kross, bec_db_version, campi core bec_core_*, sviluppatori.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/09-developer-reference/03-post-meta-reference.md",
   "sourceDirName": "09-developer-reference",
   "slug": "/developer-reference/post-meta-reference",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Riferimento post meta",
     "sidebar_label": "Riferimento post meta",
-    "description": "Chiavi meta post bec_unit, allegati gallery, opzioni prefisso/suffisso, campi core bec_core_*, REST, sviluppatori."
+    "description": "Chiavi meta post bec_unit, allegati gallery, opzioni e tassonomia categorie, motori Kross, bec_db_version, campi core bec_core_*, sviluppatori."
   },
   "sidebar": "docsSidebar",
   "previous": {

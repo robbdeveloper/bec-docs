@@ -98,6 +98,16 @@ Kross (frammento payload → descrittore):
 
 ---
 
+## Modulo di ricerca (front-end)
+
+| Filtro | Scopo |
+|--------|--------|
+| `bec_search_form_action` | Sostituisce l’URL `action` del `<form>` quando `SearchForm::render()` non ha ricevuto un argomento **`action`** esplicito (`$url`, `$context`). Restituire stringa vuota per mantenere le regole integrate (archivio / singolare / home). Lo shortcode **`[bec_search]`** imposta **`action`** da **`redirect_url`** o dal fallback archivio — il filtro vale soprattutto per form resi da PHP. |
+
+Altri filtri UI (`bec_search_form_fields`, `bec_search_form_preset`, `bec_search_guest_field_mode`, ecc.) restano in `SearchForm`; vedi **[Shortcode bec_search](../06-shortcodes/02-bec-search.md)**.
+
+---
+
 ## REST personalizzata, blocchi, webhook
 
 Il connector **non** registra una superficie **`register_rest_route`** propria per le API di prenotazione. Il CPT **`bec_unit`** usa la REST core dei post dove configurato; meta sensibili come **`bec_sync_payload`** restano fuori REST. Non ci sono **`register_block_type`** né **webhook in ingresso** — integrazione pull via sync e shortcode/hook front.

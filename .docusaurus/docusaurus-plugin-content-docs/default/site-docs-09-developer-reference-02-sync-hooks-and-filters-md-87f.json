@@ -1,7 +1,7 @@
 {
   "id": "developer-reference/sync-hooks-and-filters",
   "title": "Sync hooks & filters",
-  "description": "Sync behaviour hooks bec_before_unit_sync bec_after_unit_sync filters remote unit title content core fields mapped fields Kross provider_remote_units.",
+  "description": "Sync behaviour hooks filters bec_before_unit_sync bec_after_unit_sync lock cron manual AJAX gallery categories UnitCategorySync Resolve post statuses developer reference.",
   "source": "@site/docs/09-developer-reference/02-sync-hooks-and-filters.md",
   "sourceDirName": "09-developer-reference",
   "slug": "/developer-reference/sync-hooks-and-filters",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Sync hooks & filters",
     "sidebar_label": "Sync hooks & filters",
-    "description": "Sync behaviour hooks bec_before_unit_sync bec_after_unit_sync filters remote unit title content core fields mapped fields Kross provider_remote_units."
+    "description": "Sync behaviour hooks filters bec_before_unit_sync bec_after_unit_sync lock cron manual AJAX gallery categories UnitCategorySync Resolve post statuses developer reference."
   },
   "sidebar": "docsSidebar",
   "previous": {

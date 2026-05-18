@@ -22,7 +22,9 @@ description: Tutorial rapido — posiziona bec_search su una landing e bec_booki
 
 4. **Aggiorna** la pagina.
 
-Quando un visitatore invia il modulo, il browser si ricarica con date e conteggi ospiti nell’**URL**. Altri shortcode nella pagina di destinazione leggono gli stessi valori.
+**Dove arriva la ricerca:** con il semplice **`[bec_search]`**, l’invio va per impostazione predefinita all’**archivio delle unità** (l’elenco pubblico dell’inventario), **non** di nuovo alla homepage — così l’elenco può leggere **`bec_*`** dall’URL. Se l’archivio è disattivato, WordPress usa la **home**; abilita **Unit archive** in **Booking Engine → Units — permalinks** oppure aggiungi **`redirect_url="/tua-pagina/"`** allo shortcode. Dettagli: **[bec_search](../06-shortcodes/02-bec-search.md)**.
+
+Quando un visitatore invia il modulo, il browser carica la destinazione con date e ospiti nell’**URL**. Gli altri shortcode **su quella pagina** leggono gli stessi valori.
 
 {/* SCREENSHOT: Front-end Enhanced or Classic search bar in a page header */}
 ![Shortcode barra ricerca front-end](/img/bec-screenshot-placeholder.svg)

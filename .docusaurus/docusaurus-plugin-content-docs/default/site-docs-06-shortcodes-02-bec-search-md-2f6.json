@@ -1,7 +1,7 @@
 {
   "id": "shortcodes/bec-search",
   "title": "[bec_search] shortcode",
-  "description": "Availability search form shortcode attributes context form_id CSS hooks Enhanced vs Classic presets.",
+  "description": "bec_search shortcode redirect_url form action unit archive GET bec_* query parameters context form_id CSS hooks Enhanced Classic.",
   "source": "@site/docs/06-shortcodes/02-bec-search.md",
   "sourceDirName": "06-shortcodes",
   "slug": "/shortcodes/bec-search",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "[bec_search] shortcode",
     "sidebar_label": "bec_search",
-    "description": "Availability search form shortcode attributes context form_id CSS hooks Enhanced vs Classic presets."
+    "description": "bec_search shortcode redirect_url form action unit archive GET bec_* query parameters context form_id CSS hooks Enhanced Classic."
   },
   "sidebar": "docsSidebar",
   "previous": {

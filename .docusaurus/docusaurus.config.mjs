@@ -30,7 +30,7 @@ export default {
     }
   },
   "url": "http://localhost:3000",
-  "baseUrl": "/",
+  "baseUrl": "/it/",
   "organizationName": "booking-engine-connector",
   "projectName": "bec-docs",
   "onBrokenLinks": "throw",
@@ -106,7 +106,7 @@ export default {
           "type": "docSidebar",
           "sidebarId": "docsSidebar",
           "position": "left",
-          "label": "Documentation"
+          "label": "Documentazione"
         },
         {
           "type": "localeDropdown",
@@ -115,30 +115,31 @@ export default {
           "dropdownItemsAfter": []
         }
       ],
-      "hideOnScroll": false
+      "hideOnScroll": false,
+      "title": "Booking Engine Connector"
     },
     "footer": {
       "style": "dark",
       "links": [
         {
-          "title": "Documentation",
+          "title": "Documentazione",
           "items": [
             {
               "label": "Home",
               "to": "/docs/"
             },
             {
-              "label": "Getting started",
+              "label": "Per iniziare",
               "to": "/docs/getting-started/installation"
             },
             {
-              "label": "Troubleshooting",
+              "label": "Risoluzione dei problemi",
               "to": "/docs/troubleshooting/common-issues"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2026 Booking Engine Connector documentation."
+      "copyright": "Copyright © 2026 Documentazione Booking Engine Connector."
     },
     "prism": {
       "theme": {
@@ -344,13 +345,6 @@ export default {
         }
       ]
     },
-    "mermaid": {
-      "theme": {
-        "dark": "dark",
-        "light": "default"
-      },
-      "options": {}
-    },
     "docs": {
       "versionPersistence": "localStorage",
       "sidebar": {
@@ -367,6 +361,13 @@ export default {
     "tableOfContents": {
       "minHeadingLevel": 2,
       "maxHeadingLevel": 3
+    },
+    "mermaid": {
+      "theme": {
+        "dark": "dark",
+        "light": "default"
+      },
+      "options": {}
     }
   },
   "baseUrlIssueBanner": true,

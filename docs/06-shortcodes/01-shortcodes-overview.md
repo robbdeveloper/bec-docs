@@ -10,7 +10,7 @@ Shortcodes are WordPress shortcuts you place in pages, patterns, or templates. B
 
 | Shortcode | Purpose |
 |-----------|---------|
-| `[bec_search]` | Availability search form (GET) — seeds URL parameters. |
+| `[bec_search]` | Availability search (GET). Seeds **`bec_*`** URL parameters on the form **`action`**—by default the **units archive** (or use **`redirect_url`** for another page). |
 | `[bec_dates]` | Human-readable summary of stay dates from the URL. |
 | `[bec_quote]` | Compact availability / price line (optional rate list). |
 | `[bec_checkout]` | External checkout button or POST form. |

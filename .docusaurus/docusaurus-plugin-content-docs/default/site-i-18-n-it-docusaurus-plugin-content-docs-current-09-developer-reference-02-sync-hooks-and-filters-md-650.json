@@ -1,7 +1,7 @@
 {
   "id": "developer-reference/sync-hooks-and-filters",
   "title": "Hook e filtri sync",
-  "description": "Comportamento sync, hook bec_before_unit_sync bec_after_unit_sync, filtri riga remota titolo contenuto campi core, provider_remote_units Kross.",
+  "description": "Comportamento sync hook filtri bec_before_unit_sync bec_after_unit_sync lock cron manuale AJAX gallery categorie risoluzione stato post riferimento sviluppatori.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/09-developer-reference/02-sync-hooks-and-filters.md",
   "sourceDirName": "09-developer-reference",
   "slug": "/developer-reference/sync-hooks-and-filters",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Hook e filtri sync",
     "sidebar_label": "Hook e filtri sync",
-    "description": "Comportamento sync, hook bec_before_unit_sync bec_after_unit_sync, filtri riga remota titolo contenuto campi core, provider_remote_units Kross."
+    "description": "Comportamento sync hook filtri bec_before_unit_sync bec_after_unit_sync lock cron manuale AJAX gallery categorie risoluzione stato post riferimento sviluppatori."
   },
   "sidebar": "docsSidebar",
   "previous": {

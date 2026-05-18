@@ -35,7 +35,7 @@ Se **Kross** è attivo puoi limitare la **sync completa** ai tipi camera il cui 
 2. **Lascia tutto deselezionato** per sincronizzare **tutti** i tipi camera (consigliato all’inizio).
 3. Altrimenti seleziona gli slug dei motori da includere.
 
-Dettagli: **[Sincronizzare le unità](./02-syncing-units.md)**.
+Dettagli: **[Sincronizzare le unità](../04-units/02-syncing-units.md)**.
 
 ---
 
@@ -47,7 +47,7 @@ Campi opzionali che cambiano come vengono nominati i file scaricati in Media Lib
 - **Filename suffix (before index)** — Dopo lo slug e prima dell’indice numerico (es. `-01`).
 
 Schema approssimativo: **prefisso + slug-unità + suffisso + `-NN` + estensione**.  
-I file esistenti si possono rinominare in bulk (vedi **[Immagini galleria](./04-gallery-images.md)**).
+I file esistenti si possono rinominare in bulk (vedi **[Immagini galleria](../04-units/04-gallery-images.md)**).
 
 ---
 
@@ -65,7 +65,7 @@ Clicca **Run sync now** per una **sync completa** immediata.
 **Risultati**
 
 - Al termine dovresti vedere conteggi **created**, **updated**, **skipped** (e testo errore in caso di fallimento).
-- Se un’altra sync **completa** è già in corso può comparire **Another sync is already running** — il lock può durare a lungo; vedi **[Sincronizzare le unità](./02-syncing-units.md)** e **Clear sync lock**.
+- Se un’altra sync **completa** è già in corso può comparire **Another sync is already running** — il lock può durare a lungo; vedi **[Sincronizzare le unità](../04-units/02-syncing-units.md)** e **Clear sync lock**.
 
 {/* SCREENSHOT: Admin notice after successful sync with counts */}
 ![Avviso completamento sync](/img/bec-screenshot-placeholder.svg)
@@ -93,12 +93,12 @@ L’elenco include colonne extra come **External ID**, **Provider**, **Last sync
 ![Elenco admin Unità](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/02-getting-started/units-list-columns.png`): units-list-columns.png */}
 
-Da qui: **Sync now**, **Rename gallery files**, azioni bulk — vedi **[Sincronizzare le unità](./02-syncing-units.md)**.
+Da qui: **Sync now**, **Rename gallery files**, azioni bulk — vedi **[Sincronizzare le unità](../04-units/02-syncing-units.md)**.
 
 ---
 
 ## Pagine correlate
 
 - **[Aggiungi ricerca e prenotazione alle pagine](./04-add-search-and-booking-to-pages.md)**
-- **[Panoramica unità](./01-units-overview.md)**
-- **[Categorie unità](./06-unit-categories.md)**
+- **[Panoramica unità](../04-units/01-units-overview.md)**
+- **[Categorie unità](../04-units/06-unit-categories.md)**

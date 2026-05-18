@@ -1,248 +1,209 @@
 {
-  "/__docusaurus/debug-5ff": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
+  "/it/markdown-page-7c1": {
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/config-5ba": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/content-a2b": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "a7456010"
     },
-    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+    "content": "4c678320"
   },
-  "/__docusaurus/debug/globalData-c3c": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
+  "/it/docs-9ab": {
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "aba21aa0"
     }
   },
-  "/__docusaurus/debug/metadata-156": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
+  "/it/docs-e64": {
+    "__comp": "a7bd4aaa",
+    "__props": "1eb08509"
   },
-  "/__docusaurus/debug/registry-88c": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
+  "/it/docs-2e7": {
+    "__comp": "a94703ab"
   },
-  "/__docusaurus/debug/routes-000": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
+  "/it/docs/-572": {
+    "__comp": "17896441",
+    "content": "49b07f50"
   },
-  "/markdown-page-53a": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+  "/it/docs/bookings-and-checkout/availability-and-quotes-05e": {
+    "__comp": "17896441",
+    "content": "6240fabb"
+  },
+  "/it/docs/bookings-and-checkout/checkout-flow-b3e": {
+    "__comp": "17896441",
+    "content": "9496c566"
+  },
+  "/it/docs/bookings-and-checkout/fallback-mode-3a7": {
+    "__comp": "17896441",
+    "content": "66a95400"
+  },
+  "/it/docs/bookings-and-checkout/search-context-and-urls-a5a": {
+    "__comp": "17896441",
+    "content": "d5705cc3"
+  },
+  "/it/docs/developer-reference/adding-a-provider-d55": {
+    "__comp": "17896441",
+    "content": "bbb2f3a5"
+  },
+  "/it/docs/developer-reference/architecture-e8e": {
+    "__comp": "17896441",
+    "content": "2523493b"
+  },
+  "/it/docs/developer-reference/canonical-unit-fields-f40": {
+    "__comp": "17896441",
+    "content": "5fc58436"
+  },
+  "/it/docs/developer-reference/kross-api-777": {
+    "__comp": "17896441",
+    "content": "48354b8a"
+  },
+  "/it/docs/developer-reference/post-meta-reference-070": {
+    "__comp": "17896441",
+    "content": "b49240e6"
+  },
+  "/it/docs/developer-reference/sync-hooks-and-filters-7b9": {
+    "__comp": "17896441",
+    "content": "65099a6b"
+  },
+  "/it/docs/developer-reference/unit-info-renderers-13b": {
+    "__comp": "17896441",
+    "content": "70127e49"
+  },
+  "/it/docs/getting-started/add-search-and-booking-to-pages-7fa": {
+    "__comp": "17896441",
+    "content": "80a8cda7"
+  },
+  "/it/docs/getting-started/connect-your-provider-957": {
+    "__comp": "17896441",
+    "content": "a5ace909"
+  },
+  "/it/docs/getting-started/installation-5ac": {
+    "__comp": "17896441",
+    "content": "de11eb84"
+  },
+  "/it/docs/getting-started/run-your-first-sync-73d": {
+    "__comp": "17896441",
+    "content": "0739f6e5"
+  },
+  "/it/docs/introduction/how-it-works-4ca": {
+    "__comp": "17896441",
+    "content": "f3244239"
+  },
+  "/it/docs/introduction/requirements-b43": {
+    "__comp": "17896441",
+    "content": "defa92f1"
+  },
+  "/it/docs/introduction/what-is-bec-410": {
+    "__comp": "17896441",
+    "content": "423a7b59"
+  },
+  "/it/docs/providers/kross-booking-936": {
+    "__comp": "17896441",
+    "content": "45ad382b"
+  },
+  "/it/docs/providers/providers-overview-0e5": {
+    "__comp": "17896441",
+    "content": "7bc08b1b"
+  },
+  "/it/docs/shortcodes/bec-booking-summary-720": {
+    "__comp": "17896441",
+    "content": "4b8eb079"
+  },
+  "/it/docs/shortcodes/bec-checkout-5c2": {
+    "__comp": "17896441",
+    "content": "17342e3e"
+  },
+  "/it/docs/shortcodes/bec-dates-1e2": {
+    "__comp": "17896441",
+    "content": "13e72b27"
+  },
+  "/it/docs/shortcodes/bec-fallback-26a": {
+    "__comp": "17896441",
+    "content": "e7e81c79"
+  },
+  "/it/docs/shortcodes/bec-quote-2cc": {
+    "__comp": "17896441",
+    "content": "be125a08"
+  },
+  "/it/docs/shortcodes/bec-search-482": {
+    "__comp": "17896441",
+    "content": "985350f6"
+  },
+  "/it/docs/shortcodes/bec-unit-info-e82": {
+    "__comp": "17896441",
+    "content": "67000062"
+  },
+  "/it/docs/shortcodes/bec-unit-url-c4b": {
+    "__comp": "17896441",
+    "content": "6d854b4b"
+  },
+  "/it/docs/shortcodes/bec-version-c90": {
+    "__comp": "17896441",
+    "content": "56d03721"
+  },
+  "/it/docs/shortcodes/elementor-loop-grid-availability-filter-64f": {
+    "__comp": "17896441",
+    "content": "932ff586"
+  },
+  "/it/docs/shortcodes/shortcodes-overview-229": {
+    "__comp": "17896441",
+    "content": "6d0e3c07"
+  },
+  "/it/docs/styling/booking-summary-presets-d53": {
+    "__comp": "17896441",
+    "content": "fe2ff72b"
+  },
+  "/it/docs/styling/search-form-presets-55d": {
+    "__comp": "17896441",
+    "content": "26be3b0a"
+  },
+  "/it/docs/styling/styling-overview-e2f": {
+    "__comp": "17896441",
+    "content": "3e4e8f44"
+  },
+  "/it/docs/styling/theme-variables-and-custom-css-320": {
+    "__comp": "17896441",
+    "content": "711ac318"
+  },
+  "/it/docs/troubleshooting/common-issues-80a": {
+    "__comp": "17896441",
+    "content": "ecdc759e"
+  },
+  "/it/docs/troubleshooting/uninstalling-3f5": {
+    "__comp": "17896441",
+    "content": "f2dbdef2"
+  },
+  "/it/docs/troubleshooting/using-the-api-log-e91": {
+    "__comp": "17896441",
+    "content": "e9f4d211"
+  },
+  "/it/docs/units/editing-a-unit-96b": {
+    "__comp": "17896441",
+    "content": "50964cb1"
+  },
+  "/it/docs/units/gallery-images-e7a": {
+    "__comp": "17896441",
+    "content": "9e02ef29"
+  },
+  "/it/docs/units/permalinks-and-archive-409": {
+    "__comp": "17896441",
+    "content": "5e6c7d84"
+  },
+  "/it/docs/units/syncing-units-9ab": {
+    "__comp": "17896441",
+    "content": "e4646e83"
+  },
+  "/it/docs/units/unit-categories-ea8": {
+    "__comp": "17896441",
+    "content": "ccf8919a"
+  },
+  "/it/docs/units/units-overview-5b3": {
+    "__comp": "17896441",
+    "content": "2d68aea3"
+  },
+  "/it/-211": {
+    "__comp": "1b2de031",
     "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
+      "plugin": "a7456010"
     },
-    "content": "content---markdown-page-4-c-6-c89"
-  },
-  "/docs-47a": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
-    "__context": {
-      "plugin": "plugin---docsaba-d7c"
-    }
-  },
-  "/docs-89c": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docs-005-788"
-  },
-  "/docs-ce0": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
-  },
-  "/docs/-ec3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-0-e-3-18c"
-  },
-  "/docs/bookings-and-checkout/availability-and-quotes-126": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-bookings-and-checkout-availability-and-quotes-2-e-8-3dd"
-  },
-  "/docs/bookings-and-checkout/checkout-flow-e77": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-bookings-and-checkout-checkout-flowd-17-924"
-  },
-  "/docs/bookings-and-checkout/fallback-mode-690": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-bookings-and-checkout-fallback-mode-346-30e"
-  },
-  "/docs/bookings-and-checkout/search-context-and-urls-a62": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-bookings-and-checkout-search-context-and-urls-9-de-f0f"
-  },
-  "/docs/developer-reference/adding-a-provider-e2e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-developer-reference-adding-a-provider-6-ee-7f8"
-  },
-  "/docs/developer-reference/architecture-395": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-developer-reference-architecture-9-e-1-b40"
-  },
-  "/docs/developer-reference/canonical-unit-fields-93e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-developer-reference-canonical-unit-fieldsf-38-ad9"
-  },
-  "/docs/developer-reference/kross-api-3fa": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-developer-reference-kross-api-21-a-1b4"
-  },
-  "/docs/developer-reference/post-meta-reference-2cf": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-developer-reference-post-meta-reference-740-c55"
-  },
-  "/docs/developer-reference/sync-hooks-and-filters-82a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-developer-reference-sync-hooks-and-filters-87-f-ac5"
-  },
-  "/docs/developer-reference/unit-info-renderers-e3b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-developer-reference-unit-info-renderersefb-f61"
-  },
-  "/docs/getting-started/add-search-and-booking-to-pages-01b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-getting-started-add-search-and-booking-to-pages-3-e-1-60e"
-  },
-  "/docs/getting-started/connect-your-provider-e75": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-getting-started-connect-your-provider-2-b-1-1ed"
-  },
-  "/docs/getting-started/installation-8e2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-getting-started-installationc-94-20f"
-  },
-  "/docs/getting-started/run-your-first-sync-30b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-getting-started-run-your-first-synccc-2-ec9"
-  },
-  "/docs/introduction/how-it-works-ea1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-introduction-how-it-works-6-d-6-f48"
-  },
-  "/docs/introduction/requirements-666": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-introduction-requirements-932-556"
-  },
-  "/docs/introduction/what-is-bec-e39": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-introduction-what-is-bec-83-b-cb7"
-  },
-  "/docs/providers/kross-booking-0b8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-providers-kross-booking-5-c-1-b29"
-  },
-  "/docs/providers/providers-overview-7ea": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-providers-providers-overview-913-376"
-  },
-  "/docs/shortcodes/bec-booking-summary-d21": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-booking-summary-818-78c"
-  },
-  "/docs/shortcodes/bec-checkout-44e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-checkouteef-42a"
-  },
-  "/docs/shortcodes/bec-dates-60d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-dates-028-8fd"
-  },
-  "/docs/shortcodes/bec-fallback-ab7": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-fallback-015-5f8"
-  },
-  "/docs/shortcodes/bec-quote-2a3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-quote-482-58a"
-  },
-  "/docs/shortcodes/bec-search-966": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-search-2-f-6-a54"
-  },
-  "/docs/shortcodes/bec-unit-info-962": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-unit-info-88-f-244"
-  },
-  "/docs/shortcodes/bec-unit-url-2a2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-unit-urld-1-c-a15"
-  },
-  "/docs/shortcodes/bec-version-cfa": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-bec-version-91-a-46f"
-  },
-  "/docs/shortcodes/elementor-loop-grid-availability-filter-ed8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-elementor-loop-grid-availability-filter-4-ea-8ae"
-  },
-  "/docs/shortcodes/shortcodes-overview-9b1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-shortcodes-shortcodes-overview-79-d-a06"
-  },
-  "/docs/styling/booking-summary-presets-675": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-styling-booking-summary-presets-1-e-1-b36"
-  },
-  "/docs/styling/search-form-presets-e77": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-styling-search-form-presetsf-56-81c"
-  },
-  "/docs/styling/styling-overview-7e1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-styling-styling-overviewd-5-e-bd4"
-  },
-  "/docs/styling/theme-variables-and-custom-css-85b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-styling-theme-variables-and-custom-css-717-763"
-  },
-  "/docs/troubleshooting/common-issues-74f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-troubleshooting-common-issuese-54-193"
-  },
-  "/docs/troubleshooting/uninstalling-d14": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-troubleshooting-uninstalling-812-042"
-  },
-  "/docs/troubleshooting/using-the-api-log-6c0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-troubleshooting-using-the-api-log-991-8a0"
-  },
-  "/docs/units/editing-a-unit-901": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-units-editing-a-unitc-4-a-d81"
-  },
-  "/docs/units/gallery-images-36f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-units-gallery-imagesa-06-642"
-  },
-  "/docs/units/permalinks-and-archive-afe": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-units-permalinks-and-archivea-44-f9a"
-  },
-  "/docs/units/syncing-units-dd6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-units-syncing-units-96-d-89c"
-  },
-  "/docs/units/units-overview-f12": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-units-units-overview-910-0f9"
-  },
-  "/-e5f": {
-    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
-    "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
-    },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }

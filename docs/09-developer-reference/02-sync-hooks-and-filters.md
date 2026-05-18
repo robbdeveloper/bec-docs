@@ -98,6 +98,16 @@ Kross mapping hooks (payload fragment → descriptor) include:
 
 ---
 
+## Search form (front end)
+
+| Filter | Purpose |
+|--------|---------|
+| `bec_search_form_action` | Override the `<form action>` URL when `SearchForm::render()` did not receive an explicit **`action`** argument (`$url`, `$context`). Return empty string to keep built-in rules (archive / singular / home). The **`[bec_search]`** shortcode supplies **`action`** from **`redirect_url`** or the archive fallback—this filter applies mainly to PHP-rendered forms. |
+
+Other search UI filters (`bec_search_form_fields`, `bec_search_form_preset`, `bec_search_guest_field_mode`, etc.) remain documented alongside provider integration; see `SearchForm` and **[bec_search shortcode](../06-shortcodes/02-bec-search.md)**.
+
+---
+
 ## Custom REST, blocks, webhooks
 
 The connector **does not** register its own **`register_rest_route`** surface for booking APIs. **`bec_unit`** uses WordPress CPT REST where `show_in_rest` is true; sensitive meta such as **`bec_sync_payload`** stays out of REST. There are **no** `register_block_type` Gutenberg blocks in the plugin PHP and **no** inbound webhooks—integrations are pull-based sync + front-end shortcodes/hooks.

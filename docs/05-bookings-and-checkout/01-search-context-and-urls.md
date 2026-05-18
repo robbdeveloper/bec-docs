@@ -1,14 +1,21 @@
 ---
 title: Search context and URLs
 sidebar_label: Search context & URLs
-description: bec_checkin bec_checkout guests child ages rate ID query parameters and complete search context for Booking Engine Connector shortcodes.
+description: bec_checkin bec_checkout guests child ages rate ID, GET form action, redirect_url, unit archive, search context for Booking Engine Connector shortcodes.
 ---
 
 # Search context and URLs
 
 Most booking shortcodes read the **same information from the page URL**. That shared snapshot is called **search context**.
 
-When someone uses **`[bec_search]`**, submitting the form reloads the page and adds parameters starting with **`bec_`**.
+When someone submits **`[bec_search]`**, the browser navigates with a **GET** request to the form’s **`action`** URL. **`bec_checkin`**, **`bec_checkout`**, guest fields, and any other **`bec_*`** inputs are sent as **query parameters** on that URL.
+
+The destination is **not always the same page** as the shortcode:
+
+- **Default** **`[bec_search]`** (no **`redirect_url`**) — WordPress sends visitors to the **units archive** (or **home** if no archive URL exists) with the search parameters attached—handy for homepage → inventory flows.
+- **`redirect_url="…"`** — Sends the same parameters to whatever page or URL you choose.
+
+Other templates (auto-inserted search, `bec_render_search_form()`, etc.) compute **`action`** from the current request; see **[bec_search shortcode](../06-shortcodes/02-bec-search.md)** and the **`bec_search_form_action`** filter in **[Sync hooks & filters](../09-developer-reference/02-sync-hooks-and-filters.md)**.
 
 {/* SCREENSHOT: Browser address bar zoomed showing bec_checkin bec_checkout parameters */}
 ![URL with BEC query parameters](/img/bec-screenshot-placeholder.svg)
@@ -45,10 +52,16 @@ If dates are missing, those shortcodes usually show **search-only** or **empty**
 
 ## Example URLs
 
-**Landing search forwards to an archive:**
+**Homepage search lands on the units archive (default `[bec_search]`):**
 
 ```
-https://example.com/units/?bec_checkin=2026-06-01&bec_checkout=2026-06-08&bec_adults=2&bec_children=1
+https://example.com/properties/?bec_checkin=2026-06-01&bec_checkout=2026-06-08&bec_adults=2&bec_children=1
+```
+
+**Custom results page via `redirect_url`:**
+
+```
+https://example.com/availability-results/?bec_checkin=2026-06-01&bec_checkout=2026-06-08&bec_total_guests=3
 ```
 
 **Same dates preserved on a unit page:**

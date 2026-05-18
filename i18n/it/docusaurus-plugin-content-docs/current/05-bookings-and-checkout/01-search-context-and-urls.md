@@ -1,14 +1,21 @@
 ---
 title: Contesto di ricerca e URL
 sidebar_label: Contesto ricerca e URL
-description: Parametri bec_checkin bec_checkout ospiti età bambini rate ID e contesto di ricerca completo per gli shortcode Booking Engine Connector.
+description: Parametri bec_* archivio unità redirect_url bec_search GET action contesto ricerca completo shortcode.
 ---
 
 # Contesto di ricerca e URL
 
 La maggior parte degli shortcode di prenotazione legge le **stesse informazioni dall’URL della pagina**. Questo snapshot condiviso si chiama **contesto di ricerca** (search context).
 
-Quando si usa **`[bec_search]`**, inviare il modulo ricarica la pagina e aggiunge parametri che iniziano con **`bec_`**.
+Quando si invia **`[bec_search]`**, il browser effettua una richiesta **GET** verso l’URL **`action`** del form. **`bec_checkin`**, **`bec_checkout`**, i campi ospite e ogni altro input **`bec_*`** compaiono come **parametri di query** su quell’URL.
+
+La destinazione **non è sempre la stessa pagina** dello shortcode:
+
+- **`[bec_search]`** predefinito (senza **`redirect_url`**) — WordPress porta il visitatore sull’**archivio unità** (o sulla **home** se manca l’URL archivio) con i parametri di ricerca — utile da homepage verso l’inventario.
+- **`redirect_url="…"`** — Invia gli stessi parametri alla pagina o URL scelti.
+
+Altri template (ricerca automatica su singola unità, `bec_render_search_form()`, ecc.) calcolano **`action`** dalla richiesta corrente; vedi **[bec_search](../06-shortcodes/02-bec-search.md)** e il filtro **`bec_search_form_action`** in **[Hook sync (sviluppatori)](../09-developer-reference/02-sync-hooks-and-filters.md)**.
 
 {/* SCREENSHOT: Browser address bar zoomed showing bec_checkin bec_checkout parameters */}
 ![URL con parametri query BEC](/img/bec-screenshot-placeholder.svg)
@@ -45,10 +52,16 @@ Se mancano le date, quegli shortcode di solito mostrano stati **solo ricerca** o
 
 ## Esempi di URL
 
-**Ricerca landing che reindirizza a un archivio:**
+**Ricerca da homepage verso l’archivio unità (`[bec_search]` predefinito):**
 
 ```
-https://example.com/units/?bec_checkin=2026-06-01&bec_checkout=2026-06-08&bec_adults=2&bec_children=1
+https://example.com/properties/?bec_checkin=2026-06-01&bec_checkout=2026-06-08&bec_adults=2&bec_children=1
+```
+
+**Pagina risultati personalizzata con `redirect_url`:**
+
+```
+https://example.com/disponibilita/?bec_checkin=2026-06-01&bec_checkout=2026-06-08&bec_total_guests=3
 ```
 
 **Stesse date su una pagina unità:**

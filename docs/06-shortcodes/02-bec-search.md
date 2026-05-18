@@ -1,12 +1,12 @@
 ---
 title: '[bec_search] shortcode'
 sidebar_label: bec_search
-description: Availability search form shortcode attributes context form_id CSS hooks Enhanced vs Classic presets.
+description: bec_search shortcode redirect_url form action unit archive GET bec_* query parameters context form_id CSS hooks Enhanced Classic.
 ---
 
 # `[bec_search]`
 
-Renders the **availability search bar** visitors use to choose check-in, check-out, and guests. Submitting reloads the page with **`bec_*`** parameters so every other shortcode sees the same stay details.
+Renders the **availability search bar** visitors use to choose check-in, check-out, and guests. The form uses **GET**, so submitting sends **`bec_*`** query parameters to the form’s **`action`** URL. Any page that receives those parameters shares the same **search context** with quotes, checkout, and listing filters.
 
 ---
 
@@ -25,14 +25,28 @@ Renders the **availability search bar** visitors use to choose check-in, check-o
 
 ---
 
+## Where the form submits (action URL)
+
+| Case | Form `action` (GET target) |
+|------|---------------------------|
+| **`[bec_search]`** without **`redirect_url`** | The **units archive** (`get_post_type_archive_link` for the unit post type). If WordPress cannot build that link (for example **Unit archive** is disabled under **Units — permalinks**), it falls back to the **site home** URL. Typical pattern: search on the homepage lands on `/your-units-base/?bec_checkin=…`. |
+| **`[bec_search]`** with **`redirect_url="/path/"`** | Submits to the URL you pass (full URL or root-relative path). **`bec_*`** parameters are appended as the query string. Example: `[bec_search redirect_url="/availability-results/"]`. |
+
+**Auto-inserted search** (single-unit pages, `bec_render_search_form()`, theme hooks) uses `SearchForm`’s own rules: on a **unit archive** or **singular** URL the action is usually **that** page; otherwise often **home**. Empty **`redirect_url`** on the shortcode does **not** apply there—use the **`bec_search_form_action`** filter if you need a custom target from PHP.
+
+Connection settings still control guest fields (total vs adults/children); they are not shortcode attributes.
+
+---
+
 ## Attributes
 
 | Attribute | Default | Meaning |
 |-----------|---------|---------|
 | **`context`** | `shortcode` | Identifier passed to styling/filter hooks—change when you render multiple searches differently. |
 | **`form_id`** | `bec-search-form-sc` | HTML `id` on the `<form>`—must be unique per page if you output several forms. |
+| **`redirect_url`** | *(empty)* | Optional. Where to send the GET request (see **Where the form submits**). Passed through `esc_url()`; root-relative paths are allowed. |
 
-Guest-field behaviour (single guests vs adults/children vs provider default) is configured globally on **Booking Engine → Connection**, not on the shortcode.
+Connection **guest field** mode (follow provider / total guests / adults+children) is configured under **Booking Engine → Connection**, not on this shortcode.
 
 ---
 
@@ -44,6 +58,12 @@ Guest-field behaviour (single guests vs adults/children vs provider default) is 
 
 ```
 [bec_search form_id="homepage-search" context="homepage"]
+```
+
+Submit to a custom results page (same `bec_*` query string):
+
+```
+[bec_search redirect_url="/availability-results/" form_id="results-search"]
 ```
 
 ---
@@ -62,6 +82,7 @@ Preset-specific bundles live under plugin assets (`search-form-enhanced.css`, et
 
 ## Tips
 
+- **`[bec_search]`** without **`redirect_url`** expects a working **units archive** link—if you disabled **Unit archive**, submissions fall back to the **home** URL; enable the archive or set **`redirect_url`** explicitly.
 - Pair with **`[bec_unit_url]`** on listing cards so drill-down keeps dates.
 - Validation messages appear near the form when dates contradict provider rules after submission.
 

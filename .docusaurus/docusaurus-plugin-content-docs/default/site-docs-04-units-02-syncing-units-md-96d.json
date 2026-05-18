@@ -1,7 +1,7 @@
 {
   "id": "units/syncing-units",
   "title": "Syncing units",
-  "description": "Scheduled sync, Run sync now, per-unit sync actions, locks, skipped counts, and sync enabled behaviour.",
+  "description": "Scheduled sync, batched Run sync now with progress, Kross booking-engine filters, per-unit sync, locks, Clear sync lock, gallery rename, and sync enabled behaviour.",
   "source": "@site/docs/04-units/02-syncing-units.md",
   "sourceDirName": "04-units",
   "slug": "/units/syncing-units",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Syncing units",
     "sidebar_label": "Syncing units",
-    "description": "Scheduled sync, Run sync now, per-unit sync actions, locks, skipped counts, and sync enabled behaviour."
+    "description": "Scheduled sync, batched Run sync now with progress, Kross booking-engine filters, per-unit sync, locks, Clear sync lock, gallery rename, and sync enabled behaviour."
   },
   "sidebar": "docsSidebar",
   "previous": {
