@@ -29,6 +29,19 @@ Use **Verify connection** after saving (or even before saving, depending on form
 
 ---
 
+## Booking engines (sync filter)
+
+Sync behaviour can optionally **limit which Kross room types** are imported during a **full** sync:
+
+1. Go to **Booking Engine → Sync**.
+2. Under **Kross booking engines**, click **Refresh booking engines list from Kross** to load `be_enabled` slugs from **`/v5/rooms/get-room-types`** into the checklist.
+3. **Leave all boxes unchecked** to sync the full inventory (recommended unless you need a subset).
+4. Tick specific slugs to include only room types whose normalised payload’s **`be_enabled`** list matches **any** selected slug.
+
+Single-unit row actions and bulk sync still refresh individual posts on demand; the filter mainly affects **scheduled** and **Run sync now** full passes.
+
+---
+
 ## Booking engine URL (Checkout & fallback)
 
 **Separate from API credentials:** guests never paste API keys. They need the **public booking website** URL where reservations are completed.
@@ -61,5 +74,6 @@ Technical HTTP path and endpoint table for developers: **[Kross API reference](.
 ## Related pages
 
 - **[Connect your provider](../02-getting-started/02-connect-your-provider.md)**
+- **[Syncing units](../04-units/02-syncing-units.md)**
 - **[Checkout flow](../05-bookings-and-checkout/03-checkout-flow.md)**
 - **[Fallback mode](../05-bookings-and-checkout/04-fallback-mode.md)**

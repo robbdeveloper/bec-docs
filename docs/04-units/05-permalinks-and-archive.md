@@ -41,6 +41,17 @@ Disable it when units should **only** appear via menus, loops, or manual linksâ€
 
 ---
 
+## Unit categories (same screen)
+
+The **Units â€” permalinks** page also controls the optional **Unit category** taxonomy:
+
+- **Enable** categories so the plugin can **sync category terms** (when the provider supplies them) and optionally expose **public category URLs**.
+- Set the **category URL slug** (default base `unit-category` when left empty).
+
+See **[Unit categories](./06-unit-categories.md)** for behaviour when disabling the taxonomy, how sync assigns terms, and URL/SEO notes.
+
+---
+
 ## If links show 404
 
 After structural changes:
@@ -52,4 +63,5 @@ After structural changes:
 
 ## Related pages
 
+- **[Unit categories](./06-unit-categories.md)**
 - **[Units overview](./01-units-overview.md)**

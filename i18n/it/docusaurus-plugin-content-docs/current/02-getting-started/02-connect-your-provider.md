@@ -80,6 +80,19 @@ Nella stessa pagina **Connection**, il plugin consente di contare gli ospiti nel
 
 ---
 
+## Pagine singular unit (blocchi automatici)
+
+Sempre in **Connection**, sotto **Single unit pages**, puoi far iniettare al plugin la UI di prenotazione sulle viste **singular `bec_unit`** senza shortcode nell’editor:
+
+| Checkbox | Effetto |
+|----------|---------|
+| **Insert the availability search form above the main post content** | Antepone la stessa UI di **`[bec_search]`** al corpo unità. Disattiva se aggiungi `[bec_search]` (o un riepilogo) manualmente in template o editor a blocchi. |
+| **Append the booking quote and Continue button after the main post content when the URL has dates** | Dopo il contenuto, quando il contesto di ricerca dall’URL è **completo**, aggiunge preventivo + CTA checkout (come **`[bec_booking_summary]`** / quote). Disattiva se usi `[bec_booking_summary]`, `[bec_quote]` o `[bec_checkout]` dove preferisci. |
+
+Collegato a **[Contesto di ricerca](../05-bookings-and-checkout/01-search-context-and-urls.md)** e **[Flusso checkout](../05-bookings-and-checkout/03-checkout-flow.md)**.
+
+---
+
 ## Pagine correlate
 
 - **[Esegui la prima sincronizzazione](./03-run-your-first-sync.md)**

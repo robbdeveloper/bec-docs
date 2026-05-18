@@ -63,6 +63,7 @@ flowchart TB
     SC["SyncCron"]
     SA["SyncAdmin"]
     UPT["UnitPostType"]
+    UCAT["UnitCategoryTaxonomy"]
     CUF["CoreUnitFieldRegistry"]
     USF["UnitSyncFieldRegistry"]
     SH["ShortcodeRegistry"]
@@ -200,6 +201,16 @@ Gli shortcode riusano gli stessi servizi (`SearchForm`, `CheckoutUrlService`, `Q
 
 ---
 
+## REST API, blocchi e webhook
+
+- **Nessuna REST API pubblica custom** è registrata per le operazioni di prenotazione (`register_rest_route` non è usato per endpoint BEC propri). Il CPT **`bec_unit`** partecipa alla REST core dei post dove configurato; meta sensibili come **`bec_sync_payload`** restano fuori REST.
+- **Nessun blocco Gutenberg** nel PHP del plugin (`register_block_type` non usato) — usa **shortcode** o integrazione nel tema.
+- **Nessun webhook in ingresso** — l’inventario è **pulled** alla sync (WP-Cron + azioni admin) e i preventivi su richiesta.
+
+Punti solo admin: handler **`wp_ajax_*`** (avanzamento sync e step batch) e azioni **`admin_post_*`** — vedi **[Hook e filtri sync](./02-sync-hooks-and-filters.md)**.
+
+---
+
 ## Internals provider Kross
 
 ```mermaid
@@ -227,6 +238,8 @@ mindmap
       Migrations MigrationRunner
     PostTypes
       UnitPostType
+    Taxonomies
+      UnitCategoryTaxonomy
     Sync
       SyncService SyncCron SyncLock
       CoreUnitFieldRegistry UnitSyncFieldRegistry

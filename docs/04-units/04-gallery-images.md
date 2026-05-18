@@ -29,6 +29,17 @@ Example (illustrative): `villa-rosa-main-01.jpg`
 
 ---
 
+## Admin: editing gallery order and attachments
+
+On the unit edit screen, the **canonical** meta box includes a **gallery** UI:
+
+- Thumbnail grid with **drag-to-reorder**.
+- **Add** opens the WordPress **Media Library** modal (pick or upload attachments).
+
+Changes are saved with the post. The next **sync** may still refresh gallery content from the provider unless developers disable gallery writes—see developer filters in **[Sync hooks & filters](../09-developer-reference/02-sync-hooks-and-filters.md)**.
+
+---
+
 ## Featured image
 
 When the provider marks a **main** image, it becomes the WordPress **featured image**. Otherwise the plugin typically uses the **first image** in gallery order.
@@ -43,6 +54,8 @@ Buttons help when you change prefix/suffix **after** images already imported:
 - **Units → Row action → Rename gallery files** (one unit)
 
 Images shared across multiple units may be **copied** so other units keep working—large sites should run this during quiet periods.
+
+On the **Sync** page this tool sits under **Gallery file names** with an explanation that copying may occur when an attachment is reused by more than one unit.
 
 {/* SCREENSHOT: Media Library detail for one BEC gallery attachment showing filename */}
 ![Media Library attachment filename](/img/bec-screenshot-placeholder.svg)

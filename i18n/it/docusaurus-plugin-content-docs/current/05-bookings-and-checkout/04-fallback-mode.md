@@ -54,6 +54,17 @@ Se le categorie non coprono il caso, il visitatore può non vedere né fallback 
 
 ---
 
+## Siti multilingua (WPML / Polylang)
+
+Due **stringhe salvate nelle opzioni** in **Checkout & fallback** vengono registrate per la traduzione quando WPML o Polylang sono attivi:
+
+- Etichetta **link** fallback.
+- Contenuto **inline** HTML fallback.
+
+Dopo aver salvato quei campi, traducili in **WPML String Translation** (contesto **Booking Engine Connector**) o nell’interfaccia stringhe Polylang. La scelta locale per le chiamate provider può essere adattata con il filtro **`bec_provider_locale`** — vedi **[Riferimento meta](../09-developer-reference/03-post-meta-reference.md)** per gli sviluppatori.
+
+---
+
 ## Pagine correlate
 
 - **[Shortcode bec_fallback](../06-shortcodes/09-bec-fallback.md)**

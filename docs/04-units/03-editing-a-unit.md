@@ -23,6 +23,16 @@ This box lists **canonical** facts shared across providers—name, address, coor
 
 Think of this box as “the structured facts we store for themes and SEO.”
 
+### Gallery field (thumbnail grid)
+
+The **gallery** control shows **thumbnails** of attached images. You can:
+
+- **Reorder** images (order is stored on the unit).
+- **Add** images from the **Media Library** via the usual WordPress modal (upload new files or pick existing attachments).
+- **Remove** an image from this unit’s gallery list (attachments themselves remain in the Media Library unless you delete them there).
+
+Imports during sync still follow the rules in **[Gallery images](./04-gallery-images.md)**.
+
 {/* SCREENSHOT: Canonical meta box expanded */}
 ![Canonical core fields metabox](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/04-units/metabox-canonical.png`): metabox-canonical.png */}
@@ -62,4 +72,5 @@ The **post title** and **editor content** normally mirror canonical **name** and
 ## Related pages
 
 - **[Gallery images](./04-gallery-images.md)**
+- **[Unit categories](./06-unit-categories.md)**
 - **[Canonical fields (developers)](../09-developer-reference/04-canonical-unit-fields.md)**

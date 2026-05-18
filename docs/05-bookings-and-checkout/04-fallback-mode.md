@@ -54,6 +54,17 @@ If categories do not match your scenario, visitors might see neither fallback no
 
 ---
 
+## Multilingual sites (WPML / Polylang)
+
+Two **option-backed** strings on **Checkout & fallback** are registered for translation when WPML or Polylang is active:
+
+- Fallback **link** label.
+- Fallback **inline** HTML content.
+
+After you save those fields, translate them in **WPML String Translation** (context **Booking Engine Connector**) or Polylang’s string UI. Locale selection for provider calls can be adjusted with the **`bec_provider_locale`** filter—see **[Post meta reference](../09-developer-reference/03-post-meta-reference.md)** pointers for developers.
+
+---
+
 ## Related pages
 
 - **[bec_fallback shortcode](../06-shortcodes/09-bec-fallback.md)**

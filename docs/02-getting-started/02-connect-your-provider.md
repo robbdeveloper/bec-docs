@@ -80,6 +80,19 @@ On the same **Connection** page, the plugin lets you control how guests are coun
 
 ---
 
+## Single unit pages (automatic blocks)
+
+Still on **Connection**, under **Single unit pages**, you can let the plugin inject booking UI on **singular `bec_unit`** views—without placing shortcodes in the editor:
+
+| Checkbox | Effect |
+|----------|--------|
+| **Insert the availability search form above the main post content** | Prepends the same UI as **`[bec_search]`** above the unit body. Turn off if you add `[bec_search]` (or a booking summary) manually in templates or the block editor. |
+| **Append the booking quote and Continue button after the main post content when the URL has dates** | After content, when search context from the URL is **complete** (check-in, check-out, guests), appends quote + checkout CTA (same idea as **`[bec_booking_summary]`** / quote blocks). Turn off if you place `[bec_booking_summary]`, `[bec_quote]`, or `[bec_checkout]` yourself. |
+
+These options interact with **[Search context](../05-bookings-and-checkout/01-search-context-and-urls.md)** and **[Checkout flow](../05-bookings-and-checkout/03-checkout-flow.md)**.
+
+---
+
 ## Related pages
 
 - **[Run your first sync](./03-run-your-first-sync.md)**

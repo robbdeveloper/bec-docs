@@ -63,6 +63,7 @@ flowchart TB
     SC["SyncCron"]
     SA["SyncAdmin"]
     UPT["UnitPostType"]
+    UCAT["UnitCategoryTaxonomy"]
     CUF["CoreUnitFieldRegistry"]
     USF["UnitSyncFieldRegistry"]
     SH["ShortcodeRegistry"]
@@ -200,6 +201,16 @@ Shortcodes reuse the same services (`SearchForm`, `CheckoutUrlService`, `QuoteSe
 
 ---
 
+## REST API, blocks, and webhooks
+
+- **No custom public REST API** is registered for booking operations (`register_rest_route` is unused for BEC’s own endpoints). The **`bec_unit`** CPT participates in WordPress core post REST where configured; sensitive meta such as **`bec_sync_payload`** is withheld from REST.
+- **No Gutenberg blocks** ship with the plugin PHP (`register_block_type` is not used) — use **shortcodes** or theme integration.
+- **No inbound webhooks** — inventory is **pulled** on sync (WP-Cron + admin actions) and quotes are requested on demand.
+
+Admin-only integration points include **`wp_ajax_*`** handlers (sync progress + batched steps) and **`admin_post_*`** actions documented for developers in **[Sync hooks & filters](./02-sync-hooks-and-filters.md)**.
+
+---
+
 ## Kross provider internals
 
 ```mermaid
@@ -227,6 +238,8 @@ mindmap
       Migrations MigrationRunner
     PostTypes
       UnitPostType
+    Taxonomies
+      UnitCategoryTaxonomy
     Sync
       SyncService SyncCron SyncLock
       CoreUnitFieldRegistry UnitSyncFieldRegistry

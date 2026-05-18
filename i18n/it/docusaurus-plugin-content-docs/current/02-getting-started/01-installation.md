@@ -25,8 +25,8 @@ I sottomenu includono di solito:
 - **Dashboard** — Panoramica e collegamenti alle impostazioni.
 - **Connection** — Provider e credenziali API (più comportamento del modulo di ricerca).
 - **Styling** — Preset e CSS personalizzato.
-- **Sync** — Intervallo, opzioni nomi file gallery, **Esegui sincronizzazione ora**.
-- **Units — permalinks** — Slug URL pubblico e attivazione archivio.
+- **Sync** — Intervallo, **Kross booking engines** (filtro sync completa), opzioni nomi file galleria, **Run sync now** (avanzamento a batch con JS), **Clear sync lock**, rinomina globale file galleria.
+- **Units — permalinks** — Slug URL pubblico, **archivio unità** e **categorie unità** opzionali (tassonomia + slug URL categoria).
 - **API Log** — Chiamate HTTP recenti al provider.
 - **Checkout & fallback** — URL prenotazione esterna e fallback quando il motore non è disponibile.
 
@@ -35,6 +35,15 @@ Vedrai anche **Units** come menu dedicato per le strutture sincronizzate (separa
 {/* SCREENSHOT: WordPress admin left sidebar with Booking Engine expanded and Units menu visible */}
 ![Barra laterale admin menu Booking Engine](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/02-getting-started/admin-sidebar-booking-engine.png`): admin-sidebar-booking-engine.png */}
+
+---
+
+## Aggiornamenti da GitHub (opzionale)
+
+Le release possono essere pubblicate come **asset ZIP su GitHub** (pattern tipo `booking-engine-connector-*.zip`). Il plugin include **Plugin Update Checker** così WordPress può segnalare aggiornamenti quando i metadati sono raggiungibili.
+
+- **Repository pubblico** — Di norma installa/aggiorna da **Bacheca → Aggiornamenti** senza costanti aggiuntive.
+- **Repository privato** — Definisci **`BEC_GITHUB_UPDATER_TOKEN`** in `wp-config.php` (abbastanza presto nel caricamento, prima dei plugin) con permesso di leggere gli asset di release.
 
 ---
 

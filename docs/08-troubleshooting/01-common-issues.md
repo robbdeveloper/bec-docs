@@ -17,6 +17,7 @@ Quick symptom → cause → fix matrix for typical WordPress admins.
 | **Quotes always empty** | Dates invalid vs provider rules or occupancy exceeds limits | Adjust guests, widen stay window, inspect **[API Log](./02-using-the-api-log.md)** for calendar responses. |
 | **Cron feels delayed** | Low-traffic WP-Cron | Trigger visits manually or rely on server cron hitting `wp-cron.php`; run **Run sync now** occasionally. |
 | **Gallery duplicates / odd filenames** | Prefix/suffix changed mid-project | Run rename tools documented under **[Gallery images](../04-units/04-gallery-images.md)** carefully during quiet hours. |
+| **“Another sync is already running” for a long time** | Legitimate long full sync **or** stale **sync lock** after a crashed admin tab | Wait for completion; read **[Syncing units](../04-units/02-syncing-units.md)**; use **Clear sync lock** on the Sync page only when sure no job is running. |
 | **Shows neither fallback nor checkout on errors** | Fallback triggers exclude error category | Adjust categories under **Checkout & fallback** or consult developer filters (`bec_booking_error_notice_html`). |
 | **`[bec_unit_info]` empty** | Wrong key or stale payload | Re-sync unit, confirm renderer key spelling—see **[bec_unit_info](../06-shortcodes/08-bec-unit-info.md)**. |
 

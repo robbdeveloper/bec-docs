@@ -41,6 +41,17 @@ Disabilitalo quando le unità devono comparire **solo** tramite menu, loop o lin
 
 ---
 
+## Categorie unità (stessa schermata)
+
+La pagina **Units — permalinks** controlla anche la tassonomia opzionale **Unit category**:
+
+- **Abilita** le categorie affinché il plugin possa **sincronizzare i termini** (quando il provider li fornisce) ed esporre eventualmente **URL pubblici categoria**.
+- Imposta lo **slug URL categoria** (base predefinita `unit-category` se vuoto).
+
+Vedi **[Categorie unità](./06-unit-categories.md)** per la disattivazione, l’assegnazione in sync e note SEO/URL.
+
+---
+
 ## Se i link danno 404
 
 Dopo cambi strutturali:
@@ -52,4 +63,5 @@ Dopo cambi strutturali:
 
 ## Pagine correlate
 
+- **[Categorie unità](./06-unit-categories.md)**
 - **[Panoramica unità](./01-units-overview.md)**

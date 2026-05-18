@@ -38,6 +38,33 @@ Post meta is registered with `register_post_meta` (REST-visible where noted, san
 |--------|---------|
 | `bec_sync_gallery_image_prefix` | Prepended to auto-generated gallery filenames (default empty). |
 | `bec_sync_gallery_image_suffix` | Between the unit name slug and the `-NN` index (default empty). |
+| `bec_unit_permalink_slug` | Path segment for single units (sanitised); empty means default internal slug `bec_unit`. |
+| `bec_unit_has_archive` | Whether the unit CPT exposes a public archive at the same base. |
+| `bec_unit_category_enabled` | Whether **`bec_unit_category`** taxonomy UI and public rewrites are active. |
+| `bec_unit_category_permalink_slug` | Category term URL base (empty → default `unit-category`). |
+| `bec_kross_sync_booking_engines` | Selected `be_enabled` slugs for **full** sync filtering (empty list ⇒ include all). |
+| `bec_kross_available_booking_engines` | Cached union of slugs seen from Kross room types (populates admin checklist). |
+| `bec_sync_interval_hours` | WP-Cron interval (hours). |
+| `bec_sync_last_run_at` | Human-readable timestamp string of last completed full sync (admin display). |
+| `bec_db_version` | Database migration version for plugin custom tables (e.g. `{prefix}bec_api_log`). |
+
+During batched manual sync the plugin may also write short-lived **`bec_sync_mbatch_{userId}_{runId}`** options — treat as internal; do not delete while a run is active.
+
+### Term meta (`bec_unit_category`)
+
+Registered on category terms when the taxonomy is enabled:
+
+| Term meta | Notes |
+|-----------|-------|
+| `bec_external_id` | Provider category id (lookup key with `bec_provider_slug`). |
+| `bec_provider_slug` | e.g. `kross`. |
+| `bec_category_names` | JSON object: two-letter locale ⇒ label (archive titles use `Multilingual::filteredSiteLocale('unit_category')`). |
+| `bec_category_normalized` | JSON descriptor snapshot from last sync. |
+| `bec_last_sync_at` | `current_time('mysql')` when the term was last updated from sync. |
+
+See user guide **[Unit categories](../04-units/06-unit-categories.md)**.
+
+Outbound HTTP logging persists rows in **`{prefix}bec_api_log`** (see **[Using the API log](../08-troubleshooting/02-using-the-api-log.md)**). Schema is created by migration **`CreateApiLogTable`**; current version is tracked in **`bec_db_version`**.
 
 ### Core unit fields (`bec_core_*`)
 

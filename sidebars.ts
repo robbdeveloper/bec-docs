@@ -40,6 +40,7 @@ const sidebars: SidebarsConfig = {
         'units/editing-a-unit',
         'units/gallery-images',
         'units/permalinks-and-archive',
+        'units/unit-categories',
       ],
     },
     {

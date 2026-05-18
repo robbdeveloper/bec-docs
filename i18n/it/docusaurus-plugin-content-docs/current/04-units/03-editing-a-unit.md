@@ -23,6 +23,16 @@ Questo riquadro elenca **fatti canonici** condivisi tra provider — nome, indir
 
 Considera questo riquadro come “i fatti strutturati che conserviamo per temi e SEO”.
 
+### Campo Gallery (griglia miniature)
+
+Il controllo **gallery** mostra **miniature** degli allegati. Puoi:
+
+- **Riordinare** le immagini (l’ordine è salvato sull’unità).
+- **Aggiungere** immagini dalla **Libreria media** tramite il modal standard WordPress (carica nuovi file o scegli allegati esistenti).
+- **Rimuovere** un’immagine dall’elenco gallery di questa unità (gli allegati restano in Libreria salvo eliminazione lì).
+
+Le importazioni durante la sync seguono le regole in **[Immagini galleria](./04-gallery-images.md)**.
+
 {/* SCREENSHOT: Canonical meta box expanded */}
 ![Meta box campi canonici core](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/04-units/metabox-canonical.png`): metabox-canonical.png */}
@@ -62,4 +72,5 @@ Per **Kross** standard questo riquadro è spesso **vuoto** — nessun campo mapp
 ## Pagine correlate
 
 - **[Immagini gallery](./04-gallery-images.md)**
+- **[Categorie unità](./06-unit-categories.md)**
 - **[Campi canonici (sviluppatori)](../09-developer-reference/04-canonical-unit-fields.md)**

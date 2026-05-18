@@ -25,7 +25,29 @@ I filtri si applicano tramite menu in cima alla schermata (usano parametri URL i
 
 ---
 
-## Colonne
+## Tabella database
+
+Le righe sono nella tabella custom **`{prefix}bec_api_log`** (creata all’aggiornamento tramite migrazioni del plugin; versione DB in opzione **`bec_db_version`**). Colonne tipiche:
+
+| Colonna | Scopo |
+|---------|--------|
+| `id` | Chiave primaria autoincrement. |
+| `created_at` | Orario fine richiesta (server). |
+| `provider_slug` | Chiave integrazione (es. `kross`). |
+| `http_method` | Verbo (`GET`, `POST`, …). |
+| `endpoint` | Percorso o etichetta logica (testo). |
+| `status_code` | Codice HTTP quando noto. |
+| `duration_ms` | Durata round-trip. |
+| `error_category` | Bucket errore normalizzato (nullable). |
+| `message` | Breve riassunto (nullable). |
+| `unit_id` | ID post `bec_unit` correlato se il logger ha legato la chiamata a un’unità (nullable). |
+| `correlation_id` | Valore header **`X-BEC-Correlation-Id`** per retry correlati. |
+
+La UI admin riflette il sottoinsieme più utile di queste colonne.
+
+---
+
+## Colonne dell’interfaccia admin
 
 | Colonna | Scopo |
 |---------|--------|

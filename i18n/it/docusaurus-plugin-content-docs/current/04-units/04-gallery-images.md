@@ -35,6 +35,17 @@ Quando il provider segna un’immagine **main**, diventa l’**immagine in evide
 
 ---
 
+## Admin: ordine gallery e allegati
+
+Nella schermata modifica unità, il meta box **canonico** include una UI **gallery**:
+
+- Griglia miniature con **trascina per riordinare**.
+- **Add** apre il **modal Libreria media** WordPress (carica o scegli allegati).
+
+Le modifiche si salvano con il post. La **prossima sync** può comunque aggiornare la gallery dal provider salvo filtri sviluppatore — vedi **[Hook e filtri sync](../09-developer-reference/02-sync-hooks-and-filters.md)**.
+
+---
+
 ## Rinominare file esistenti
 
 Pulsanti utili quando cambi prefisso/suffisso **dopo** l’import:
@@ -43,6 +54,8 @@ Pulsanti utili quando cambi prefisso/suffisso **dopo** l’import:
 - **Units → Azione riga → Rename gallery files** (una unità)
 
 Immagini condivise tra più unità possono essere **copiate** così le altre unità continuano a funzionare — su siti grandi esegui in periodi di poco traffico.
+
+Nella pagina **Sync** lo strumento sta sotto **Gallery file names** con nota che la copia può avvenire se un allegato è riusato da più unità.
 
 {/* SCREENSHOT: Media Library detail for one BEC gallery attachment showing filename */}
 ![Nome file allegato Libreria media](/img/bec-screenshot-placeholder.svg)

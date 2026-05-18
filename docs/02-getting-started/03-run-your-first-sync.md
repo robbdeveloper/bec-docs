@@ -1,7 +1,7 @@
 ---
 title: Run your first sync
 sidebar_label: Run your first sync
-description: Booking Engine Sync page — interval, gallery filename options, Run sync now, and where to find Units in WordPress.
+description: Booking Engine Sync page — schedule, Kross booking-engine filters, gallery filename options, batched Run sync now with progress, sync lock, and Units list.
 ---
 
 # Run your first sync
@@ -27,6 +27,18 @@ Saving the form **reschedules** the background job.
 
 ---
 
+## Kross booking engines (optional filter)
+
+If **Kross** is active, you can narrow **full sync** to room types whose payload includes selected **`be_enabled`** slugs:
+
+1. Click **Refresh booking engines list from Kross** to populate the checklist from the API.
+2. **Leave every box unchecked** to sync **all** room types (recommended starting point).
+3. Otherwise tick the engine slugs you want included.
+
+Details: **[Syncing units](../04-units/02-syncing-units.md)**.
+
+---
+
 ## Gallery image filenames (future syncs)
 
 Optional fields change how downloaded gallery files are named in the Media Library:
@@ -41,17 +53,33 @@ Existing files can be renamed in bulk later (see **[Gallery images](../04-units/
 
 ## Run sync now
 
-Click **Run sync now** to start an immediate **full sync** of all units from the active provider.
+Click **Run sync now** for an immediate **full sync**.
 
-When it finishes you should see an admin notice with counts such as **created**, **updated**, and **skipped**, plus any error text if something failed.
+**With JavaScript (default wp-admin):**
 
-If another sync is already running, you may see a message that a sync is in progress (a short lock prevents overlapping full syncs).
+- The plugin acquires a **manual sync lock** and processes units in **batches** via AJAX.
+- A **Sync progress** panel shows a live log and status until completion.
+
+**Without JavaScript** or if the AJAX flow errors, the button falls back to a standard form POST (longer single request).
+
+**Results**
+
+- On completion you should see **created**, **updated**, and **skipped** counts (and error text if something failed).
+- If another **full** sync is already running, you may see **Another sync is already running**—the lock can be held for a long time while work runs; see **[Syncing units](../04-units/02-syncing-units.md)** for lock behaviour and **Clear sync lock**.
 
 {/* SCREENSHOT: Admin notice after successful sync with counts */}
 ![Sync completion notice](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/02-getting-started/sync-success-notice.png`): sync-success-notice.png */}
 
 **Last successful sync** (if shown) comes from the plugin’s stored timestamp for the last completed run.
+
+---
+
+## Sync lock troubleshooting
+
+On **Booking Engine → Sync**, the **Sync lock** section shows whether a lock is set and offers **Clear sync lock**.
+
+- Only clear it when you are sure **no** job is running (e.g. stale lock after a crashed tab).
 
 ---
 
@@ -73,3 +101,4 @@ From here you can open a unit, use row actions like **Sync now** or **Rename gal
 
 - **[Add search and booking to pages](./04-add-search-and-booking-to-pages.md)**
 - **[Units overview](../04-units/01-units-overview.md)**
+- **[Unit categories](../04-units/06-unit-categories.md)**

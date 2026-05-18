@@ -29,6 +29,19 @@ Usa **Verify connection** dopo aver salvato (o anche prima, secondo il comportam
 
 ---
 
+## Motori prenotazione (filtro sync)
+
+Il comportamento della sync può **limitare quali tipi camera Kross** vengono importati durante una **sync completa**:
+
+1. Vai in **Booking Engine → Sync**.
+2. Sotto **Kross booking engines**, clicca **Refresh booking engines list from Kross** per caricare gli slug `be_enabled` da **`/v5/rooms/get-room-types`** nella checklist.
+3. **Lascia tutte le caselle deselezionate** per sincronizzare l’intero inventario (consigliato salvo esigenze diverse).
+4. Seleziona slug specifici per includere solo i tipi camera il cui elenco **`be_enabled`** normalizzato corrisponde a **almeno uno** slug scelto.
+
+Le azioni su singola riga e la bulk sync aggiornano comunque i post su richiesta; il filtro riguarda soprattutto **cron** e **Run sync now**.
+
+---
+
 ## URL motore di prenotazione (Checkout & fallback)
 
 **Separato dalle credenziali API:** gli ospiti non incollano mai le API key. Serve l’URL del **sito di prenotazione pubblico** dove si completano le prenotazioni.
@@ -61,5 +74,6 @@ Percorsi HTTP e tabella endpoint per sviluppatori: **[Riferimento API Kross](../
 ## Pagine correlate
 
 - **[Collega il provider](../02-getting-started/02-connect-your-provider.md)**
+- **[Sincronizzare le unità](../04-units/02-syncing-units.md)**
 - **[Flusso di checkout](../05-bookings-and-checkout/03-checkout-flow.md)**
 - **[Modalità fallback](../05-bookings-and-checkout/04-fallback-mode.md)**
