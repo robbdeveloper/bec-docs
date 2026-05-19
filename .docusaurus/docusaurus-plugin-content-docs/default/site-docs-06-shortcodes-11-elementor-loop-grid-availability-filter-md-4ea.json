@@ -18,11 +18,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "bec_version",
-    "permalink": "/docs/shortcodes/bec-version"
+    "title": "bec_unit_gallery",
+    "permalink": "/docs/shortcodes/bec-unit-gallery"
   },
   "next": {
-    "title": "Styling overview",
-    "permalink": "/docs/styling/styling-overview"
+    "title": "Elementor Unit gallery",
+    "permalink": "/docs/shortcodes/elementor-unit-gallery"
   }
 }

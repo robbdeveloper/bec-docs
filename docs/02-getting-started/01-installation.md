@@ -45,6 +45,8 @@ Releases may ship as **GitHub release ZIP assets** (pattern like `booking-engine
 - **Public repository** — Usually install/update from **Dashboard → Updates** without extra constants.
 - **Private repository** — Define **`BEC_GITHUB_UPDATER_TOKEN`** in `wp-config.php` (early enough that it exists before plugins load) with permission to read release assets.
 
+**Version header must match the release.** The updater reads the `Version:` line in `booking-engine-connector.php` from the release asset. If the GitHub tag says `0.1.30` but the zip header still says an older number, WordPress may not offer the update. Always ship releases where the tag, zip filename, and plugin header agree.
+
 ---
 
 ## Next step

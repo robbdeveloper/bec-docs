@@ -16,7 +16,7 @@ Apri **Units** e clicca un titolo. Oltre al solito **title**, **content** e **fe
 
 ## Unit — core fields (canonical)
 
-Questo riquadro elenca **fatti canonici** condivisi tra provider — nome, indirizzo, coordinate, limiti occupazione, finestre check-in/out, locali, bagni, estratto descrizione, dimensione, JSON servizi, ID allegati gallery, ecc.
+Questo riquadro elenca **fatti canonici** condivisi tra provider — nome, indirizzo, coordinate, limiti occupazione, finestre check-in/out, locali, bagni, estratto descrizione, dimensione, **CIN** (codice identificativo nazionale alloggio quando fornito dal provider), JSON servizi, ID allegati gallery, ecc.
 
 - **Puoi modificare** questi campi direttamente — utile per piccole correzioni o traduzioni **se** il flusso lo consente.
 - **La prossima sync può sovrascriverli** salvo che uno sviluppatore disattivi le scritture core via filtri documentati per gli ingegneri.
@@ -25,13 +25,12 @@ Considera questo riquadro come “i fatti strutturati che conserviamo per temi e
 
 ### Campo Gallery (griglia miniature)
 
-Il controllo **gallery** mostra **miniature** degli allegati. Puoi:
+Il controllo **gallery** mostra una **griglia di miniature** delle immagini già collegate all’unità (l’ordine sync è conservato nei meta).
 
-- **Riordinare** le immagini (l’ordine è salvato sull’unità).
-- **Aggiungere** immagini dalla **Libreria media** tramite il modal standard WordPress (carica nuovi file o scegli allegati esistenti).
-- **Rimuovere** un’immagine dall’elenco gallery di questa unità (gli allegati restano in Libreria salvo eliminazione lì).
+- **Clic su una miniatura** per aprire il modal allegato della **Libreria media** — modifica **testo alt**, titolo e altri campi allegato.
+- La griglia **non consente riordino** nell’admin; l’**ordine** gallery proviene dalla sync (o filtri sviluppatore). Per cambiare le immagini, esegui **sync** o usa strumenti supportati — vedi **[Immagini gallery](./04-gallery-images.md)**.
 
-Le importazioni durante la sync seguono le regole in **[Immagini galleria](./04-gallery-images.md)**.
+Le importazioni durante la sync seguono le regole in **[Immagini gallery](./04-gallery-images.md)**.
 
 {/* SCREENSHOT: Canonical meta box expanded */}
 ![Meta box campi canonici core](/img/bec-screenshot-placeholder.svg)

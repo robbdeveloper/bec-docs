@@ -68,7 +68,7 @@ Le richieste HTTP in uscita sono loggate in **`{prefix}bec_api_log`** (vedi **[U
 
 ### Campi core unità (`bec_core_*`)
 
-Semantica canonica condivisa tra provider (nome, indirizzo, geo, occupazione, orari, locali, bagni, descrizione, m², servizi, gallery come ID allegati). Compilati da `ProviderInterface::extractCoreUnitFields()` alla sync; modificabili in **Unit — core fields (canonical)**. Vedi **[Campi canonici unità](./04-canonical-unit-fields.md)**.
+Semantica canonica condivisi tra provider (nome, indirizzo, geo, occupazione, orari, locali, bagni, descrizione, m², servizi, gallery come ID allegati, **CIN** come `bec_core_cin`). Compilati da `ProviderInterface::extractCoreUnitFields()` alla sync; modificabili in **Unit — core fields (canonical)**. Vedi **[Campi canonici unità](./04-canonical-unit-fields.md)**.
 
 ### Campi mappati opzionali (per provider / client)
 

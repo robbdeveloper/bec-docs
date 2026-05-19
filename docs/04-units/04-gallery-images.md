@@ -29,14 +29,16 @@ Example (illustrative): `villa-rosa-main-01.jpg`
 
 ---
 
-## Admin: editing gallery order and attachments
+## Admin: viewing and editing attachments
 
-On the unit edit screen, the **canonical** meta box includes a **gallery** UI:
+On the unit edit screen, the **canonical** meta box includes a **gallery** thumbnail grid:
 
-- Thumbnail grid with **drag-to-reorder**.
-- **Add** opens the WordPress **Media Library** modal (pick or upload attachments).
+- **Click a thumbnail** to open that image in the **Media Library** attachment modal (alt text, caption, etc.).
+- The grid reflects **`bec_core_gallery`** attachment IDs and sync order; it is not a drag-and-drop reorder UI.
 
-Changes are saved with the post. The next **sync** may still refresh gallery content from the provider unless developers disable gallery writes—see developer filters in **[Sync hooks & filters](../09-developer-reference/02-sync-hooks-and-filters.md)**.
+The next **sync** may still refresh gallery content from the provider unless developers disable gallery writes—see developer filters in **[Sync hooks & filters](../09-developer-reference/02-sync-hooks-and-filters.md)**.
+
+Front-end builders can expose the same gallery via **`[bec_unit_gallery]`** (JSON) or the Elementor **Unit gallery** dynamic tag—see **[bec_unit_gallery](../06-shortcodes/13-bec-unit-gallery.md)** and **[Elementor — Unit gallery](../06-shortcodes/14-elementor-unit-gallery.md)**.
 
 ---
 

@@ -35,14 +35,16 @@ Quando il provider segna un’immagine **main**, diventa l’**immagine in evide
 
 ---
 
-## Admin: ordine gallery e allegati
+## Admin: visualizzazione e modifica allegati
 
-Nella schermata modifica unità, il meta box **canonico** include una UI **gallery**:
+Nella schermata modifica unità, il meta box **canonico** include una griglia miniature **gallery**:
 
-- Griglia miniature con **trascina per riordinare**.
-- **Add** apre il **modal Libreria media** WordPress (carica o scegli allegati).
+- **Clic su una miniatura** per aprire quell’immagine nel modal allegato **Libreria media** (alt text, didascalia, ecc.).
+- La griglia riflette gli ID in **`bec_core_gallery`** e l’ordine sync; **non** è un’interfaccia drag-and-drop per riordinare.
 
-Le modifiche si salvano con il post. La **prossima sync** può comunque aggiornare la gallery dal provider salvo filtri sviluppatore — vedi **[Hook e filtri sync](../09-developer-reference/02-sync-hooks-and-filters.md)**.
+La **prossima sync** può comunque aggiornare la gallery dal provider salvo filtri sviluppatore — vedi **[Hook e filtri sync](../09-developer-reference/02-sync-hooks-and-filters.md)**.
+
+In front-end puoi esporre la stessa gallery con **`[bec_unit_gallery]`** (JSON) o il dynamic tag Elementor **Unit gallery** — vedi **[bec_unit_gallery](../06-shortcodes/13-bec-unit-gallery.md)** e **[Elementor — Unit gallery](../06-shortcodes/14-elementor-unit-gallery.md)**.
 
 ---
 

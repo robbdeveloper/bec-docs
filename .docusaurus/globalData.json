@@ -146,6 +146,16 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "shortcodes/bec-unit-field",
+              "path": "/it/docs/shortcodes/bec-unit-field",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "shortcodes/bec-unit-gallery",
+              "path": "/it/docs/shortcodes/bec-unit-gallery",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "shortcodes/bec-unit-info",
               "path": "/it/docs/shortcodes/bec-unit-info",
               "sidebar": "docsSidebar"
@@ -163,6 +173,11 @@
             {
               "id": "shortcodes/elementor-loop-grid-availability-filter",
               "path": "/it/docs/shortcodes/elementor-loop-grid-availability-filter",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "shortcodes/elementor-unit-gallery",
+              "path": "/it/docs/shortcodes/elementor-unit-gallery",
               "sidebar": "docsSidebar"
             },
             {

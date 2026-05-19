@@ -26,6 +26,7 @@ Provider-independent semantics for **Units** (`bec_unit`), stored as `bec_core_*
 | `SQM` | `bec_core_sqm` | Size in m² |
 | `AMENITIES` | `bec_core_amenities` | JSON array of normalised items (see below) |
 | `GALLERY` | `bec_core_gallery` | JSON array of **attachment IDs** (integers). On sync, providers (e.g. Kross) return gallery payloads; the connector **imports per unit**: each file is **owned** by the unit (see attachment meta), named using **Sync** settings and the unit name slug, and saved here in provider order. Sets the **featured image** to the Kross `main` image when present, else the first item in the ordered list. |
+| `CIN` | `bec_core_cin` | Italian **Codice Identificativo Nazionale** (accommodation unit ID). Synced from Kross `cin` when present; editable in **Unit — core fields**. Also readable via `[bec_unit_field field="cin"]` from `raw`. |
 
 **Change detection (gallery):** the unit stores:
 
@@ -85,6 +86,20 @@ Filters:
 | `bec_gallery_download_concurrency` | Concurrent cURL transfers per batch (default `8`, max `32`; `$postId`, `$urls`). |
 | `bec_core_unit_gallery_before_save` | Adjust the gallery value before import (`$value`, `$postId`). |
 | `bec_core_unit_gallery_remote_urls` | Replace or reorder URL list (`$urls`, `$postId`, `$payload`). |
+
+**Front-end gallery consumers** (shortcode / Elementor, attachment IDs already in meta):
+
+| Filter | Purpose |
+|--------|---------|
+| `bec_unit_gallery_attachment_ids` | Adjust ID list before URL resolution (`$ids`, `$unitId`, `$context`). |
+| `bec_unit_gallery_items` | Adjust JSON item objects for `[bec_unit_gallery]` (`$items`, `$unitId`, `$context`). |
+| `bec_unit_gallery_json` | Final JSON string from shortcode (`$json`, `$postId`, `$atts`). |
+| `bec_unit_gallery_elementor_rows` | Elementor `{ id }` rows before tag output. |
+| `bec_unit_gallery_elementor_value` | Final Elementor tag value. |
+
+## Amenities label repair (0.1.30+)
+
+`AmenityItem::repairLabelString()` fixes corrupted stored labels (e.g. `u0027` instead of an apostrophe) when amenities are read for display. Sync and admin saves use raw meta values so JSON is not double-unslashed. After upgrading, a **re-sync** refreshes amenities JSON if labels still look wrong in the database.
 
 ## Filters
 

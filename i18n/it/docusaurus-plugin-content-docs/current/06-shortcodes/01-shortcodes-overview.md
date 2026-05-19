@@ -17,6 +17,8 @@ Gli shortcode sono scorciatoie WordPress che inserisci in pagine, pattern o temp
 | `[bec_booking_summary]` | Riquadro/card prenotazione completo con ricerca, dettaglio, drawer mobile. |
 | `[bec_unit_url]` | Produce **solo** la stringa URL (per `href`) mantenendo i parametri di ricerca. |
 | `[bec_unit_info]` | Blocchi HTML specifici del provider (es. griglia servizi). |
+| `[bec_unit_field]` | Valore scalare dal payload provider sincronizzato (percorso puntato, es. CIN). |
+| `[bec_unit_gallery]` | Gallery JSON da ID allegati canonici (per JS personalizzato). |
 | `[bec_fallback]` | Link o contenuto arricchito fallback configurato in admin. |
 | `[bec_version]` | Stampa versione plugin (supporto/debug). |
 
@@ -49,9 +51,12 @@ Se `unit_id` non punta a un’unità, l’output è di solito vuoto.
 
 ---
 
-## Elementor Pro Loop Grid (opzionale)
+## Elementor (opzionale)
 
-Con **Elementor Pro** [Loop Grid](https://elementor.com/help/loop-grid/) che elenca unità e **`[bec_quote]`** in ogni scheda, puoi impostare il **Query ID** della griglia su **`bec_available_only`** così le schede senza disponibilità sono **omesse** quando l’URL ha parametri di ricerca completi. Vedi **[Elementor — nascondere unità senza disponibilità](./11-elementor-loop-grid-availability-filter.md)**.
+| Funzione | Quando usarla |
+|----------|----------------|
+| **Loop Grid — Query ID `bec_available_only`** | Nascondere schede archivio senza disponibilità quando l’URL ha parametri di ricerca completi. Vedi **[Elementor — nascondere unità senza disponibilità](./11-elementor-loop-grid-availability-filter.md)**. |
+| **Dynamic tag — Unit gallery** | Alimentare widget Gallery / Media Carousel da **`bec_core_gallery`**. Vedi **[Elementor — Unit gallery](./14-elementor-unit-gallery.md)**. |
 
 ---
 
@@ -69,4 +74,5 @@ Ogni pagina dedicata elenca **hook CSS** che puoi stilizzare in sicurezza con **
 
 - **[bec_search](./02-bec-search.md)**
 - **[bec_booking_summary](./06-bec-booking-summary.md)** — guida più lunga
-- **[Filtro disponibilità Elementor Loop Grid](./11-elementor-loop-grid-availability-filter.md)** — Elementor Pro
+- **[bec_unit_field](./12-bec-unit-field.md)** · **[bec_unit_gallery](./13-bec-unit-gallery.md)**
+- **[Filtro disponibilità Elementor Loop Grid](./11-elementor-loop-grid-availability-filter.md)** · **[Elementor Unit gallery](./14-elementor-unit-gallery.md)**

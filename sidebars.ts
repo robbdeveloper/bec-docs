@@ -67,7 +67,10 @@ const sidebars: SidebarsConfig = {
         'shortcodes/bec-unit-info',
         'shortcodes/bec-fallback',
         'shortcodes/bec-version',
+        'shortcodes/bec-unit-field',
+        'shortcodes/bec-unit-gallery',
         'shortcodes/elementor-loop-grid-availability-filter',
+        'shortcodes/elementor-unit-gallery',
       ],
     },
     {

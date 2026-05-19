@@ -45,6 +45,8 @@ Le release possono essere pubblicate come **asset ZIP su GitHub** (pattern tipo 
 - **Repository pubblico** — Di norma installa/aggiorna da **Bacheca → Aggiornamenti** senza costanti aggiuntive.
 - **Repository privato** — Definisci **`BEC_GITHUB_UPDATER_TOKEN`** in `wp-config.php` (abbastanza presto nel caricamento, prima dei plugin) con permesso di leggere gli asset di release.
 
+**L’intestazione Version deve coincidere con la release.** L’updater legge la riga `Version:` in `booking-engine-connector.php` dall’asset di release. Se il tag GitHub dice `0.1.30` ma lo ZIP ha ancora un numero più vecchio nell’header, WordPress potrebbe non offrire l’aggiornamento. Pubblica release in cui tag, nome file ZIP e header plugin sono allineati.
+
 ---
 
 ## Passo successivo

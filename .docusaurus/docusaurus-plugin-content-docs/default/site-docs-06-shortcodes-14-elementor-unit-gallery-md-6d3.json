@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/elementor-unit-gallery",
+  "title": "Elementor — Unit gallery dynamic tag",
+  "description": "Elementor dynamic tag for unit bec_core_gallery — Gallery and Media Carousel widgets, limit, offset, unit ID.",
+  "source": "@site/docs/06-shortcodes/14-elementor-unit-gallery.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/elementor-unit-gallery",
+  "permalink": "/docs/shortcodes/elementor-unit-gallery",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Elementor — Unit gallery dynamic tag",
+    "sidebar_label": "Elementor Unit gallery",
+    "description": "Elementor dynamic tag for unit bec_core_gallery — Gallery and Media Carousel widgets, limit, offset, unit ID."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Elementor Loop Grid filter",
+    "permalink": "/docs/shortcodes/elementor-loop-grid-availability-filter"
+  },
+  "next": {
+    "title": "Styling overview",
+    "permalink": "/docs/styling/styling-overview"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "shortcodes/bec-quote",
   "title": "[bec_quote] shortcode",
-  "description": "Compact quote shortcode unit_id show_rates CSS hooks bec-shortcode-quote archive cards.",
+  "description": "Compact quote shortcode unit_id show_rates currency formatting decimals number_style CSS hooks bec-shortcode-quote archive cards.",
   "source": "@site/docs/06-shortcodes/04-bec-quote.md",
   "sourceDirName": "06-shortcodes",
   "slug": "/shortcodes/bec-quote",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "[bec_quote] shortcode",
     "sidebar_label": "bec_quote",
-    "description": "Compact quote shortcode unit_id show_rates CSS hooks bec-shortcode-quote archive cards."
+    "description": "Compact quote shortcode unit_id show_rates currency formatting decimals number_style CSS hooks bec-shortcode-quote archive cards."
   },
   "sidebar": "docsSidebar",
   "previous": {

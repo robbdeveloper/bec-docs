@@ -16,7 +16,7 @@ Open **Units** and click any title. Besides the usual WordPress **title**, **con
 
 ## Unit — core fields (canonical)
 
-This box lists **canonical** facts shared across providers—name, address, coordinates, occupancy limits, check-in/out windows, rooms, bathrooms, description excerpt, size, amenities JSON, gallery attachment IDs, etc.
+This box lists **canonical** facts shared across providers—name, address, coordinates, occupancy limits, check-in/out windows, rooms, bathrooms, description excerpt, size, **CIN** (Italian national identification code when provided by the provider), amenities JSON, gallery attachment IDs, etc.
 
 - **You can edit** these fields directly—useful for minor tweaks or translations **if** your workflow allows it.
 - **The next sync may overwrite** them unless your developer disables core writes via filters documented for engineers.
@@ -25,11 +25,10 @@ Think of this box as “the structured facts we store for themes and SEO.”
 
 ### Gallery field (thumbnail grid)
 
-The **gallery** control shows **thumbnails** of attached images. You can:
+The **gallery** control shows a **thumbnail grid** of images already linked to the unit (sync order is preserved in meta).
 
-- **Reorder** images (order is stored on the unit).
-- **Add** images from the **Media Library** via the usual WordPress modal (upload new files or pick existing attachments).
-- **Remove** an image from this unit’s gallery list (attachments themselves remain in the Media Library unless you delete them there).
+- **Click a thumbnail** to open the WordPress **Media Library** attachment modal—edit **alt text**, title, and other attachment fields.
+- The grid is **read-only for reordering** in the admin UI; gallery **order** comes from sync (or developer filters). To change which images appear, run **sync** or adjust **`bec_core_gallery`** via supported tools—see **[Gallery images](./04-gallery-images.md)**.
 
 Imports during sync still follow the rules in **[Gallery images](./04-gallery-images.md)**.
 

@@ -68,7 +68,7 @@ Outbound HTTP logging persists rows in **`{prefix}bec_api_log`** (see **[Using t
 
 ### Core unit fields (`bec_core_*`)
 
-Canonical semantics shared across providers (name, address, geo, occupancy, times, rooms, bathrooms, description, m², amenities, gallery as attachment IDs). Filled by `ProviderInterface::extractCoreUnitFields()` on sync; editable in **Unit — core fields (canonical)**. See **[Canonical unit fields](./04-canonical-unit-fields.md)**.
+Canonical semantics shared across providers (name, address, geo, occupancy, times, rooms, bathrooms, description, m², amenities, gallery as attachment IDs, **CIN** as `bec_core_cin`). Filled by `ProviderInterface::extractCoreUnitFields()` on sync; editable in **Unit — core fields (canonical)**. See **[Canonical unit fields](./04-canonical-unit-fields.md)**.
 
 ### Optional mapped fields (per provider / client)
 

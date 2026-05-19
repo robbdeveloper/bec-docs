@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/elementor-unit-gallery",
+  "title": "Elementor — dynamic tag Unit gallery",
+  "description": "Dynamic tag Elementor per bec_core_gallery — widget Gallery e Media Carousel, limit, offset, Unit ID.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/14-elementor-unit-gallery.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/elementor-unit-gallery",
+  "permalink": "/it/docs/shortcodes/elementor-unit-gallery",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "Elementor — dynamic tag Unit gallery",
+    "sidebar_label": "Elementor Unit gallery",
+    "description": "Dynamic tag Elementor per bec_core_gallery — widget Gallery e Media Carousel, limit, offset, Unit ID."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Filtro Elementor Loop Grid",
+    "permalink": "/it/docs/shortcodes/elementor-loop-grid-availability-filter"
+  },
+  "next": {
+    "title": "Panoramica stile",
+    "permalink": "/it/docs/styling/styling-overview"
+  }
+}

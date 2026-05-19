@@ -20,6 +20,7 @@ Quick symptom → cause → fix matrix for typical WordPress admins.
 | **“Another sync is already running” for a long time** | Legitimate long full sync **or** stale **sync lock** after a crashed admin tab | Wait for completion; read **[Syncing units](../04-units/02-syncing-units.md)**; use **Clear sync lock** on the Sync page only when sure no job is running. |
 | **Shows neither fallback nor checkout on errors** | Fallback triggers exclude error category | Adjust categories under **Checkout & fallback** or consult developer filters (`bec_booking_error_notice_html`). |
 | **`[bec_unit_info]` empty** | Wrong key or stale payload | Re-sync unit, confirm renderer key spelling—see **[bec_unit_info](../06-shortcodes/08-bec-unit-info.md)**. |
+| **Amenity labels show `u0027` or garbled apostrophes** | Legacy double-encoding in stored JSON (fixed in **0.1.30**) | Upgrade plugin; open unit and save, or run **sync** so amenities re-save; labels repair on read via `AmenityItem::repairLabelString()`. |
 
 ---
 

@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-unit-field",
+  "title": "Shortcode `[bec_unit_field]`",
+  "description": "Valori scalari dal payload unità sincronizzato tramite percorsi puntati — field, type, unit_id, default — CIN e campi Kross personalizzati.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/12-bec-unit-field.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-unit-field",
+  "permalink": "/it/docs/shortcodes/bec-unit-field",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "Shortcode `[bec_unit_field]`",
+    "sidebar_label": "bec_unit_field",
+    "description": "Valori scalari dal payload unità sincronizzato tramite percorsi puntati — field, type, unit_id, default — CIN e campi Kross personalizzati."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_version",
+    "permalink": "/it/docs/shortcodes/bec-version"
+  },
+  "next": {
+    "title": "bec_unit_gallery",
+    "permalink": "/it/docs/shortcodes/bec-unit-gallery"
+  }
+}

@@ -14,15 +14,15 @@ export default [
   },
   {
     path: '/it/docs',
-    component: ComponentCreator('/it/docs', '9ab'),
+    component: ComponentCreator('/it/docs', '9ee'),
     routes: [
       {
         path: '/it/docs',
-        component: ComponentCreator('/it/docs', 'e64'),
+        component: ComponentCreator('/it/docs', '733'),
         routes: [
           {
             path: '/it/docs',
-            component: ComponentCreator('/it/docs', '2e7'),
+            component: ComponentCreator('/it/docs', 'b1e'),
             routes: [
               {
                 path: '/it/docs/',
@@ -187,6 +187,18 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
+                path: '/it/docs/shortcodes/bec-unit-field',
+                component: ComponentCreator('/it/docs/shortcodes/bec-unit-field', '114'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/it/docs/shortcodes/bec-unit-gallery',
+                component: ComponentCreator('/it/docs/shortcodes/bec-unit-gallery', 'd15'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
                 path: '/it/docs/shortcodes/bec-unit-info',
                 component: ComponentCreator('/it/docs/shortcodes/bec-unit-info', 'e82'),
                 exact: true,
@@ -207,6 +219,12 @@ export default [
               {
                 path: '/it/docs/shortcodes/elementor-loop-grid-availability-filter',
                 component: ComponentCreator('/it/docs/shortcodes/elementor-loop-grid-availability-filter', '64f'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/it/docs/shortcodes/elementor-unit-gallery',
+                component: ComponentCreator('/it/docs/shortcodes/elementor-unit-gallery', '1dc'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

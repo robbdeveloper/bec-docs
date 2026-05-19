@@ -12,17 +12,17 @@
       "plugin": "138e0e15"
     }
   },
-  "/it/docs-9ab": {
+  "/it/docs-9ee": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/it/docs-e64": {
+  "/it/docs-733": {
     "__comp": "a7bd4aaa",
     "__props": "1eb08509"
   },
-  "/it/docs-2e7": {
+  "/it/docs-b1e": {
     "__comp": "a94703ab"
   },
   "/it/docs/-572": {
@@ -133,6 +133,14 @@
     "__comp": "17896441",
     "content": "985350f6"
   },
+  "/it/docs/shortcodes/bec-unit-field-114": {
+    "__comp": "17896441",
+    "content": "1d2b6cfb"
+  },
+  "/it/docs/shortcodes/bec-unit-gallery-d15": {
+    "__comp": "17896441",
+    "content": "5bf076f7"
+  },
   "/it/docs/shortcodes/bec-unit-info-e82": {
     "__comp": "17896441",
     "content": "67000062"
@@ -148,6 +156,10 @@
   "/it/docs/shortcodes/elementor-loop-grid-availability-filter-64f": {
     "__comp": "17896441",
     "content": "932ff586"
+  },
+  "/it/docs/shortcodes/elementor-unit-gallery-1dc": {
+    "__comp": "17896441",
+    "content": "c4aca46c"
   },
   "/it/docs/shortcodes/shortcodes-overview-229": {
     "__comp": "17896441",

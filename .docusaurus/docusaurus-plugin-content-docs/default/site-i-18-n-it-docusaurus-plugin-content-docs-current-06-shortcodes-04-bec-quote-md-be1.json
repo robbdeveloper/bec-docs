@@ -1,7 +1,7 @@
 {
   "id": "shortcodes/bec-quote",
   "title": "Shortcode `[bec_quote]`",
-  "description": "Shortcode preventivo compatto, unit_id, show_rates, hook CSS bec-shortcode-quote, schede archivio.",
+  "description": "Shortcode preventivo compatto, unit_id, show_rates, formattazione valuta, decimals number_style, hook CSS bec-shortcode-quote.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/04-bec-quote.md",
   "sourceDirName": "06-shortcodes",
   "slug": "/shortcodes/bec-quote",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Shortcode `[bec_quote]`",
     "sidebar_label": "bec_quote",
-    "description": "Shortcode preventivo compatto, unit_id, show_rates, hook CSS bec-shortcode-quote, schede archivio."
+    "description": "Shortcode preventivo compatto, unit_id, show_rates, formattazione valuta, decimals number_style, hook CSS bec-shortcode-quote."
   },
   "sidebar": "docsSidebar",
   "previous": {

@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-unit-gallery",
+  "title": "Shortcode `[bec_unit_gallery]`",
+  "description": "Gallery JSON da ID allegati bec_core_gallery — limit, offset, size, unit_id, default — per JS personalizzato o template headless.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/13-bec-unit-gallery.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-unit-gallery",
+  "permalink": "/it/docs/shortcodes/bec-unit-gallery",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "Shortcode `[bec_unit_gallery]`",
+    "sidebar_label": "bec_unit_gallery",
+    "description": "Gallery JSON da ID allegati bec_core_gallery — limit, offset, size, unit_id, default — per JS personalizzato o template headless."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_unit_field",
+    "permalink": "/it/docs/shortcodes/bec-unit-field"
+  },
+  "next": {
+    "title": "Filtro Elementor Loop Grid",
+    "permalink": "/it/docs/shortcodes/elementor-loop-grid-availability-filter"
+  }
+}

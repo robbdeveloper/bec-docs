@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-unit-field",
+  "title": "[bec_unit_field] shortcode",
+  "description": "Read scalar values from synced unit payload via dot paths — field, type, unit_id, default — CIN and custom Kross fields.",
+  "source": "@site/docs/06-shortcodes/12-bec-unit-field.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-unit-field",
+  "permalink": "/docs/shortcodes/bec-unit-field",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "[bec_unit_field] shortcode",
+    "sidebar_label": "bec_unit_field",
+    "description": "Read scalar values from synced unit payload via dot paths — field, type, unit_id, default — CIN and custom Kross fields."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_version",
+    "permalink": "/docs/shortcodes/bec-version"
+  },
+  "next": {
+    "title": "bec_unit_gallery",
+    "permalink": "/docs/shortcodes/bec-unit-gallery"
+  }
+}

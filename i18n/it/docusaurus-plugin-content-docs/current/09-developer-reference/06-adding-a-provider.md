@@ -18,7 +18,7 @@ Il plugin risolve le integrazioni tramite **`ProviderInterface`** (`includes/Pro
 2. Registra la mappa etichette admin con **`bec_registered_providers`** così **Booking Engine → Connection** mostra il tuo slug.
 3. Restituisci la tua istanza concreta da **`bec_provider_instance`** quando WordPress chiede il tuo slug — `ProviderRegistry::getProvider()` invoca questo filtro **prima** del fallback ai built-in.
 4. Memorizza i campi credenziali in modo dichiarativo con **`getCredentialSchema()`** — Connection salva opzioni come `bec_{slug}_{fieldKey}` automaticamente.
-5. Implementa **`fetchRemoteUnits()`**, **`extractCoreUnitFields()`**, **`getQuoteForUnit()`**, **`buildCheckoutUrl()`**, e opzionalmente **`BulkQuoteProviderInterface`** + **`getUnitInfoRenderers()`**.
+5. Implementa **`fetchRemoteUnits()`**, **`extractCoreUnitFields()`**, **`getQuoteForUnit()`**, **`buildCheckoutUrl()`**, **`getUnitFieldValue()`**, e opzionalmente **`BulkQuoteProviderInterface`** + **`getUnitInfoRenderers()`**.
 
 ---
 
@@ -72,8 +72,35 @@ Implementa **`getCredentialSchema(): array`** restituendo una lista di oggetti *
 | `getQuoteForUnit()` | Restituisce array/`WP_Error` coerenti con i consumer preventivi (`QuoteService`). |
 | `buildCheckoutUrl()` | Restituisce `['url' => ..., 'label' => ...]` o descrittore POST (`method`=`post`, `post_fields`). |
 | `getUnitInfoRenderers()` | Mappa chiave shortcode → callable per **`[bec_unit_info]`** (può restituire `[]`). |
+| `getUnitFieldValue()` | Risolve percorsi puntati sotto `raw` per **`[bec_unit_field]`** — restituisce `string|int|float|null`. Filtro: **`bec_unit_field_value`**. |
 
 Opzionale **`BulkQuoteProviderInterface`** raggruppa disponibilità una volta per **`SearchContext`** (vedi docblock interfaccia in `includes/Providers/Contracts/BulkQuoteProviderInterface.php`).
+
+### `getUnitFieldValue()` (shortcode scalare)
+
+`[bec_unit_field field="…"]` decodifica `bec_sync_payload`, poi chiama il provider:
+
+```php
+public function getUnitFieldValue(
+    array $syncPayload,
+    string $field,
+    array $atts,
+    array $context
+): string|int|float|null {
+    $raw = $syncPayload['raw'] ?? [];
+    if (! is_array($raw)) {
+        return null;
+    }
+    // Risolvi $field come percorso puntato, es. custom_fields.foo.en
+    return $this->dotGet($raw, $field);
+}
+```
+
+- **`$field`** — percorso relativo a **`raw`** (non l’intero payload).
+- **`$context`** — include `provider`, `locale` (due lettere) e `type` (`string`|`number`).
+- Restituisci **`null`** se mancante o non coercibile al tipo richiesto.
+
+Kross include **`KrossUnitFieldResolver`** come riferimento; filtro **`bec_kross_unit_field_value`** per personalizzazioni solo Kross.
 
 ---
 
@@ -93,4 +120,5 @@ Usa **`bec_test_connection`** dal pulsante verifica Connection per adapter non-K
 
 - **[Architettura](./01-architecture.md)**
 - **[Renderer unit info](./07-unit-info-renderers.md)**
+- **[bec_unit_field](../06-shortcodes/12-bec-unit-field.md)** — guida utente allo shortcode
 - **[API Kross](./05-kross-api.md)** — riferimento comportamentale anche quando cloni pattern per un altro vendor.

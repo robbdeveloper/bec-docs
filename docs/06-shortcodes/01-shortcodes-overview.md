@@ -17,6 +17,8 @@ Shortcodes are WordPress shortcuts you place in pages, patterns, or templates. B
 | `[bec_booking_summary]` | Full booking sidebar/card with search, breakdown, mobile drawer. |
 | `[bec_unit_url]` | Outputs **only** the URL string (for `href`) keeping search params. |
 | `[bec_unit_info]` | Provider-specific HTML blocks (e.g. amenities grid). |
+| `[bec_unit_field]` | Single scalar from synced provider payload (dot path, e.g. CIN). |
+| `[bec_unit_gallery]` | JSON gallery from canonical attachment IDs (for custom JS). |
 | `[bec_fallback]` | Admin-configured fallback link or rich content. |
 | `[bec_version]` | Prints plugin version (support/debug). |
 
@@ -49,9 +51,12 @@ If `unit_id` points at something that is **not** a unit, output is typically emp
 
 ---
 
-## Elementor Pro Loop Grid (optional)
+## Elementor (optional)
 
-If you use **Elementor Pro** [Loop Grid](https://elementor.com/help/loop-grid/) to list units and **`[bec_quote]`** inside each card, you can set the grid **Query ID** to **`bec_available_only`** so cards with no availability are **omitted** when the URL has complete search parameters. See **[Elementor — hide units with no availability](./11-elementor-loop-grid-availability-filter.md)**.
+| Feature | When to use |
+|---------|-------------|
+| **Loop Grid — Query ID `bec_available_only`** | Hide archive cards with no availability when the URL has complete search params. See **[Elementor — hide units with no availability](./11-elementor-loop-grid-availability-filter.md)**. |
+| **Dynamic tag — Unit gallery** | Fill Gallery / Media Carousel widgets from **`bec_core_gallery`**. See **[Elementor — Unit gallery](./14-elementor-unit-gallery.md)**. |
 
 ---
 
@@ -69,4 +74,5 @@ Each dedicated page below lists **CSS hooks** you can style safely with **Bookin
 
 - **[bec_search](./02-bec-search.md)**
 - **[bec_booking_summary](./06-bec-booking-summary.md)** — longest guide
-- **[Elementor Loop Grid availability filter](./11-elementor-loop-grid-availability-filter.md)** — Elementor Pro
+- **[bec_unit_field](./12-bec-unit-field.md)** · **[bec_unit_gallery](./13-bec-unit-gallery.md)**
+- **[Elementor Loop Grid availability filter](./11-elementor-loop-grid-availability-filter.md)** · **[Elementor Unit gallery](./14-elementor-unit-gallery.md)**

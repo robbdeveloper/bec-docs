@@ -26,6 +26,7 @@ Semantica indipendente dal provider per le **Unità** (`bec_unit`), memorizzata 
 | `SQM` | `bec_core_sqm` | Superficie in m² |
 | `AMENITIES` | `bec_core_amenities` | Array JSON di elementi normalizzati (vedi sotto) |
 | `GALLERY` | `bec_core_gallery` | Array JSON di **ID allegati** (interi). Alla sync i provider (es. Kross) restituiscono payload gallery; il connector **importa per unità**: ogni file è **posseduto** dall’unità (vedi meta allegati), nominato con impostazioni **Sync** e slug nome unità, salvato qui nell’ordine del provider. Imposta l’**immagine in evidenza** all’immagine `main` Kross se presente, altrimenti al primo elemento dell’elenco ordinato. |
+| `CIN` | `bec_core_cin` | **Codice Identificativo Nazionale** italiano (identificativo unità alloggio). Sincronizzato da `cin` Kross se presente; modificabile in **Unità — campi core**. Leggibile anche con `[bec_unit_field field="cin"]` da `raw`. |
 
 **Rilevamento modifiche (gallery):** l’unità memorizza:
 
@@ -85,6 +86,20 @@ Filtri:
 | `bec_gallery_download_concurrency` | Trasferimenti cURL concorrenti per batch (default `8`, max `32`; `$postId`, `$urls`). |
 | `bec_core_unit_gallery_before_save` | Regola valore gallery prima dell’import (`$value`, `$postId`). |
 | `bec_core_unit_gallery_remote_urls` | Sostituisce o riordina elenco URL (`$urls`, `$postId`, `$payload`). |
+
+**Consumer gallery front-end** (shortcode / Elementor, ID allegato già in meta):
+
+| Filtro | Scopo |
+|--------|--------|
+| `bec_unit_gallery_attachment_ids` | Regola elenco ID prima della risoluzione URL (`$ids`, `$unitId`, `$context`). |
+| `bec_unit_gallery_items` | Regola oggetti JSON per `[bec_unit_gallery]` (`$items`, `$unitId`, `$context`). |
+| `bec_unit_gallery_json` | Stringa JSON finale dallo shortcode (`$json`, `$postId`, `$atts`). |
+| `bec_unit_gallery_elementor_rows` | Righe Elementor `{ id }` prima dell’output del tag. |
+| `bec_unit_gallery_elementor_value` | Valore finale del tag Elementor. |
+
+## Riparazione etichette servizi (0.1.30+)
+
+`AmenityItem::repairLabelString()` corregge etichette memorizzate corrotte (es. `u0027` al posto dell’apostrofo) in lettura. Sync e salvataggi admin usano valori meta grezzi così il JSON non viene doppio-unslashato. Dopo l’aggiornamento, una **re-sync** aggiorna il JSON servizi se le etichette nel database sono ancora errate.
 
 ## Filtri
 

@@ -20,6 +20,7 @@ Matrice rapida sintomo → causa → azione per amministratori WordPress tipici.
 | **“Another sync is already running” a lungo** | Sync completa legittima lunga **oppure** **lock sync** obsoleto dopo tab admin chiusa | Attendi completamento; leggi **[Sincronizzare le unità](../04-units/02-syncing-units.md)**; usa **Clear sync lock** nella pagina Sync solo se sei sicuro che nessun job sia attivo. |
 | **Né fallback né checkout su errori** | Trigger fallback escludono categoria errore | Regola categorie in **Checkout & fallback** o consulta filtri sviluppatore (`bec_booking_error_notice_html`). |
 | **`[bec_unit_info]` vuoto** | Chiave errata o payload obsoleto | Ri-sincronizza l’unità, conferma ortografia chiave renderer — vedi **[bec_unit_info](../06-shortcodes/08-bec-unit-info.md)**. |
+| **Etichette servizi con `u0027` o apostrofi corrotti** | Doppia codifica legacy nel JSON memorizzato (corretto in **0.1.30**) | Aggiorna il plugin; apri l’unità e salva, oppure esegui **sync** per riscrivere i servizi; le etichette si riparano in lettura con `AmenityItem::repairLabelString()`. |
 
 ---
 

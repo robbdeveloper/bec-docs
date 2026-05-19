@@ -1,7 +1,7 @@
 {
   "id": "shortcodes/bec-dates",
   "title": "[bec_dates] shortcode",
-  "description": "Readable stay dates from URL search context shortcode bec_dates CSS bec-shortcode-dates.",
+  "description": "Readable stay dates from URL search context shortcode bec_dates date_format preset label_style label CSS bec-shortcode-dates.",
   "source": "@site/docs/06-shortcodes/03-bec-dates.md",
   "sourceDirName": "06-shortcodes",
   "slug": "/shortcodes/bec-dates",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "[bec_dates] shortcode",
     "sidebar_label": "bec_dates",
-    "description": "Readable stay dates from URL search context shortcode bec_dates CSS bec-shortcode-dates."
+    "description": "Readable stay dates from URL search context shortcode bec_dates date_format preset label_style label CSS bec-shortcode-dates."
   },
   "sidebar": "docsSidebar",
   "previous": {
