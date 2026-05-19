@@ -70,7 +70,22 @@ export default {
     ]
   ],
   "themes": [
-    "@docusaurus/theme-mermaid"
+    "@docusaurus/theme-mermaid",
+    [
+      "/Users/robertoenasoaie/Documents/projects/bec-docs/node_modules/@easyops-cn/docusaurus-search-local/dist/server/server/index.js",
+      {
+        "hashed": true,
+        "indexDocs": true,
+        "indexBlog": false,
+        "indexPages": false,
+        "docsRouteBasePath": "/docs",
+        "language": [
+          "en",
+          "it"
+        ],
+        "searchResultLimits": 8
+      }
+    ]
   ],
   "markdown": {
     "mermaid": true,
