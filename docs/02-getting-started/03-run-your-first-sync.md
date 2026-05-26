@@ -1,14 +1,14 @@
 ---
 title: Run your first sync
 sidebar_label: Run your first sync
-description: Booking Engine Sync page — schedule, Kross booking-engine filters, gallery filename options, batched Run sync now with progress, sync lock, and Units list.
+description: Booking Engine Sync & Import page — schedule, Kross booking-engine filters, gallery filename options, batched Run sync now with progress, sync lock, and Units list.
 ---
 
 # Run your first sync
 
 After **[connecting credentials](./02-connect-your-provider.md)**, pull your inventory into WordPress.
 
-Open **Booking Engine → Sync**.
+Open **Booking Engine → Sync & Import** ( **Tools** tab for **Run sync now** ).
 
 {/* SCREENSHOT: Sync page full view with interval, filename fields, and action buttons */}
 ![Sync units page](/img/bec-screenshot-placeholder.svg)
@@ -77,7 +77,7 @@ Click **Run sync now** for an immediate **full sync**.
 
 ## Sync lock troubleshooting
 
-On **Booking Engine → Sync**, the **Sync lock** section shows whether a lock is set and offers **Clear sync lock**.
+On **Booking Engine → Sync & Import → Tools**, the **Sync lock** section shows whether a lock is set and offers **Clear sync lock**.
 
 - Only clear it when you are sure **no** job is running (e.g. stale lock after a crashed tab).
 

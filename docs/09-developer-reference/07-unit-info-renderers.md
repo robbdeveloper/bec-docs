@@ -138,6 +138,7 @@ Kross registers the built-in key **`amenities_grid`**: a simple grid of **icon +
 |--------------|---------|-------------|
 | `font_pack` | `font-1` | Slug of an entry registered via `bec_amenities_font_packs` (icon CSS is expected under `assets/fonts/amenities/{slug}/style.css`). |
 | `columns` | `2` | Number of grid columns, **1–6** (applies the CSS custom property `--bec-amenities-cols` on the root). |
+| `columns_mobile` | `1` | Grid columns below **640px**, **1–6** (applies `--bec-amenities-cols-mobile`). |
 | `limit` | all | Maximum number of items after **natural sort by label**; `0` means no limit. |
 | `category` | *(open)* | If set, only items whose normalised `category` matches (e.g. `amenity`). `mandatory_service` is not shown in this grid. |
 
@@ -181,7 +182,7 @@ Kross registers **`bedroom_arrangements`**: a grid of per-bedroom headings and a
 | `font_pack` | `font-1` | Slug of an entry registered via `bec_amenities_font_packs` (icon CSS is under `assets/fonts/amenities/{slug}/style.css`). |
 | `columns` | `3` | Number of grid columns, **1–6** (applies the CSS custom property `--bec-bedrooms-cols` on the root). |
 | `title` | *(empty)* | If non-empty, replaces the default translatable section title (“Sleeping arrangements”). For multilingual sites, prefer leaving this empty so WordPress can translate the default string, or use a theme/mu-plugin filter on `bec_unit_info_output` / per-locale page content. |
-| `show_title` | `1` | Set to `0`, `no`, or `false` to hide the section title. |
+| `show_title` | *(hidden)* | Set to `1`, `yes`, or `true` to show the section title; hidden by default. |
 
 **Data source**
 

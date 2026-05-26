@@ -1,7 +1,7 @@
 ---
 title: Connect your provider
 sidebar_label: Connect your provider
-description: Booking Engine Connection screen — provider choice, Kross credentials, Verify connection, and search form guest settings.
+description: Booking Engine Connection screen — provider choice, Kross credentials, and Verify connection.
 ---
 
 # Connect your provider
@@ -19,6 +19,8 @@ Open **Booking Engine → Connection**.
 Use the **Provider** dropdown to choose which booking integration is active.
 
 Out of the box you will normally see **Kross Booking**. Additional providers can be added by developers via WordPress filters (see **[Adding a provider](../09-developer-reference/06-adding-a-provider.md)**).
+
+**Option key:** `bec_active_provider`
 
 ---
 
@@ -54,42 +56,9 @@ Click **Verify connection** to run a real token exchange with the provider (with
 
 ---
 
-## Search form (front)
+## Search and single-unit settings
 
-On the same **Connection** page, the plugin lets you control how guests are counted on the **front-end search bar** (used by `[bec_search]` and inside the booking summary).
-
-### How guests are collected
-
-| Option | When to use it |
-|--------|----------------|
-| **Follow the active provider** | Default. Matches what your provider expects (e.g. one total guest count vs adults + children). |
-| **Single “Guests” count only** | One number for all people—simplest for small properties. |
-| **Adults and children (separate fields)** | When you need a split headcount for pricing or policies. |
-
-### Child ages in search
-
-| Option | Meaning |
-|--------|---------|
-| **Follow the active provider** | Uses the engine’s rules. |
-| **Ask for each child’s age** | Shows one age field per child when the form is in adults + children mode. |
-| **Do not ask for child ages** | Omits age fields (not used when you only collect a single guest total). |
-
-{/* SCREENSHOT: Search form behaviour section on Connection page */}
-![Search form settings on Connection](/img/bec-screenshot-placeholder.svg)
-{/* Intended screenshot (add file at `docs/img/02-getting-started/connection-search-form-settings.png`): connection-search-form-settings.png */}
-
----
-
-## Single unit pages (automatic blocks)
-
-Still on **Connection**, under **Single unit pages**, you can let the plugin inject booking UI on **singular `bec_unit`** views—without placing shortcodes in the editor:
-
-| Checkbox | Effect |
-|----------|--------|
-| **Insert the availability search form above the main post content** | Prepends the same UI as **`[bec_search]`** above the unit body. Turn off if you add `[bec_search]` (or a booking summary) manually in templates or the block editor. |
-| **Append the booking quote and Continue button after the main post content when the URL has dates** | After content, when search context from the URL is **complete** (check-in, check-out, guests), appends quote + checkout CTA (same idea as **`[bec_booking_summary]`** / quote blocks). Turn off if you place `[bec_booking_summary]`, `[bec_quote]`, or `[bec_checkout]` yourself. |
-
-These options interact with **[Search context](../05-bookings-and-checkout/01-search-context-and-urls.md)** and **[Checkout flow](../05-bookings-and-checkout/03-checkout-flow.md)**.
+Guest field mode, child ages, and automatic search/booking blocks on unit pages moved to **Booking Engine → Frontend**. See **[Frontend settings](./06-frontend-settings.md)**.
 
 ---
 
@@ -97,4 +66,4 @@ These options interact with **[Search context](../05-bookings-and-checkout/01-se
 
 - **[Run your first sync](./03-run-your-first-sync.md)**
 - **[Kross Booking (detailed)](../03-providers/02-kross-booking.md)**
-- **[Search context](../05-bookings-and-checkout/01-search-context-and-urls.md)**
+- **[Admin screens overview](./05-admin-screens.md)**

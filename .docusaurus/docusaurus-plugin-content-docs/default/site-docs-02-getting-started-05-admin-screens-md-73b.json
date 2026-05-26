@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/admin-screens",
+  "title": "Admin screens overview",
+  "description": "Map of Booking Engine admin menu — Dashboard, Connection, Frontend, Sync & Import, Units, Listing Filters, Design, Checkout & Fallback, Tools & Logs.",
+  "source": "@site/docs/02-getting-started/05-admin-screens.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/admin-screens",
+  "permalink": "/docs/getting-started/admin-screens",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Admin screens overview",
+    "sidebar_label": "Admin screens",
+    "description": "Map of Booking Engine admin menu — Dashboard, Connection, Frontend, Sync & Import, Units, Listing Filters, Design, Checkout & Fallback, Tools & Logs."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Add search & booking to pages",
+    "permalink": "/docs/getting-started/add-search-and-booking-to-pages"
+  },
+  "next": {
+    "title": "Frontend settings",
+    "permalink": "/docs/getting-started/frontend-settings"
+  }
+}

@@ -19,6 +19,8 @@ Shortcodes are WordPress shortcuts you place in pages, patterns, or templates. B
 | `[bec_unit_info]` | Provider-specific HTML blocks (e.g. amenities grid). |
 | `[bec_unit_field]` | Single scalar from synced provider payload (dot path, e.g. CIN). |
 | `[bec_unit_gallery]` | JSON gallery from canonical attachment IDs (for custom JS). |
+| `[bec_unit_filters]` | Unit listing filters (order, rooms, bathrooms, amenities) via GET. |
+| `[bec_available_units_count]` | Count of units matching filters and availability. |
 | `[bec_fallback]` | Admin-configured fallback link or rich content. |
 | `[bec_version]` | Prints plugin version (support/debug). |
 
@@ -30,7 +32,7 @@ Shortcodes are WordPress shortcuts you place in pages, patterns, or templates. B
 flowchart LR
   Search["bec_search submits form"]
   URL["URL carries bec_* params"]
-  Others["dates quote checkout summary unit_url"]
+  Others["dates quote checkout summary unit_url filters count"]
   Search --> URL --> Others
 ```
 
@@ -55,14 +57,16 @@ If `unit_id` points at something that is **not** a unit, output is typically emp
 
 | Feature | When to use |
 |---------|-------------|
-| **Loop Grid — Query ID `bec_available_only`** | Hide archive cards with no availability when the URL has complete search params. See **[Elementor — hide units with no availability](./11-elementor-loop-grid-availability-filter.md)**. |
+| **Loop Grid — Query ID `bec_available_only`** or **`bec_filtered_units`** | Hide archive cards with no availability when the URL has complete search params; applies unit filters. See **[Elementor — hide units with no availability](./11-elementor-loop-grid-availability-filter.md)**. |
 | **Dynamic tag — Unit gallery** | Fill Gallery / Media Carousel widgets from **`bec_core_gallery`**. See **[Elementor — Unit gallery](./14-elementor-unit-gallery.md)**. |
+
+Pair **`[bec_unit_filters]`** and **`[bec_available_units_count]`** above Loop Grid listings on search results pages.
 
 ---
 
 ## Screenshots per shortcode
 
-Each dedicated page below lists **CSS hooks** you can style safely with **Booking Engine → Styling → Extra CSS** or your theme stylesheet.
+Each dedicated page below lists **CSS hooks** you can style safely with **Booking Engine → Design → Extra CSS** or your theme stylesheet.
 
 {/* SCREENSHOT: Collage or grid of multiple shortcodes on sample pages */}
 ![Shortcodes overview collage](/img/bec-screenshot-placeholder.svg)
@@ -74,5 +78,6 @@ Each dedicated page below lists **CSS hooks** you can style safely with **Bookin
 
 - **[bec_search](./02-bec-search.md)**
 - **[bec_booking_summary](./06-bec-booking-summary.md)** — longest guide
+- **[bec_unit_filters](./15-bec-unit-filters.md)** · **[bec_available_units_count](./16-bec-available-units-count.md)**
 - **[bec_unit_field](./12-bec-unit-field.md)** · **[bec_unit_gallery](./13-bec-unit-gallery.md)**
 - **[Elementor Loop Grid availability filter](./11-elementor-loop-grid-availability-filter.md)** · **[Elementor Unit gallery](./14-elementor-unit-gallery.md)**

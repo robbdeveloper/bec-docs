@@ -1,7 +1,7 @@
 {
   "id": "troubleshooting/using-the-api-log",
-  "title": "Usare l’API Log",
-  "description": "Admin Booking Engine API Log, filtri provider, colonne stato HTTP, correlazione, durata, supporto, filtro logging auth.",
+  "title": "Usare Tools & Logs",
+  "description": "Admin Booking Engine Tools & Logs, filtri provider, colonne stato HTTP, correlazione, durata, supporto, filtro logging auth.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/08-troubleshooting/02-using-the-api-log.md",
   "sourceDirName": "08-troubleshooting",
   "slug": "/troubleshooting/using-the-api-log",
@@ -12,9 +12,9 @@
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
-    "title": "Usare l’API Log",
-    "sidebar_label": "API Log",
-    "description": "Admin Booking Engine API Log, filtri provider, colonne stato HTTP, correlazione, durata, supporto, filtro logging auth."
+    "title": "Usare Tools & Logs",
+    "sidebar_label": "Tools & Logs",
+    "description": "Admin Booking Engine Tools & Logs, filtri provider, colonne stato HTTP, correlazione, durata, supporto, filtro logging auth."
   },
   "sidebar": "docsSidebar",
   "previous": {

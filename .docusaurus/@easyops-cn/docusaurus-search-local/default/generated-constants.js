@@ -4,6 +4,6 @@ require("/Users/robertoenasoaie/Documents/projects/bec-docs/node_modules/lunr-la
 require("/Users/robertoenasoaie/Documents/projects/bec-docs/node_modules/lunr-languages/lunr.multi.js")(lunr);
 export const removeDefaultStopWordFilter = [];
 export const language = ["en","it"];
-export const searchIndexUrl = "search-index{dir}.json?_=9d4d0fef";
+export const searchIndexUrl = "search-index{dir}.json?_=f16eb4cb";
 export const searchResultLimits = 8;
 export const fuzzyMatchingDistance = 1;

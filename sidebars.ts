@@ -24,6 +24,8 @@ const sidebars: SidebarsConfig = {
         'getting-started/connect-your-provider',
         'getting-started/run-your-first-sync',
         'getting-started/add-search-and-booking-to-pages',
+        'getting-started/admin-screens',
+        'getting-started/frontend-settings',
       ],
     },
     {
@@ -41,6 +43,7 @@ const sidebars: SidebarsConfig = {
         'units/gallery-images',
         'units/permalinks-and-archive',
         'units/unit-categories',
+        'units/listing-filters-admin',
       ],
     },
     {
@@ -69,13 +72,15 @@ const sidebars: SidebarsConfig = {
         'shortcodes/bec-version',
         'shortcodes/bec-unit-field',
         'shortcodes/bec-unit-gallery',
+        'shortcodes/bec-unit-filters',
+        'shortcodes/bec-available-units-count',
         'shortcodes/elementor-loop-grid-availability-filter',
         'shortcodes/elementor-unit-gallery',
       ],
     },
     {
       type: 'category',
-      label: 'Styling',
+      label: 'Design',
       items: [
         'styling/styling-overview',
         'styling/search-form-presets',

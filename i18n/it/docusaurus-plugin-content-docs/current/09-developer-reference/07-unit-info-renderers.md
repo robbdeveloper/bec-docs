@@ -138,6 +138,7 @@ Kross registra la chiave built-in **`amenities_grid`**: una griglia semplice **i
 |--------------|-------------|-------------|
 | `font_pack` | `font-1` | Slug di una voce registrata via `bec_amenities_font_packs` (il CSS icone è atteso in `assets/fonts/amenities/{slug}/style.css`). |
 | `columns` | `2` | Numero colonne griglia, **1–6** (applica la custom property CSS `--bec-amenities-cols` sulla radice). |
+| `columns_mobile` | `1` | Colonne griglia sotto **640px**, **1–6** (applica `--bec-amenities-cols-mobile`). |
 | `limit` | all | Massimo elementi dopo **ordinamento naturale per etichetta**; `0` = nessun limite. |
 | `category` | *(aperto)* | Se impostato, solo elementi la cui `category` normalizzata corrisponde (es. `amenity`). `mandatory_service` non è mostrato in questa griglia. |
 
@@ -181,7 +182,7 @@ Kross registra **`bedroom_arrangements`**: una griglia di intestazioni per camer
 | `font_pack` | `font-1` | Slug voce `bec_amenities_font_packs` (CSS in `assets/fonts/amenities/{slug}/style.css`). |
 | `columns` | `3` | Colonne griglia **1–6** (custom property `--bec-bedrooms-cols` sulla radice). |
 | `title` | *(vuoto)* | Se non vuoto, sostituisce il titolo sezione traducibile predefinito (“Sleeping arrangements”). Per siti multilingua, preferisci lasciare vuoto così WordPress traduce la stringa default, o usa filtro tema/mu-plugin su `bec_unit_info_output` / contenuto per locale. |
-| `show_title` | `1` | Imposta `0`, `no` o `false` per nascondere il titolo sezione. |
+| `show_title` | *(nascosto)* | Imposta `1`, `yes` o `true` per mostrare il titolo sezione; nascosto di default. |
 
 **Fonte dati**
 

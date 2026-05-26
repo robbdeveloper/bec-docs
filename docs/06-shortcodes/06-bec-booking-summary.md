@@ -26,6 +26,8 @@ Singular unit templates—typically right column / sticky sidebar pattern builde
 | **`tax_note`** | *(empty)* | Small disclaimer below totals—falls back to defaults/filter when blank. |
 | **`show_enquiry`** | `1` | Set `0`, `false`, or `no` to hide secondary enquiry link. |
 | **`enquiry_label`** | translated “Enquiry” | Anchor text for secondary action (fallback settings supply URL/text fallbacks). |
+| **`daterange_format`** | *(empty)* | PHP `date_i18n()` format for embedded search calendar footer. Overrides **`daterange_preset`** when set. |
+| **`daterange_preset`** | `medium` | Footer preset when **`daterange_format`** is empty: `iso`, `short`, `medium`, `long`, or `full`. |
 
 ---
 
@@ -39,7 +41,7 @@ Singular unit templates—typically right column / sticky sidebar pattern builde
 | **Quote API error** | Error-oriented messaging—may pair with **[fallback](../05-bookings-and-checkout/04-fallback-mode.md)** depending on configuration. |
 | **Fallback triggered** | Inline fallback aside alongside enquiry/search according to rules. |
 
-Mobile layouts duplicate critical controls (`bec-booking-summary__mobile`, drawer/backdrop IDs derived from `form_id`).
+Mobile layouts duplicate critical controls (`bec-booking-summary__mobile`, drawer/backdrop IDs derived from `form_id`). The drawer body scroll region uses **`bec-booking-summary__drawer-body`**.
 
 {/* SCREENSHOT: Desktop booking summary available state */}
 ![Booking summary desktop available](/img/bec-screenshot-placeholder.svg)
@@ -78,7 +80,7 @@ Mobile layouts duplicate critical controls (`bec-booking-summary__mobile`, drawe
 ```
 
 ```
-[bec_booking_summary tax_note="VAT included." enquiry_label="Ask us"]
+[bec_booking_summary tax_note="VAT included." enquiry_label="Ask us" daterange_preset="long"]
 ```
 
 ---
@@ -101,12 +103,12 @@ Regions:
 - Accordions (respect styling toggles): `bec-booking-summary__accordions`, `__accordion`
 - Breakdown: `bec-booking-summary__breakdown`, `__row`, `__tax-note`
 - Actions: `bec-booking-summary__actions`, `__action--primary`, `__action--secondary`
-- Mobile: `bec-booking-summary__mobile`, `__bar`, `__backdrop`, `__drawer`, `__hero`
+- Mobile: `bec-booking-summary__mobile`, `__bar`, `__backdrop`, `__drawer`, `__drawer-body`, `__hero`
 - Messages: `bec-booking-summary__message`, `--error`, `--empty`
 
 ---
 
 ## Tips
 
-- Accordions for **inclusions** / **conditions** obey **[Styling](../07-styling/01-styling-overview.md)** admin toggles.
+- Accordions for **inclusions** / **conditions** obey **[Design](../07-styling/01-styling-overview.md)** admin toggles.
 - Rate switching writes **`bec_rate_id`** into the URL for downstream checkout.

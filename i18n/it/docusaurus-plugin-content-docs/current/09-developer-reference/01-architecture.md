@@ -24,9 +24,9 @@ Il plugin:
 
 ## Elementor Pro (Loop Grid)
 
-`BookingEngineConnector\Elementor\AvailabilityQueryFilter` registra l’azione Elementor `elementor/query/{query_id}` (query id predefinita **`bec_available_only`**, sovrascrivibile con **`bec_elementor_availability_query_id`**). Restringe il Loop Grid usando **`QuoteService::getQuote()`** e il **`SearchContext`** corrente.
+`BookingEngineConnector\Elementor\AvailabilityQueryFilter` registra l’azione Elementor `elementor/query/{query_id}` per ogni id restituito da **`bec_elementor_unit_filter_query_ids`** (default **`bec_available_only`** e alias **`bec_filtered_units`**). L’id query principale è sovrascrivibile con **`bec_elementor_availability_query_id`**. Restringe il Loop Grid usando **`QuoteService::getQuote()`**, **`SearchContext`** e i parametri GET **`bec_filter_*`** opzionali da **`[bec_unit_filters]`**.
 
-**Filtri sviluppatore:** `bec_elementor_availability_query_id`, `bec_elementor_available_post_ids`, `bec_elementor_availability_max_units`.
+**Filtri sviluppatore:** `bec_elementor_availability_query_id`, `bec_elementor_unit_filter_query_ids`, `bec_elementor_available_post_ids`, `bec_elementor_availability_max_units`.
 
 Guida utente: **[Elementor — nascondere unità senza disponibilità](../06-shortcodes/11-elementor-loop-grid-availability-filter.md)**.
 
@@ -59,7 +59,7 @@ flowchart TB
     STH["SearchTemplateHooks"]
     PA["PublicAssets"]
     PCB["PublicContentBlocks"]
-    AM["AdminMenu + ConnectionPage + StylingPage + FallbackPage"]
+    AM["AdminMenu + Dashboard + ConnectionPage + FrontendPage + SyncAdmin + UnitPermalinkPage + UnitFiltersPage + StylingPage + FallbackPage + ApiLogPage"]
     SC["SyncCron"]
     SA["SyncAdmin"]
     UPT["UnitPostType"]
@@ -123,8 +123,14 @@ flowchart LR
 
   subgraph admin [Admin]
     Menu["AdminMenu"]
+    Dash["Dashboard"]
     Conn["ConnectionPage"]
-    SyncAd["SyncAdmin"]
+    Front["FrontendPage"]
+    SyncAd["SyncAdmin (tab Settings + Tools)"]
+    Units["UnitPermalinkPage"]
+    Filters["UnitFiltersPage"]
+    Design["StylingPage"]
+    FB["FallbackPage"]
     Log["ApiLogPage"]
   end
 
@@ -253,7 +259,8 @@ mindmap
     Fallback
       FallbackService FallbackRenderer FallbackSettings
     Admin
-      AdminMenu ConnectionPage SyncAdmin ApiLogPage
+      AdminMenu Dashboard ConnectionPage FrontendPage
+      SyncAdmin UnitPermalinkPage UnitFiltersPage StylingPage FallbackPage ApiLogPage
     Api HttpClient HttpResponse
     Logging ApiLogRepository Migrations
     Front PublicAssets PublicContentBlocks
@@ -269,6 +276,7 @@ mindmap
 | Inventario remoto | `ProviderInterface::fetchRemoteUnits()` |
 | Post/meta persistiti | `SyncService` + campi core canonici + meta mappati opzionali |
 | Contesto prenotazione | `SearchContext` costruito dagli argomenti query `bec_*` |
+| Filtri elenco | `UnitFilterRegistry`, `UnitFilterQueryApplier`, parametri GET `[bec_unit_filters]` |
 | Estensibilità | Filtri/azioni con prefisso `bec_*` |
 
 ---

@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/admin-screens",
+  "title": "Panoramica schermate admin",
+  "description": "Mappa del menu admin Booking Engine — Dashboard, Connection, Frontend, Sync & Import, Units, Listing Filters, Design, Checkout & Fallback, Tools & Logs.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/02-getting-started/05-admin-screens.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/admin-screens",
+  "permalink": "/it/docs/getting-started/admin-screens",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Panoramica schermate admin",
+    "sidebar_label": "Schermate admin",
+    "description": "Mappa del menu admin Booking Engine — Dashboard, Connection, Frontend, Sync & Import, Units, Listing Filters, Design, Checkout & Fallback, Tools & Logs."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Ricerca e prenotazione sulle pagine",
+    "permalink": "/it/docs/getting-started/add-search-and-booking-to-pages"
+  },
+  "next": {
+    "title": "Impostazioni Frontend",
+    "permalink": "/it/docs/getting-started/frontend-settings"
+  }
+}

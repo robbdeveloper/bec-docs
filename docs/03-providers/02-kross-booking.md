@@ -33,7 +33,7 @@ Use **Verify connection** after saving (or even before saving, depending on form
 
 Sync behaviour can optionally **limit which Kross room types** are imported during a **full** sync:
 
-1. Go to **Booking Engine → Sync**.
+1. Go to **Booking Engine → Sync & Import**.
 2. Under **Kross booking engines**, click **Refresh booking engines list from Kross** to load `be_enabled` slugs from **`/v5/rooms/get-room-types`** into the checklist.
 3. **Leave all boxes unchecked** to sync the full inventory (recommended unless you need a subset).
 4. Tick specific slugs to include only room types whose normalised payload’s **`be_enabled`** list matches **any** selected slug.

@@ -1,6 +1,6 @@
 {
   "id": "shortcodes/bec-unit-info",
-  "title": "Shortcode `[bec_unit_info]`",
+  "title": "Shortcode '[bec_unit_info]'",
   "description": "HTML unità specifico del provider da payload sync — chiavi amenities_grid bedroom_arrangements unit_id, estensione sviluppatori bec_unit_info_renderers.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/08-bec-unit-info.md",
   "sourceDirName": "06-shortcodes",
@@ -12,7 +12,7 @@
   "version": "current",
   "sidebarPosition": 8,
   "frontMatter": {
-    "title": "Shortcode `[bec_unit_info]`",
+    "title": "Shortcode '[bec_unit_info]'",
     "sidebar_label": "bec_unit_info",
     "description": "HTML unità specifico del provider da payload sync — chiavi amenities_grid bedroom_arrangements unit_id, estensione sviluppatori bec_unit_info_renderers."
   },

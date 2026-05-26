@@ -1,7 +1,7 @@
 {
   "id": "styling/styling-overview",
-  "title": "Panoramica stile",
-  "description": "Pagina admin Booking Engine Styling, variabili tema, preset ricerca e riepilogo prenotazione, accordion, Extra CSS.",
+  "title": "Panoramica Design",
+  "description": "Pagina admin Booking Engine Design, variabili tema, preset ricerca e riepilogo prenotazione, accordion, Extra CSS, unit filters.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/07-styling/01-styling-overview.md",
   "sourceDirName": "07-styling",
   "slug": "/styling/styling-overview",
@@ -12,9 +12,9 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
-    "title": "Panoramica stile",
-    "sidebar_label": "Panoramica stile",
-    "description": "Pagina admin Booking Engine Styling, variabili tema, preset ricerca e riepilogo prenotazione, accordion, Extra CSS."
+    "title": "Panoramica Design",
+    "sidebar_label": "Panoramica Design",
+    "description": "Pagina admin Booking Engine Design, variabili tema, preset ricerca e riepilogo prenotazione, accordion, Extra CSS, unit filters."
   },
   "sidebar": "docsSidebar",
   "previous": {

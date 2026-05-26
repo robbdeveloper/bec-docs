@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/frontend-settings",
+  "title": "Impostazioni Frontend",
+  "description": "Schermata Booking Engine Frontend — modalità input ospiti, età bambini, inserimento automatico ricerca, blocchi prenotazione sulle pagine singola unità.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/02-getting-started/06-frontend-settings.md",
+  "sourceDirName": "02-getting-started",
+  "slug": "/getting-started/frontend-settings",
+  "permalink": "/it/docs/getting-started/frontend-settings",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Impostazioni Frontend",
+    "sidebar_label": "Impostazioni Frontend",
+    "description": "Schermata Booking Engine Frontend — modalità input ospiti, età bambini, inserimento automatico ricerca, blocchi prenotazione sulle pagine singola unità."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Schermate admin",
+    "permalink": "/it/docs/getting-started/admin-screens"
+  },
+  "next": {
+    "title": "Panoramica provider",
+    "permalink": "/it/docs/providers/providers-overview"
+  }
+}

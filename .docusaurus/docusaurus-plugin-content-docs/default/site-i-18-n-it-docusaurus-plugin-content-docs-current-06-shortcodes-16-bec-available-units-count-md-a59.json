@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-available-units-count",
+  "title": "Shortcode '[bec_available_units_count]'",
+  "description": "Conteggio unità che corrispondono a filtri e disponibilità per il contesto ricerca URL corrente; format, zero_text, etichette singolare/plurale.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/16-bec-available-units-count.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-available-units-count",
+  "permalink": "/it/docs/shortcodes/bec-available-units-count",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "title": "Shortcode '[bec_available_units_count]'",
+    "sidebar_label": "bec_available_units_count",
+    "description": "Conteggio unità che corrispondono a filtri e disponibilità per il contesto ricerca URL corrente; format, zero_text, etichette singolare/plurale."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_unit_filters",
+    "permalink": "/it/docs/shortcodes/bec-unit-filters"
+  },
+  "next": {
+    "title": "Filtro Elementor Loop Grid",
+    "permalink": "/it/docs/shortcodes/elementor-loop-grid-availability-filter"
+  }
+}

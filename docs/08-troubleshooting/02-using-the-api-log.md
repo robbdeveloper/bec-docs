@@ -1,15 +1,15 @@
 ---
-title: Using the API log
-sidebar_label: Using the API log
-description: Booking Engine API Log admin provider filter HTTP status columns correlation duration support troubleshooting auth logging filter.
+title: Using Tools & Logs
+sidebar_label: Tools & Logs
+description: Booking Engine Tools & Logs admin provider filter HTTP status columns correlation duration support troubleshooting auth logging filter.
 ---
 
-# Using the API log
+# Using Tools & Logs
 
-Navigate to **Booking Engine → API Log** to inspect recent HTTP conversations between WordPress and booking providers.
+Navigate to **Booking Engine → Tools & Logs** to inspect recent HTTP conversations between WordPress and booking providers.
 
-{/* SCREENSHOT: API Log table with filters */}
-![API Log admin screen](/img/bec-screenshot-placeholder.svg)
+{/* SCREENSHOT: Tools & Logs table with filters */}
+![Tools & Logs admin screen](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/08-troubleshooting/api-log-page.png`): api-log-page.png */}
 
 ---
@@ -71,3 +71,4 @@ Sensitive auth/token exchanges may be omitted unless developers explicitly enabl
 ## Related pages
 
 - **[Common issues](./01-common-issues.md)**
+- **[Admin screens overview](../02-getting-started/05-admin-screens.md)**

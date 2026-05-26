@@ -1,18 +1,18 @@
 ---
-title: Immagini gallery
-sidebar_label: Immagini gallery
+title: Immagini galleria
+sidebar_label: Immagini galleria
 description: Come le immagini remote importano nella Libreria media, prefisso e suffisso nome file, strumenti rinomina, regole immagine in evidenza.
 ---
 
-# Immagini gallery
+# Immagini galleria
 
-Durante la sync il plugin può **scaricare** la gallery di ogni unità dal provider nella **Libreria media WordPress**, poi memorizzare gli ID allegato sull’unità.
+Durante la sync il plugin può **scaricare** la galleria di ogni unità dal provider nella **Libreria media WordPress**, poi memorizzare gli ID allegato sull’unità.
 
 ---
 
 ## Modello nome file
 
-In **Booking Engine → Sync**:
+In **Booking Engine → Sync & Import**:
 
 - **Filename prefix** — Testo opzionale **prima** dello slug nome unità.
 - **Filename suffix (before index)** — Testo opzionale **tra** slug e indice numerico.
@@ -24,14 +24,8 @@ Modello:
 Esempio (illustrativo): `villa-rosa-main-01.jpg`
 
 {/* SCREENSHOT: Sync page gallery filename fields highlighted */}
-![Impostazioni nome file gallery](/img/bec-screenshot-placeholder.svg)
+![Impostazioni nome file galleria](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/04-units/sync-gallery-filename-fields.png`): sync-gallery-filename-fields.png */}
-
----
-
-## Immagine in evidenza
-
-Quando il provider segna un’immagine **main**, diventa l’**immagine in evidenza** WordPress. Altrimenti il plugin usa di solito la **prima immagine** nell’ordine gallery.
 
 ---
 
@@ -48,11 +42,17 @@ In front-end puoi esporre la stessa gallery con **`[bec_unit_gallery]`** (JSON) 
 
 ---
 
+## Immagine in evidenza
+
+Quando il provider segna un’immagine **main**, diventa l’**immagine in evidenza** WordPress. Altrimenti il plugin usa di solito la **prima immagine** nell’ordine gallery.
+
+---
+
 ## Rinominare file esistenti
 
 Pulsanti utili quando cambi prefisso/suffisso **dopo** l’import:
 
-- **Booking Engine → Sync → Rename all unit gallery files**
+- **Booking Engine → Sync & Import → Tools → Rename all unit gallery files**
 - **Units → Azione riga → Rename gallery files** (una unità)
 
 Immagini condivise tra più unità possono essere **copiate** così le altre unità continuano a funzionare — su siti grandi esegui in periodi di poco traffico.

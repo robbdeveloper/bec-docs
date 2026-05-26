@@ -16,7 +16,12 @@ Open **Units** and click any title. Besides the usual WordPress **title**, **con
 
 ## Unit — core fields (canonical)
 
-This box lists **canonical** facts shared across providers—name, address, coordinates, occupancy limits, check-in/out windows, rooms, bathrooms, description excerpt, size, **CIN** (Italian national identification code when provided by the provider), amenities JSON, gallery attachment IDs, etc.
+This box lists **canonical** facts shared across providers—name, address, **city**, coordinates, occupancy limits, check-in/out windows, rooms, bathrooms, description excerpt, size, **CIN** (Italian national identification code when provided by the provider), amenities JSON, gallery attachment IDs, etc.
+
+| Field | Meta key | Editable | Notes |
+|-------|----------|----------|-------|
+| **City** | `bec_core_city` | Yes | Synced from Kross `city`; also part of **`bec_core_address_full`**. |
+| **Lat / Lng (combined)** | `bec_core_lat_lng` | Read-only | Derived `lat,lng` pair from **`bec_core_lat`** and **`bec_core_lng`**; updated on sync and when coordinates change. |
 
 - **You can edit** these fields directly—useful for minor tweaks or translations **if** your workflow allows it.
 - **The next sync may overwrite** them unless your developer disables core writes via filters documented for engineers.

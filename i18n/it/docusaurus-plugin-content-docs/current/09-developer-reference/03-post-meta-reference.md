@@ -39,9 +39,13 @@ Il post meta è registrato con `register_post_meta` (visibile REST dove indicato
 | `bec_sync_gallery_image_prefix` | Prefisso ai nomi file gallery generati automaticamente (default vuoto). |
 | `bec_sync_gallery_image_suffix` | Tra slug nome unità e indice `-NN` (default vuoto). |
 | `bec_unit_permalink_slug` | Segmento percorso per singole unità (sanificato); vuoto ⇒ slug interno predefinito `bec_unit`. |
+| `bec_unit_url_structure` | Schema URL singola unità: `base`, `base_category`, o `category_only`. |
 | `bec_unit_has_archive` | Se il CPT unità espone archivio pubblico sulla stessa base. |
 | `bec_unit_category_enabled` | Se la tassonomia **`bec_unit_category`** ha UI admin e rewrite pubblici attivi. |
 | `bec_unit_category_permalink_slug` | Base URL termini categoria (vuoto ⇒ default `unit-category`). |
+| `bec_unit_category_url_structure` | Schema URL archivio categoria: `category_base`, `unit_base`, o `bare`. |
+| `bec_unit_filters_amenity_options` | Mappa JSON chiavi servizio → `{ enabled, order, label? }` curata in **Listing Filters**. |
+| `bec_styling_filters_extra_css` | CSS extra per **`[bec_unit_filters]`** (admin Design). |
 | `bec_kross_sync_booking_engines` | Slug `be_enabled` selezionati per filtrare la **sync completa** (lista vuota ⇒ includi tutto). |
 | `bec_kross_available_booking_engines` | Unione cache degli slug visti dai tipi camera Kross (checklist admin). |
 | `bec_sync_interval_hours` | Intervallo WP-Cron (ore). |

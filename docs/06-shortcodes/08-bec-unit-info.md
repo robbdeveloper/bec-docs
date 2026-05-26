@@ -38,14 +38,15 @@ Unit body templates beneath descriptions, tabs, or accordions managed by your th
 | Pass-through | Default | Meaning |
 |--------------|---------|---------|
 | **`font_pack`** | `font-1` | Icon font bundle slug registered via amenities asset filters. |
-| **`columns`** | `2` | Grid columns **1–6**. |
+| **`columns`** | `2` | Grid columns **1–6** (desktop, ≥640px). |
+| **`columns_mobile`** | `1` | Grid columns **1–6** below 640px. Sets CSS variable **`--bec-amenities-cols-mobile`**. |
 | **`limit`** | `0` (all) | Maximum icons after sorting labels—`0` keeps entire list. |
 | **`category`** | *(unset)* | Filter amenities by stored category slug (e.g. `amenity`). |
 
 Example:
 
 ```
-[bec_unit_info key="amenities_grid" columns="3" limit="12" category="amenity"]
+[bec_unit_info key="amenities_grid" columns="3" columns_mobile="2" limit="12" category="amenity"]
 ```
 
 {/* SCREENSHOT: amenities_grid front-end */}
@@ -65,12 +66,12 @@ Example:
 | **`font_pack`** | `font-1` | Same icon packs as amenities. |
 | **`columns`** | `3` | Bedroom grid columns **1–6**. |
 | **`title`** | *(empty)* | Override section heading—leave blank to rely on translations. |
-| **`show_title`** | `1` | Set `0` / `no` / `false` to hide heading. |
+| **`show_title`** | hidden | Section title is **hidden** by default. Set **`show_title="1"`** to display it. |
 
 Example:
 
 ```
-[bec_unit_info key="bedroom_arrangements" show_title="0"]
+[bec_unit_info key="bedroom_arrangements" show_title="1" title="Sleeping arrangements"]
 ```
 
 {/* SCREENSHOT: bedroom_arrangements front-end */}

@@ -21,8 +21,8 @@ Page headers, sticky summaries, confirmation banners—anywhere you already carr
 | Attribute | Default | Meaning |
 |-----------|---------|---------|
 | **`date_format`** | *(empty)* | PHP `date_i18n()` format string. When set, overrides **`preset`**. |
-| **`preset`** | `iso` | Built-in format: `iso`, `short`, `medium`, `long`, or `full` (locale-aware month/day names). |
-| **`label_style`** | `arrow` | Range template: `arrow` (`%1$s → %2$s`), `from_to`, or `from_to_lower`. Ignored when **`label`** is set. |
+| **`preset`** | `long` | Built-in format: `iso`, `short`, `medium`, `long`, or `full` (locale-aware month/day names). |
+| **`label_style`** | `from_to` | Range template: `arrow` (`%1$s → %2$s`), `from_to`, or `from_to_lower`. Ignored when **`label`** is set. |
 | **`label`** | *(empty)* | Custom `sprintf` pattern with **`%1$s`** = check-in, **`%2$s`** = check-out (overrides **`label_style`**). |
 
 Site-wide defaults can be set with the **`bec_date_format_defaults`** filter (context `bec_dates`).
@@ -35,16 +35,16 @@ Other filters: **`bec_shortcode_dates_text`**, **`bec_shortcode_dates_html`**, *
 
 ## Examples
 
-Default (ISO dates with arrow):
+Default (long format with “from … to …” wording):
 
 ```
 [bec_dates]
 ```
 
-Long format with “from … to …” wording:
+ISO dates with arrow separator:
 
 ```
-[bec_dates preset="long" label_style="from_to"]
+[bec_dates preset="iso" label_style="arrow"]
 ```
 
 Custom PHP date format:
@@ -61,13 +61,13 @@ When **[search context](../05-bookings-and-checkout/01-search-context-and-urls.m
 
 Otherwise visitors typically see a paragraph like:
 
-> Mon Jun 1 → Mon Jun 8
+> Monday, 1 June 2026 to Monday, 8 June 2026
 
-(with **`preset="iso"`**)
+(with defaults **`preset="long"`** and **`label_style="from_to"`**)
 
-or, with **`preset="long"`**:
+or, with **`preset="iso"`** and **`label_style="arrow"`**:
 
-> Monday, 1 June 2026 → Monday, 8 June 2026
+> 2026-06-01 → 2026-06-08
 
 (Locale formatting follows WordPress settings and the chosen **`preset`** / **`date_format`**.)
 

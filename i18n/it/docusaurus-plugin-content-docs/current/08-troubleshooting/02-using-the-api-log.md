@@ -1,15 +1,15 @@
 ---
-title: Usare l’API Log
-sidebar_label: API Log
-description: Admin Booking Engine API Log, filtri provider, colonne stato HTTP, correlazione, durata, supporto, filtro logging auth.
+title: Usare Tools & Logs
+sidebar_label: Tools & Logs
+description: Admin Booking Engine Tools & Logs, filtri provider, colonne stato HTTP, correlazione, durata, supporto, filtro logging auth.
 ---
 
-# Usare l’API Log
+# Usare Tools & Logs
 
-Vai in **Booking Engine → API Log** per ispezionare conversazioni HTTP recenti tra WordPress e i provider di prenotazione.
+Vai in **Booking Engine → Tools & Logs** per ispezionare conversazioni HTTP recenti tra WordPress e i provider di prenotazione.
 
-{/* SCREENSHOT: API Log table with filters */}
-![Schermata admin API Log](/img/bec-screenshot-placeholder.svg)
+{/* SCREENSHOT: Tools & Logs table with filters */}
+![Schermata admin Tools & Logs](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/08-troubleshooting/api-log-page.png`): api-log-page.png */}
 
 ---
@@ -21,7 +21,7 @@ Vai in **Booking Engine → API Log** per ispezionare conversazioni HTTP recenti
 | **Provider** | Restringi le righe a uno slug di integrazione (es. `kross`). |
 | **HTTP status** | Concentrati su errori (`401`, `429`, `500`, …) vs successi (`200`). |
 
-I filtri si applicano tramite menu in cima alla schermata (usano parametri URL internamente).
+I filtri si applicano tramite menu a tendina in cima alla schermata (usano parametri URL internamente).
 
 ---
 
@@ -43,11 +43,9 @@ Le righe sono nella tabella custom **`{prefix}bec_api_log`** (creata all’aggio
 | `unit_id` | ID post `bec_unit` correlato se il logger ha legato la chiamata a un’unità (nullable). |
 | `correlation_id` | Valore header **`X-BEC-Correlation-Id`** per retry correlati. |
 
-La UI admin riflette il sottoinsieme più utile di queste colonne.
-
 ---
 
-## Colonne dell’interfaccia admin
+## Colonne spiegate
 
 | Colonna | Scopo |
 |---------|--------|
@@ -60,7 +58,7 @@ La UI admin riflette il sottoinsieme più utile di queste colonne.
 | **Correlation** | Trace id che lega retry correlati — condividilo col supporto vendor. |
 | **Message** | Breve riassunto leggibile / estratto errore. |
 
-Si mostrano fino alle **200** righe più recenti — pianifica export/screenshot in anticipo se ruoti spesso i log.
+Si mostrano fino alle **200** righe più recenti — pianifica export/screenshot in anticipo se ruoti spesso i log. La UI admin riflette il sottoinsieme più utile delle colonne database descritte sopra.
 
 ---
 
@@ -73,3 +71,4 @@ Scambi sensibili auth/token possono essere omessi salvo che gli sviluppatori abi
 ## Pagine correlate
 
 - **[Problemi comuni](./01-common-issues.md)**
+- **[Panoramica schermate admin](../02-getting-started/05-admin-screens.md)**

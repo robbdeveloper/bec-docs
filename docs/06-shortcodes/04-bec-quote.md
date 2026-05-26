@@ -1,7 +1,7 @@
 ---
 title: '[bec_quote] shortcode'
 sidebar_label: bec_quote
-description: Compact quote shortcode unit_id show_rates currency formatting decimals number_style CSS hooks bec-shortcode-quote archive cards.
+description: Compact quote shortcode unit_id show_rates price_mode currency formatting decimals number_style CSS hooks bec-shortcode-quote archive cards.
 ---
 
 # `[bec_quote]`
@@ -21,15 +21,18 @@ Unit archive loops, Related Units grids, hero strips—anywhere `[bec_booking_su
 | Attribute | Default | Meaning |
 |-----------|---------|---------|
 | **`unit_id`** | `0` | Target Units post ID; `0` uses current loop post. |
-| **`show_rates`** | `auto` | Optional multi-rate list below the headline price. Truthy: `1`, `always`, `yes`, `true`. Falsy: `0`, `never`, `no`, `false`. **`auto`** lists rates only when more than one exists. |
-| **`currency_display`** | `code` | `code` (e.g. `EUR`) or `symbol` (e.g. `€`). |
+| **`show_rates`** | `never` | Optional multi-rate list below the headline price. Truthy: `1`, `always`, `yes`, `true`. **`auto`** lists rates only when more than one exists. Falsy: `0`, `never`, `no`, `false`. |
+| **`price_mode`** | `total` | `total` (stay total) or `per_night` (nightly amount). Adds class `bec-shortcode-quote--per-night`. |
+| **`currency_display`** | `symbol` | `code` (e.g. `EUR`) or `symbol` (e.g. `€`). |
 | **`currency_position`** | `after` | `before` or `after` the amount. |
 | **`decimals`** | `2` | Decimal places (`0`–`4`). |
 | **`decimal_sep`** | *(locale)* | Decimal separator. Only applies when **both** **`decimal_sep`** and **`thousands_sep`** are set. |
 | **`thousands_sep`** | *(locale)* | Thousands separator. Pair with **`decimal_sep`** for explicit grouping. |
-| **`number_style`** | `locale` | `locale`, `eu` (e.g. `1.234,56`), or `us` (e.g. `1,234.56`). |
+| **`number_style`** | `eu` | `locale`, `eu` (e.g. `1.234,56`), or `us` (e.g. `1,234.56`). |
 
 Site-wide money defaults: filter **`bec_money_format_defaults`** (context `bec_quote`).
+
+When the unit is **not available**, the root element also gets class **`no-results`**.
 
 ---
 
@@ -47,10 +50,10 @@ Site-wide money defaults: filter **`bec_money_format_defaults`** (context `bec_q
 [bec_quote unit_id="456" show_rates="0"]
 ```
 
-European-style symbol before amount:
+Per-night headline with symbol before amount:
 
 ```
-[bec_quote currency_display="symbol" currency_position="before" number_style="eu"]
+[bec_quote price_mode="per_night" currency_display="symbol" currency_position="before" number_style="eu"]
 ```
 
 ---
@@ -69,7 +72,7 @@ When multiple rates exist and none is selected in the URL, the headline may show
 
 ## CSS hooks
 
-- Root: `bec-shortcode-quote`
+- Root: `bec-shortcode-quote`, `bec-shortcode-quote--per-night`, **`no-results`** when unavailable
 - Rate list: `bec-shortcode-quote__rates`, `bec-shortcode-quote__rate`, `bec-shortcode-quote__rate--selected`
 - Labels: `bec-shortcode-quote__rate-name`, `bec-shortcode-quote__rate-price`
 

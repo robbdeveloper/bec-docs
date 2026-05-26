@@ -13,7 +13,7 @@ description: Sync behaviour hooks filters bec_before_unit_sync bec_after_unit_sy
 ## Behaviour
 
 - **Full sync** loads remote units from the active provider (`fetchRemoteUnits`), then creates or updates **Unit** posts keyed by `bec_external_id` + `bec_provider_slug`.
-- **Scheduled sync** uses WP-Cron (`bec_run_scheduled_sync`). Interval is configured under **Booking Engine → Sync** (`bec_sync_interval_hours`, default 6). On low-traffic sites, cron may run only after the next request (standard WP behaviour).
+- **Scheduled sync** uses WP-Cron (`bec_run_scheduled_sync`). Interval is configured under **Booking Engine → Sync & Import** (`bec_sync_interval_hours`, default 6). On low-traffic sites, cron may run only after the next request (standard WP behaviour).
 - **Manual full sync (wp-admin)** uses **AJAX batches** (`wp_ajax_bec_sync_start_all`, `wp_ajax_bec_sync_step_all`) with progress stored per user + run id (**`SyncProgressReporter`** / **`SyncManualBatchState`**).
 - **Lock** — concurrent **full** sync is coordinated with transient **`bec_sync_running_lock`**:
   - TTL **7200 seconds (2 hours)** per `set_transient`, **refreshed** on re-entry while work continues (`SyncLock::refresh()`).
@@ -105,6 +105,50 @@ Kross mapping hooks (payload fragment → descriptor) include:
 | `bec_search_form_action` | Override the `<form action>` URL when `SearchForm::render()` did not receive an explicit **`action`** argument (`$url`, `$context`). Return empty string to keep built-in rules (archive / singular / home). The **`[bec_search]`** shortcode supplies **`action`** from **`redirect_url`** or the archive fallback—this filter applies mainly to PHP-rendered forms. |
 
 Other search UI filters (`bec_search_form_fields`, `bec_search_form_preset`, `bec_search_guest_field_mode`, etc.) remain documented alongside provider integration; see `SearchForm` and **[bec_search shortcode](../06-shortcodes/02-bec-search.md)**.
+
+---
+
+## Filters — date range & money formatting
+
+| Filter | Purpose |
+|--------|---------|
+| `bec_search_form_daterange_format` | PHP `date_i18n()` format for Enhanced calendar footer readout (`$format`, `$context`) |
+| `bec_daterange_moment_format_presets` | Map preset slugs (`iso`, `short`, `medium`, …) to Moment.js format strings |
+| `bec_php_date_format_to_moment` | Convert a custom PHP date format to Moment.js (`$moment`, `$phpFormat`) |
+| `bec_search_form_popover_placement` | Override popover placement (`auto`, `top`, `bottom`) for Enhanced search |
+| `bec_date_format_defaults` | Default format options for **`[bec_dates]`** shortcode |
+| `bec_shortcode_dates_format` / `bec_shortcode_dates_text` / `bec_shortcode_dates_html` | Adjust **`[bec_dates]`** output |
+| `bec_money_format_defaults` | Default currency/number options for **`[bec_quote]`** (`$defaults`, `'bec_quote'`) |
+| `bec_currency_symbols` | Map ISO currency codes to display symbols |
+| `bec_format_money` | Final formatted amount string before output |
+
+---
+
+## Filters — unit listing (`[bec_unit_filters]`)
+
+| Filter | Purpose |
+|--------|---------|
+| `bec_unit_filter_definitions` | Add/replace built-in filter field definitions (`$defs`) |
+| `bec_unit_filters_preserve_query_keys` | Extra GET keys to keep when the filter form submits (`$keys`) |
+| `bec_unit_filter_query_applied` | Action after filters are applied to a `WP_Query` (`$query`, `$request`) |
+| `bec_available_units_count` | Override count returned by **`[bec_available_units_count]`** (`$count`, `$loopQuery`) |
+| `bec_shortcode_available_units_count_html` | Adjust count shortcode HTML (`$html`, `$count`, `$atts`, `$ctx`) |
+| `bec_elementor_unit_filter_query_ids` | Elementor Loop Grid query ids that receive filter + availability logic (`$ids`) |
+
+Native **`bec_unit`** archive main queries are filtered via **`UnitFilterQueryHooks`** when **`bec_filter_*`** params are present.
+
+---
+
+## Filters — unit permalinks & routing
+
+| Filter | Purpose |
+|--------|---------|
+| `bec_unit_url_structure` | Effective single-unit URL structure option (`base`, `base_category`, `category_only`) |
+| `bec_unit_category_url_structure` | Category archive URL structure (`category_base`, `unit_base`, `bare`) |
+| `bec_unit_permalink_primary_term` | Pick primary category term when multiple are assigned (`$term`, `$candidates`, `$postId`) |
+| `bec_unit_permalink_slug_conflicts_with_core` | Treat a slug as conflicting with core WP content (`$conflicts`, `$slug`) |
+
+See user guide **[Permalinks and archive](../04-units/05-permalinks-and-archive.md)**.
 
 ---
 

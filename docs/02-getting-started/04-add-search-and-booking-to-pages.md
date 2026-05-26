@@ -22,7 +22,7 @@ This is a **minimal** layout many sites use: search everywhere you need it, rich
 
 4. **Update** the page.
 
-**Where the search sends visitors:** with plain **`[bec_search]`**, submitting goes to the **units archive** by default (your public units listing), **not** back to the homepage—so the listing can read **`bec_*`** from the URL. If the archive is disabled, WordPress falls back to the **home** URL; enable **Unit archive** under **Booking Engine → Units — permalinks** or add **`redirect_url="/your-page/"`** to the shortcode. Details: **[bec_search](../06-shortcodes/02-bec-search.md)**.
+**Where the search sends visitors:** with plain **`[bec_search]`**, submitting goes to the **units archive** by default (your public units listing), **not** back to the homepage—so the listing can read **`bec_*`** from the URL. If the archive is disabled, WordPress falls back to the **home** URL; enable **Unit archive** under **Booking Engine → Units** or add **`redirect_url="/your-page/"`** to the shortcode. Details: **[bec_search](../06-shortcodes/02-bec-search.md)**.
 
 When a visitor submits the form, the browser loads the destination with dates and guest counts in the **URL**. Other shortcodes on **that** page read the same values.
 
@@ -85,9 +85,9 @@ Or pass a specific post ID: `[bec_unit_url unit_id="123"]`.
 
 ---
 
-## Styling
+## Design
 
-Change the look under **Booking Engine → Styling** or add CSS—see **[Styling overview](../07-styling/01-styling-overview.md)**.
+Change the look under **Booking Engine → Design** or add CSS—see **[Design overview](../07-styling/01-styling-overview.md)**.
 
 ---
 

@@ -1,0 +1,28 @@
+{
+  "id": "units/listing-filters-admin",
+  "title": "Listing Filters admin",
+  "description": "Schermata Booking Engine Listing Filters — indice servizi, abilitazione/ordine/etichette personalizzate per lo shortcode bec_unit_filters.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/04-units/07-listing-filters-admin.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/listing-filters-admin",
+  "permalink": "/it/docs/units/listing-filters-admin",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Listing Filters admin",
+    "sidebar_label": "Listing Filters admin",
+    "description": "Schermata Booking Engine Listing Filters — indice servizi, abilitazione/ordine/etichette personalizzate per lo shortcode bec_unit_filters."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Categorie unità",
+    "permalink": "/it/docs/units/unit-categories"
+  },
+  "next": {
+    "title": "Contesto ricerca e URL",
+    "permalink": "/it/docs/bookings-and-checkout/search-context-and-urls"
+  }
+}

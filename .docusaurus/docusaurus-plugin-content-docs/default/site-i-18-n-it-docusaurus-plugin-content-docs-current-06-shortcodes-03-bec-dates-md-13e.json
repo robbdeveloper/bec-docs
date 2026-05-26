@@ -1,6 +1,6 @@
 {
   "id": "shortcodes/bec-dates",
-  "title": "Shortcode `[bec_dates]`",
+  "title": "Shortcode '[bec_dates]'",
   "description": "Date soggiorno leggibili dall’URL, shortcode bec_dates, date_format preset label_style label, CSS bec-shortcode-dates.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/03-bec-dates.md",
   "sourceDirName": "06-shortcodes",
@@ -12,7 +12,7 @@
   "version": "current",
   "sidebarPosition": 3,
   "frontMatter": {
-    "title": "Shortcode `[bec_dates]`",
+    "title": "Shortcode '[bec_dates]'",
     "sidebar_label": "bec_dates",
     "description": "Date soggiorno leggibili dall’URL, shortcode bec_dates, date_format preset label_style label, CSS bec-shortcode-dates."
   },

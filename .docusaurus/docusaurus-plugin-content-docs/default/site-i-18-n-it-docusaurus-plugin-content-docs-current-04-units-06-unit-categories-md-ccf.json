@@ -1,7 +1,7 @@
 {
   "id": "units/unit-categories",
   "title": "Categorie unità",
-  "description": "Tassonomia opzionale bec_unit_category — attiva nella schermata permalink, slug URL, sync da Kross, archivi pubblici ed etichette multilingua.",
+  "description": "Tassonomia opzionale bec_unit_category — attiva nella schermata Units, slug URL, struttura URL, sync da Kross, archivi pubblici ed etichette multilingua.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/04-units/06-unit-categories.md",
   "sourceDirName": "04-units",
   "slug": "/units/unit-categories",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Categorie unità",
     "sidebar_label": "Categorie unità",
-    "description": "Tassonomia opzionale bec_unit_category — attiva nella schermata permalink, slug URL, sync da Kross, archivi pubblici ed etichette multilingua."
+    "description": "Tassonomia opzionale bec_unit_category — attiva nella schermata Units, slug URL, struttura URL, sync da Kross, archivi pubblici ed etichette multilingua."
   },
   "sidebar": "docsSidebar",
   "previous": {
@@ -22,7 +22,7 @@
     "permalink": "/it/docs/units/permalinks-and-archive"
   },
   "next": {
-    "title": "Contesto ricerca e URL",
-    "permalink": "/it/docs/bookings-and-checkout/search-context-and-urls"
+    "title": "Listing Filters admin",
+    "permalink": "/it/docs/units/listing-filters-admin"
   }
 }

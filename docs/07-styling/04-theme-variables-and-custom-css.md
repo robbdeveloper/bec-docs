@@ -6,7 +6,7 @@ description: Reference list of CSS class hooks for search booking summary checko
 
 # Theme variables & custom CSS
 
-Use **Booking Engine → Styling** textareas—or your theme stylesheet—for cosmetic tweaks.
+Use **Booking Engine → Design** textareas—or your theme stylesheet—for cosmetic tweaks.
 
 ---
 
@@ -55,8 +55,13 @@ Representative regions (non-exhaustive):
 - `.bec-booking-summary__actions`
 - `.bec-booking-summary__mobile`
 - `.bec-booking-summary__drawer`
+- `.bec-booking-summary__drawer-body` — scrollable middle region on mobile drawer (search through quote blocks)
 
 Pair with data attributes such as `data-bec-booking-summary`, `data-bec-bsummary-continue`, `data-bec-rate-id` when writing advanced selectors.
+
+Booking-summary colour tokens (override in **Shared theme variables**):
+
+- `--bec-bsummary-color-text`, `--bec-bsummary-color-primary`, `--bec-bsummary-color-muted`, `--bec-bsummary-color-accent`
 
 {/* SCREENSHOT: Devtools tree for booking summary */}
 ![Inspect booking summary CSS hooks](/img/bec-screenshot-placeholder.svg)
@@ -69,6 +74,22 @@ Pair with data attributes such as `data-bec-booking-summary`, `data-bec-bsummary
 - `.bec-shortcode-checkout`
 - `.bec-checkout-cta`, `.bec-checkout-form`
 - `.bec-shortcode-quote`, `.bec-shortcode-quote__rates`, `.bec-shortcode-quote__rate`
+- `.bec-shortcode-quote.no-results` — added when there is no availability for the selected dates (0.1.41)
+
+---
+
+## Unit filters hooks
+
+- `.bec-unit-filters`, `.bec-unit-filters--inline`, `.bec-unit-filters--stacked`
+- `.bec-unit-filters__*` — triggers, popovers, amenity sheet, reset control
+
+Styles ship in **`assets/public.css`**; tune via **Design → Unit filters — extra CSS** (`bec_styling_filters_extra_css`).
+
+---
+
+## Available units count
+
+- `.bec-available-units-count` — wrapper for **`[bec_available_units_count]`** output
 
 ---
 
@@ -83,6 +104,8 @@ Pair with data attributes such as `data-bec-booking-summary`, `data-bec-bsummary
 Amenities grid:
 
 - `.bec-amenities`, `.bec-amenities__item`, …
+- `--bec-amenities-cols` — desktop columns from **`columns`** attribute
+- `--bec-amenities-cols-mobile` — columns below 640px from **`columns_mobile`** (default `1`)
 
 Bedroom arrangements:
 

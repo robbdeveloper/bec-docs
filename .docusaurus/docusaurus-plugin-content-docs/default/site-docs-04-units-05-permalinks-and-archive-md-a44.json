@@ -1,7 +1,7 @@
 {
   "id": "units/permalinks-and-archive",
   "title": "Permalinks and archive",
-  "description": "Booking Engine Units permalinks — public URL slug segment and optional unit archive listing.",
+  "description": "Booking Engine Units screen — public URL slug segment, URL structures, and optional unit archive listing.",
   "source": "@site/docs/04-units/05-permalinks-and-archive.md",
   "sourceDirName": "04-units",
   "slug": "/units/permalinks-and-archive",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Permalinks and archive",
     "sidebar_label": "Permalinks & archive",
-    "description": "Booking Engine Units permalinks — public URL slug segment and optional unit archive listing."
+    "description": "Booking Engine Units screen — public URL slug segment, URL structures, and optional unit archive listing."
   },
   "sidebar": "docsSidebar",
   "previous": {

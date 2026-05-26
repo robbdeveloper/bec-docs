@@ -1,14 +1,14 @@
 ---
 title: Esegui la prima sincronizzazione
 sidebar_label: Esegui la prima sincronizzazione
-description: Pagina Sync — pianificazione, filtri motori Kross, nomi file galleria, Run sync now in batch con avanzamento, lock sync ed elenco Units.
+description: Pagina Booking Engine Sync & Import — pianificazione, filtri motori Kross, opzioni nomi file galleria, Run sync now in batch con avanzamento, lock sync ed elenco Units.
 ---
 
 # Esegui la prima sincronizzazione
 
 Dopo aver **[collegato le credenziali](./02-connect-your-provider.md)**, importa l’inventario in WordPress.
 
-Apri **Booking Engine → Sync**.
+Apri **Booking Engine → Sync & Import** (tab **Tools** per **Run sync now**).
 
 {/* SCREENSHOT: Sync page full view with interval, filename fields, and action buttons */}
 ![Pagina Sync unità](/img/bec-screenshot-placeholder.svg)
@@ -77,7 +77,7 @@ Clicca **Run sync now** per una **sync completa** immediata.
 
 ## Lock sync — troubleshooting
 
-Nella pagina **Booking Engine → Sync**, la sezione **Sync lock** indica se il lock è attivo e offre **Clear sync lock**.
+In **Booking Engine → Sync & Import → Tools**, la sezione **Sync lock** indica se il lock è attivo e offre **Clear sync lock**.
 
 - Usalo solo se sei sicuro che **nessun** job sia in esecuzione (es. lock obsoleto dopo tab crashata).
 
@@ -87,13 +87,13 @@ Nella pagina **Booking Engine → Sync**, la sezione **Sync lock** indica se il 
 
 Apri il menu **Units** in amministrazione.
 
-L’elenco include colonne extra come **External ID**, **Provider**, **Last sync**.
+L’elenco include colonne extra come **External ID**, **Provider**, **Last sync** così puoi abbinare le righe WordPress al sistema di prenotazione.
 
 {/* SCREENSHOT: Units list table with External ID Provider Last sync columns */}
 ![Elenco admin Unità](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/02-getting-started/units-list-columns.png`): units-list-columns.png */}
 
-Da qui: **Sync now**, **Rename gallery files**, azioni bulk — vedi **[Sincronizzare le unità](../04-units/02-syncing-units.md)**.
+Da qui puoi aprire un’unità, usare azioni riga come **Sync now** o **Rename gallery files**, o azioni bulk — vedi **[Sincronizzare le unità](../04-units/02-syncing-units.md)**.
 
 ---
 

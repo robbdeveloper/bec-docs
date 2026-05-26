@@ -13,8 +13,8 @@ description: Comportamento sync hook filtri bec_before_unit_sync bec_after_unit_
 ## Comportamento
 
 - **Sync completa** carica le unità remote dal provider attivo (`fetchRemoteUnits`), poi crea o aggiorna i post **Unità** con chiave `bec_external_id` + `bec_provider_slug`.
-- **Sync pianificata** usa WP-Cron (`bec_run_scheduled_sync`). L’intervallo è in **Booking Engine → Sync** (`bec_sync_interval_hours`, default 6). Su siti a basso traffico il cron può partire solo alla richiesta successiva (comportamento WP standard).
-- **Sync completa manuale (wp-admin)** usa **batch AJAX** (`wp_ajax-bec_sync_start_all`, `bec_sync_step_all`) con avanzamento per utente + run id (**`SyncProgressReporter`** / **`SyncManualBatchState`**).
+- **Sync pianificata** usa WP-Cron (`bec_run_scheduled_sync`). L’intervallo è in **Booking Engine → Sync & Import** (`bec_sync_interval_hours`, default 6). Su siti a basso traffico il cron può partire solo alla richiesta successiva (comportamento WP standard).
+- **Sync completa manuale (wp-admin)** usa **batch AJAX** (`wp_ajax_bec_sync_start_all`, `wp_ajax_bec_sync_step_all`) con avanzamento per utente + run id (**`SyncProgressReporter`** / **`SyncManualBatchState`**).
 - **Lock** — le **sync complete** concorrenti sono coordinate dal transient **`bec_sync_running_lock`**:
   - TTL **7200 secondi (2 ore)** per `set_transient`, **rinnovato** alla rientranza mentre il lavoro continua (`SyncLock::refresh()`).
   - Titolare **`c`** — lock acquisito dal cron WP (**`SyncLock::acquireCron`**).
@@ -105,6 +105,50 @@ Kross (frammento payload → descrittore):
 | `bec_search_form_action` | Sostituisce l’URL `action` del `<form>` quando `SearchForm::render()` non ha ricevuto un argomento **`action`** esplicito (`$url`, `$context`). Restituire stringa vuota per mantenere le regole integrate (archivio / singolare / home). Lo shortcode **`[bec_search]`** imposta **`action`** da **`redirect_url`** o dal fallback archivio — il filtro vale soprattutto per form resi da PHP. |
 
 Altri filtri UI (`bec_search_form_fields`, `bec_search_form_preset`, `bec_search_guest_field_mode`, ecc.) restano in `SearchForm`; vedi **[Shortcode bec_search](../06-shortcodes/02-bec-search.md)**.
+
+---
+
+## Filtri — intervallo date e formattazione importi
+
+| Filtro | Scopo |
+|--------|--------|
+| `bec_search_form_daterange_format` | Formato PHP `date_i18n()` per la lettura footer calendario Enhanced (`$format`, `$context`) |
+| `bec_daterange_moment_format_presets` | Mappa preset (`iso`, `short`, `medium`, …) a stringhe formato Moment.js |
+| `bec_php_date_format_to_moment` | Converte un formato data PHP personalizzato in Moment.js (`$moment`, `$phpFormat`) |
+| `bec_search_form_popover_placement` | Override posizione popover (`auto`, `top`, `bottom`) per ricerca Enhanced |
+| `bec_date_format_defaults` | Opzioni formato predefinite per shortcode **`[bec_dates]`** |
+| `bec_shortcode_dates_format` / `bec_shortcode_dates_text` / `bec_shortcode_dates_html` | Regola output **`[bec_dates]`** |
+| `bec_money_format_defaults` | Opzioni valuta/numero predefinite per **`[bec_quote]`** (`$defaults`, `'bec_quote'`) |
+| `bec_currency_symbols` | Mappa codici ISO valuta a simboli display |
+| `bec_format_money` | Stringa importo formattata finale prima dell’output |
+
+---
+
+## Filtri — elenco unità (`[bec_unit_filters]`)
+
+| Filtro | Scopo |
+|--------|--------|
+| `bec_unit_filter_definitions` | Aggiunge/sostituisce definizioni campi filtro (`$defs`) |
+| `bec_unit_filters_preserve_query_keys` | Chiavi GET extra da conservare al submit del form (`$keys`) |
+| `bec_unit_filter_query_applied` | Action dopo applicazione filtri a `WP_Query` (`$query`, `$request`) |
+| `bec_available_units_count` | Override conteggio **`[bec_available_units_count]`** (`$count`, `$loopQuery`) |
+| `bec_shortcode_available_units_count_html` | Regola HTML shortcode conteggio (`$html`, `$count`, `$atts`, `$ctx`) |
+| `bec_elementor_unit_filter_query_ids` | Query id Loop Grid Elementor con logica filtri + disponibilità (`$ids`) |
+
+Le query principali archivio **`bec_unit`** sono filtrate via **`UnitFilterQueryHooks`** quando sono presenti parametri **`bec_filter_*`**.
+
+---
+
+## Filtri — permalink e routing unità
+
+| Filtro | Scopo |
+|--------|--------|
+| `bec_unit_url_structure` | Struttura URL effettiva singola unità (`base`, `base_category`, `category_only`) |
+| `bec_unit_category_url_structure` | Struttura URL archivio categoria (`category_base`, `unit_base`, `bare`) |
+| `bec_unit_permalink_primary_term` | Sceglie termine categoria primario con più assegnazioni (`$term`, `$candidates`, `$postId`) |
+| `bec_unit_permalink_slug_conflicts_with_core` | Tratta uno slug come in conflitto con contenuti WP core (`$conflicts`, `$slug`) |
+
+Guida utente: **[Permalink e archivio](../04-units/05-permalinks-and-archive.md)**.
 
 ---
 

@@ -14,7 +14,7 @@ Matrice rapida sintomo → causa → azione per amministratori WordPress tipici.
 | **Nessuna unità dopo sync** | Credenziali incomplete o inventario remoto vuoto | Leggi errori nell’avviso sync, conferma che Hotel ID mappi camere attive in Kross. |
 | **Molte unità “skipped”** | Unità con **sync disabilitata** (`bec_sync_enabled`) | Controlla meta box ispettore unità — l’azione riga sync manuale aggiorna comunque singole righe. |
 | **Pulsante prenotazione assente** | Date incomplete / URL base checkout mancante / checkout POST senza rate ID | Conferma parametri URL presenti, compila **Booking engine base URL**, prova GET temporaneamente per validare il flusso. |
-| **Preventivi sempre vuoti** | Date non valide rispetto al provider o occupazione oltre i limiti | Regola ospiti, allarga finestra soggiorno, ispeziona **[API Log](./02-using-the-api-log.md)** per risposte calendario. |
+| **Preventivi sempre vuoti** | Date non valide rispetto al provider o occupazione oltre i limiti | Regola ospiti, allarga finestra soggiorno, ispeziona **[Tools & Logs](./02-using-the-api-log.md)** per risposte calendario. |
 | **Cron in ritardo** | WP-Cron a basso traffico | Genera visite manualmente o usa cron server su `wp-cron.php`; esegui **Run sync now** occasionalmente. |
 | **Duplicati gallery / nomi strani** | Prefisso/suffisso cambiato a progetto avviato | Esegui strumenti rinomina documentati in **[Immagini gallery](../04-units/04-gallery-images.md)** con cautela in orari di basso traffico. |
 | **“Another sync is already running” a lungo** | Sync completa legittima lunga **oppure** **lock sync** obsoleto dopo tab admin chiusa | Attendi completamento; leggi **[Sincronizzare le unità](../04-units/02-syncing-units.md)**; usa **Clear sync lock** nella pagina Sync solo se sei sicuro che nessun job sia attivo. |
@@ -30,7 +30,7 @@ Raccogli:
 
 1. Versione plugin (`[bec_version]`).
 2. Screenshot oscurato delle impostazioni Connection (nascondi segreti).
-3. Una riga **[API Log](./02-using-the-api-log.md)** con endpoint in errore + stato HTTP.
+3. Una riga **[Tools & Logs](./02-using-the-api-log.md)** con endpoint in errore + stato HTTP.
 
 {/* SCREENSHOT: Example API log row highlighting status column */}
 ![Esempio riga API log](/img/bec-screenshot-placeholder.svg)

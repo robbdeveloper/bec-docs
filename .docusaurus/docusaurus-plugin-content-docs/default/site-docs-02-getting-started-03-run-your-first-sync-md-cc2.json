@@ -1,7 +1,7 @@
 {
   "id": "getting-started/run-your-first-sync",
   "title": "Run your first sync",
-  "description": "Booking Engine Sync page — schedule, Kross booking-engine filters, gallery filename options, batched Run sync now with progress, sync lock, and Units list.",
+  "description": "Booking Engine Sync & Import page — schedule, Kross booking-engine filters, gallery filename options, batched Run sync now with progress, sync lock, and Units list.",
   "source": "@site/docs/02-getting-started/03-run-your-first-sync.md",
   "sourceDirName": "02-getting-started",
   "slug": "/getting-started/run-your-first-sync",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Run your first sync",
     "sidebar_label": "Run your first sync",
-    "description": "Booking Engine Sync page — schedule, Kross booking-engine filters, gallery filename options, batched Run sync now with progress, sync lock, and Units list."
+    "description": "Booking Engine Sync & Import page — schedule, Kross booking-engine filters, gallery filename options, batched Run sync now with progress, sync lock, and Units list."
   },
   "sidebar": "docsSidebar",
   "previous": {

@@ -1,7 +1,7 @@
 {
   "id": "troubleshooting/using-the-api-log",
-  "title": "Using the API log",
-  "description": "Booking Engine API Log admin provider filter HTTP status columns correlation duration support troubleshooting auth logging filter.",
+  "title": "Using Tools & Logs",
+  "description": "Booking Engine Tools & Logs admin provider filter HTTP status columns correlation duration support troubleshooting auth logging filter.",
   "source": "@site/docs/08-troubleshooting/02-using-the-api-log.md",
   "sourceDirName": "08-troubleshooting",
   "slug": "/troubleshooting/using-the-api-log",
@@ -12,9 +12,9 @@
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
-    "title": "Using the API log",
-    "sidebar_label": "Using the API log",
-    "description": "Booking Engine API Log admin provider filter HTTP status columns correlation duration support troubleshooting auth logging filter."
+    "title": "Using Tools & Logs",
+    "sidebar_label": "Tools & Logs",
+    "description": "Booking Engine Tools & Logs admin provider filter HTTP status columns correlation duration support troubleshooting auth logging filter."
   },
   "sidebar": "docsSidebar",
   "previous": {

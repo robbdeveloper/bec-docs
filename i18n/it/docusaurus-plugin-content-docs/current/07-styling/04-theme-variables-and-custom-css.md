@@ -6,7 +6,7 @@ description: Elenco di riferimento classi CSS per ricerca, riepilogo prenotazion
 
 # Variabili tema e CSS personalizzato
 
-Usa le textarea **Booking Engine → Styling** — o il foglio di stile del tema — per ritocchi visivi.
+Usa le textarea **Booking Engine → Design** — o il foglio di stile del tema — per ritocchi visivi.
 
 ---
 
@@ -55,8 +55,13 @@ Regioni rappresentative (non esaustivo):
 - `.bec-booking-summary__actions`
 - `.bec-booking-summary__mobile`
 - `.bec-booking-summary__drawer`
+- `.bec-booking-summary__drawer-body` — regione centrale scrollabile nel drawer mobile (da ricerca ai blocchi preventivo)
 
 Abbinali ad attributi `data-*` come `data-bec-booking-summary`, `data-bec-bsummary-continue`, `data-bec-rate-id` per selettori avanzati.
+
+Token colore riepilogo (override in **Shared theme variables**):
+
+- `--bec-bsummary-color-text`, `--bec-bsummary-color-primary`, `--bec-bsummary-color-muted`, `--bec-bsummary-color-accent`
 
 {/* SCREENSHOT: Devtools tree for booking summary */}
 ![Ispeziona hook CSS riepilogo](/img/bec-screenshot-placeholder.svg)
@@ -69,6 +74,22 @@ Abbinali ad attributi `data-*` come `data-bec-booking-summary`, `data-bec-bsumma
 - `.bec-shortcode-checkout`
 - `.bec-checkout-cta`, `.bec-checkout-form`
 - `.bec-shortcode-quote`, `.bec-shortcode-quote__rates`, `.bec-shortcode-quote__rate`
+- `.bec-shortcode-quote.no-results` — aggiunta quando non c’è disponibilità per le date selezionate (0.1.41)
+
+---
+
+## Hook filtri unità
+
+- `.bec-unit-filters`, `.bec-unit-filters--inline`, `.bec-unit-filters--stacked`
+- `.bec-unit-filters__*` — trigger, popover, sheet servizi, controllo reset
+
+Gli stili sono in **`assets/public.css`**; personalizza via **Design → Unit filters — extra CSS** (`bec_styling_filters_extra_css`).
+
+---
+
+## Conteggio unità disponibili
+
+- `.bec-available-units-count` — wrapper per l’output di **`[bec_available_units_count]`**
 
 ---
 
@@ -83,6 +104,8 @@ Abbinali ad attributi `data-*` come `data-bec-booking-summary`, `data-bec-bsumma
 Griglia servizi:
 
 - `.bec-amenities`, `.bec-amenities__item`, …
+- `--bec-amenities-cols` — colonne desktop dall’attributo **`columns`**
+- `--bec-amenities-cols-mobile` — colonne sotto 640px da **`columns_mobile`** (default `1`)
 
 Disposizione camere:
 

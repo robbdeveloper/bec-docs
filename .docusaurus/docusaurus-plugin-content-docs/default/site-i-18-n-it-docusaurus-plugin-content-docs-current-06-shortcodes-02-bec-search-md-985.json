@@ -1,7 +1,7 @@
 {
   "id": "shortcodes/bec-search",
-  "title": "Shortcode `[bec_search]`",
-  "description": "Modulo ricerca GET, redirect_url, action archivio unità, attributi context form_id, hook CSS, preset Enhanced e Classic.",
+  "title": "Shortcode '[bec_search]'",
+  "description": "Shortcode bec_search redirect_url action archivio unità parametri GET bec_* attributi context form_id hook CSS Enhanced Classic.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/02-bec-search.md",
   "sourceDirName": "06-shortcodes",
   "slug": "/shortcodes/bec-search",
@@ -12,9 +12,9 @@
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
-    "title": "Shortcode `[bec_search]`",
+    "title": "Shortcode '[bec_search]'",
     "sidebar_label": "bec_search",
-    "description": "Modulo ricerca GET, redirect_url, action archivio unità, attributi context form_id, hook CSS, preset Enhanced e Classic."
+    "description": "Shortcode bec_search redirect_url action archivio unità parametri GET bec_* attributi context form_id hook CSS Enhanced Classic."
   },
   "sidebar": "docsSidebar",
   "previous": {

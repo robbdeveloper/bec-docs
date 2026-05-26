@@ -1,7 +1,7 @@
 ---
-title: Shortcode `[bec_search]`
+title: Shortcode '[bec_search]'
 sidebar_label: bec_search
-description: Modulo ricerca GET, redirect_url, action archivio unità, attributi context form_id, hook CSS, preset Enhanced e Classic.
+description: Shortcode bec_search redirect_url action archivio unità parametri GET bec_* attributi context form_id hook CSS Enhanced Classic.
 ---
 
 # `[bec_search]`
@@ -29,22 +29,29 @@ Mostra la **barra di ricerca disponibilità** per check-in, check-out e ospiti. 
 
 | Caso | `action` del form (destinazione GET) |
 |------|--------------------------------------|
-| **`[bec_search]`** senza **`redirect_url`** | Archivio delle **unità** (`get_post_type_archive_link`). Se WordPress non può costruire il link (es. **Unit archive** disattivato in **Units — permalinks**), si usa l’**URL home**. Tipico: ricerca in homepage → elenco inventario con `?bec_checkin=…`. |
+| **`[bec_search]`** senza **`redirect_url`** | Archivio delle **unità** (`get_post_type_archive_link` per il post type unità). Se WordPress non può costruire il link (es. **Unit archive** disattivato in **Booking Engine → Units**), si usa l’**URL home**. Tipico: ricerca in homepage → elenco inventario con `?bec_checkin=…`. |
 | **`[bec_search]`** con **`redirect_url="/percorso/"`** | Invio all’URL indicato (URL completo o percorso radice-rel). I parametri **`bec_*`** sono aggiunti come query string. Esempio: `[bec_search redirect_url="/disponibilita/"]`. |
 
-**Ricerca inserita automaticamente** (singola unità, `bec_render_search_form()`, hook tema) usa le regole di `SearchForm`: su **archivio unità** o **pagina singola** l’`action` è di solito **quella** pagina; altrimenti spesso **home**. Lo shortcode con `redirect_url` vuoto **non** modifica questi percorsi — da PHP usa il filtro **`bec_search_form_action`** se serve un target fisso.
+**Ricerca inserita automaticamente** (singola unità, `bec_render_search_form()`, hook tema) usa le regole di `SearchForm`: su **archivio unità** o **pagina singola** l’`action` è di solito **quella** pagina; altrimenti spesso **home**. **`redirect_url`** vuoto sullo shortcode **non** si applica lì — da PHP usa il filtro **`bec_search_form_action`** se serve un target fisso.
 
-La modalità campi ospite (follow provider / ospiti totali / adulti+bambini) resta in **Booking Engine → Connection**, non negli attributi dello shortcode.
+La modalità campi ospite è configurata in **Booking Engine → Frontend**, non su questo shortcode.
 
 ---
 
 ## Attributi
 
-| Attributo | Predefinito | Significato |
-|-----------|---------------|-------------|
-| **`context`** | `shortcode` | Identificatore per hook di stile/filtri — utile con più ricerche nella stessa pagina. |
-| **`form_id`** | `bec-search-form-sc` | Attributo HTML `id` sul `<form>` — unico per pagina se ci sono più moduli. |
-| **`redirect_url`** | *(vuoto)* | Opzionale. Destinazione GET (vedi sopra). Passa da `esc_url()`; consentiti percorsi radice-relativi. |
+| Attribute | Default | Significato |
+|-----------|---------|-------------|
+| **`context`** | `shortcode` | Identificatore passato a hook stile/filtri — cambia se renderizzi più ricerche in modo diverso. |
+| **`form_id`** | `bec-search-form-sc` | Base per l’`id` HTML sul `<form>` — il plugin aggiunge un suffisso **`wp_unique_id()`** così più istanze restano univoche. |
+| **`redirect_url`** | *(empty)* | Opzionale. Destinazione GET (vedi **Dove viene inviato il modulo**). Passa da `esc_url()`; consentiti percorsi radice-relativi. |
+| **`popover_placement`** | `auto` | Posizione popover calendario: `auto`, `top`, o `bottom`. `auto` si adatta allo spazio viewport. |
+| **`daterange_format`** | *(empty)* | Formato PHP `date_i18n()` per il footer calendario. Se impostato, sovrascrive **`daterange_preset`**. |
+| **`daterange_preset`** | `medium` | Formato footer integrato quando **`daterange_format`** è vuoto: `iso`, `short`, `medium`, `long`, o `full`. |
+
+Filtri: **`bec_search_form_daterange_format`**, **`bec_search_form_popover_placement`**.
+
+La modalità campi ospite front-end (follow provider / total guests / adults+children) è configurata in **Booking Engine → Frontend**, non su questo shortcode.
 
 ---
 
@@ -62,6 +69,12 @@ Invio a una pagina risultati personalizzata (stessa query `bec_*`):
 
 ```
 [bec_search redirect_url="/disponibilita/" form_id="ricerca-risultati"]
+```
+
+Forza popover sopra la barra su layout stretti:
+
+```
+[bec_search popover_placement="top" daterange_preset="long"]
 ```
 
 ---
@@ -88,4 +101,5 @@ I bundle specifici del preset stanno negli asset del plugin (`search-form-enhanc
 
 ## Vedi anche
 
+- **[Impostazioni Frontend](../02-getting-started/06-frontend-settings.md)**
 - **[Contesto di ricerca](../05-bookings-and-checkout/01-search-context-and-urls.md)**

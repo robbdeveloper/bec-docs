@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-unit-filters",
+  "title": "[bec_unit_filters] shortcode",
+  "description": "Unit listing filters shortcode — order, rooms, bathrooms, amenities via GET params; Elementor Query IDs bec_available_only and bec_filtered_units.",
+  "source": "@site/docs/06-shortcodes/15-bec-unit-filters.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-unit-filters",
+  "permalink": "/docs/shortcodes/bec-unit-filters",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "[bec_unit_filters] shortcode",
+    "sidebar_label": "bec_unit_filters",
+    "description": "Unit listing filters shortcode — order, rooms, bathrooms, amenities via GET params; Elementor Query IDs bec_available_only and bec_filtered_units."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_unit_gallery",
+    "permalink": "/docs/shortcodes/bec-unit-gallery"
+  },
+  "next": {
+    "title": "bec_available_units_count",
+    "permalink": "/docs/shortcodes/bec-available-units-count"
+  }
+}

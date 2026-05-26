@@ -1,7 +1,7 @@
 {
   "id": "getting-started/run-your-first-sync",
   "title": "Esegui la prima sincronizzazione",
-  "description": "Pagina Sync — pianificazione, filtri motori Kross, nomi file galleria, Run sync now in batch con avanzamento, lock sync ed elenco Units.",
+  "description": "Pagina Booking Engine Sync & Import — pianificazione, filtri motori Kross, opzioni nomi file galleria, Run sync now in batch con avanzamento, lock sync ed elenco Units.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/02-getting-started/03-run-your-first-sync.md",
   "sourceDirName": "02-getting-started",
   "slug": "/getting-started/run-your-first-sync",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Esegui la prima sincronizzazione",
     "sidebar_label": "Esegui la prima sincronizzazione",
-    "description": "Pagina Sync — pianificazione, filtri motori Kross, nomi file galleria, Run sync now in batch con avanzamento, lock sync ed elenco Units."
+    "description": "Pagina Booking Engine Sync & Import — pianificazione, filtri motori Kross, opzioni nomi file galleria, Run sync now in batch con avanzamento, lock sync ed elenco Units."
   },
   "sidebar": "docsSidebar",
   "previous": {

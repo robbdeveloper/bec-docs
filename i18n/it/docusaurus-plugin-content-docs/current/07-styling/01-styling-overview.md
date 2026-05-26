@@ -1,15 +1,15 @@
 ---
-title: Panoramica stile
-sidebar_label: Panoramica stile
-description: Pagina admin Booking Engine Styling, variabili tema, preset ricerca e riepilogo prenotazione, accordion, Extra CSS.
+title: Panoramica Design
+sidebar_label: Panoramica Design
+description: Pagina admin Booking Engine Design, variabili tema, preset ricerca e riepilogo prenotazione, accordion, Extra CSS, unit filters.
 ---
 
-# Panoramica stile
+# Panoramica Design
 
-Apri **Booking Engine → Styling** per influenzare l’aspetto della barra di ricerca e del riepilogo prenotazione **senza modificare PHP**.
+Apri **Booking Engine → Design** per influenzare l’aspetto della barra di ricerca, del riepilogo prenotazione e dei filtri unità **senza modificare PHP**.
 
-{/* SCREENSHOT: Full Styling admin page */}
-![Pagina impostazioni Styling](/img/bec-screenshot-placeholder.svg)
+{/* SCREENSHOT: Full Design admin page */}
+![Pagina impostazioni Design](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/07-styling/styling-page-full.png`): styling-page-full.png */}
 
 ---
@@ -46,9 +46,17 @@ Esempio (illustrativo):
 
 ---
 
+## Unit filters — extra CSS
+
+**Option key:** `bec_styling_filters_extra_css`
+
+CSS libero per il markup **`[bec_unit_filters]`** (`.bec-unit-filters*`, pannelli picker, sheet servizi). Vedi **[bec_unit_filters](../06-shortcodes/15-bec-unit-filters.md)** e **[Listing Filters admin](../04-units/07-listing-filters-admin.md)**.
+
+---
+
 ## Sanificazione e sicurezza
 
-I campi CSS passano da una sanificazione che blocca sequenze palesemente pericolose (come aperture HTML grezze nel textarea). Risposta limiti di lunghezza ragionevoli — sposta fogli di stile enormi nel tema se necessario.
+I campi CSS passano da una sanificazione che blocca sequenze palesemente pericolose (come aperture HTML grezze nel textarea). Rispetta limiti di lunghezza ragionevoli — sposta fogli di stile enormi nel tema se necessario.
 
 ---
 

@@ -1,0 +1,28 @@
+{
+  "id": "units/listing-filters-admin",
+  "title": "Listing Filters admin",
+  "description": "Booking Engine Listing Filters screen — amenity index, enable/order/custom labels for bec_unit_filters shortcode.",
+  "source": "@site/docs/04-units/07-listing-filters-admin.md",
+  "sourceDirName": "04-units",
+  "slug": "/units/listing-filters-admin",
+  "permalink": "/docs/units/listing-filters-admin",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Listing Filters admin",
+    "sidebar_label": "Listing Filters admin",
+    "description": "Booking Engine Listing Filters screen — amenity index, enable/order/custom labels for bec_unit_filters shortcode."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Unit categories",
+    "permalink": "/docs/units/unit-categories"
+  },
+  "next": {
+    "title": "Search context & URLs",
+    "permalink": "/docs/bookings-and-checkout/search-context-and-urls"
+  }
+}

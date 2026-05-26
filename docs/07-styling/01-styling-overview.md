@@ -1,15 +1,15 @@
 ---
-title: Styling overview
-sidebar_label: Styling overview
-description: Booking Engine Styling admin page theme variables search and booking summary presets accordions extra CSS screenshots.
+title: Design overview
+sidebar_label: Design overview
+description: Booking Engine Design admin page theme variables search and booking summary presets accordions extra CSS unit filters screenshots.
 ---
 
-# Styling overview
+# Design overview
 
-Open **Booking Engine → Styling** to influence how the search bar and booking summary look **without editing PHP**.
+Open **Booking Engine → Design** to influence how the search bar, booking summary, and unit filters look **without editing PHP**.
 
-{/* SCREENSHOT: Full Styling admin page */}
-![Styling settings page](/img/bec-screenshot-placeholder.svg)
+{/* SCREENSHOT: Full Design admin page */}
+![Design settings page](/img/bec-screenshot-placeholder.svg)
 {/* Intended screenshot (add file at `docs/img/07-styling/styling-page-full.png`): styling-page-full.png */}
 
 ---
@@ -43,6 +43,14 @@ Example (illustrative):
 | **Layout style** | **Default** vs **Compact** desktop layout. |
 | **Rate details accordions** | Toggle **Inclusions** / **Conditions** panels when quote text provides them. |
 | **Extra CSS** | Targets booking summary DOM structure. |
+
+---
+
+## Unit filters — extra CSS
+
+**Option key:** `bec_styling_filters_extra_css`
+
+Free-form CSS for **`[bec_unit_filters]`** markup (`.bec-unit-filters*`, picker panels, amenity sheets). See **[bec_unit_filters](../06-shortcodes/15-bec-unit-filters.md)** and **[Listing Filters admin](../04-units/07-listing-filters-admin.md)**.
 
 ---
 

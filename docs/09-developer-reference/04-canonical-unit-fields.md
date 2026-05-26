@@ -16,7 +16,9 @@ Provider-independent semantics for **Units** (`bec_unit`), stored as `bec_core_*
 |----------|----------|-------|
 | `NAME` | `bec_core_name` | Display name |
 | `ADDRESS_FULL` | `bec_core_address_full` | Single formatted address (maps, SEO) |
+| `CITY` | `bec_core_city` | City name; synced from Kross `city`; editable in meta box; also included in `bec_core_address_full` |
 | `LAT` / `LNG` | `bec_core_lat`, `bec_core_lng` | Coordinates as strings |
+| `LAT_LNG` | `bec_core_lat_lng` | Read-only derived `lat,lng` pair; updated on sync and admin save when lat/lng change |
 | `OCC_MIN` / `OCC_MAX` | `bec_core_occ_min`, `bec_core_occ_max` | Guest limits |
 | `CHECK_IN_FROM` / `CHECK_IN_TO` | `bec_core_check_in_from`, `bec_core_check_in_to` | Check-in window |
 | `CHECK_OUT_UNTIL` | `bec_core_check_out_until` | Check-out deadline |
@@ -73,9 +75,9 @@ Providers may return `GALLERY` as:
 - `['urls' => [ 'https://…', … ], 'featured_url' => 'https://…'|null ]` — `items` and keys are derived from the URL list.
 - A flat list of `https://…` strings — same import behaviour (keys = SHA-256 of each normalised URL, with index suffixes if duplicates).
 
-**Sync → Gallery image filenames (wp-admin → Sync):** options `bec_sync_gallery_image_prefix` and `bec_sync_gallery_image_suffix` (see **[Post meta reference](./03-post-meta-reference.md)**) control: prefix + unit name slug (from `bec_core_name`) + suffix + `-` + `NN` + file extension.
+**Sync → Gallery image filenames (wp-admin → Sync & Import):** options `bec_sync_gallery_image_prefix` and `bec_sync_gallery_image_suffix` (see **[Post meta reference](./03-post-meta-reference.md)**) control: prefix + unit name slug (from `bec_core_name`) + suffix + `-` + `NN` + file extension.
 
-**Renaming existing files:** the Sync screen also offers **Rename all unit gallery files** and a per-unit **Rename gallery files** row action. They re-apply the current prefix/suffix to attachments already listed in `bec_core_gallery` (indices follow the stored gallery order). Attachments referenced by more than one `bec_unit` are **copied** for the current unit and the unit’s gallery (and featured image, when it pointed at the old attachment) is updated so other units keep working. The Media Library **Title** (`post_title`) is set to match the file’s base name (without extension), including when the file name already matched sync settings but the title was still a placeholder (e.g. from import). Alt text and other fields are unchanged. Single-unit renames regenerate thumbnails after moving the main file.
+**Renaming existing files:** the Sync & Import **Tools** tab also offers **Rename all unit gallery files** and a per-unit **Rename gallery files** row action. They re-apply the current prefix/suffix to attachments already listed in `bec_core_gallery` (indices follow the stored gallery order). Attachments referenced by more than one `bec_unit` are **copied** for the current unit and the unit’s gallery (and featured image, when it pointed at the old attachment) is updated so other units keep working. The Media Library **Title** (`post_title`) is set to match the file’s base name (without extension), including when the file name already matched sync settings but the title was still a placeholder (e.g. from import). Alt text and other fields are unchanged. Single-unit renames regenerate thumbnails after moving the main file.
 
 Filters:
 

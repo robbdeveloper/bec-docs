@@ -39,9 +39,13 @@ Post meta is registered with `register_post_meta` (REST-visible where noted, san
 | `bec_sync_gallery_image_prefix` | Prepended to auto-generated gallery filenames (default empty). |
 | `bec_sync_gallery_image_suffix` | Between the unit name slug and the `-NN` index (default empty). |
 | `bec_unit_permalink_slug` | Path segment for single units (sanitised); empty means default internal slug `bec_unit`. |
+| `bec_unit_url_structure` | Single-unit URL pattern: `base`, `base_category`, or `category_only`. |
 | `bec_unit_has_archive` | Whether the unit CPT exposes a public archive at the same base. |
 | `bec_unit_category_enabled` | Whether **`bec_unit_category`** taxonomy UI and public rewrites are active. |
 | `bec_unit_category_permalink_slug` | Category term URL base (empty → default `unit-category`). |
+| `bec_unit_category_url_structure` | Category archive URL pattern: `category_base`, `unit_base`, or `bare`. |
+| `bec_unit_filters_amenity_options` | JSON map of amenity keys → `{ enabled, order, label? }` curated under **Listing Filters**. |
+| `bec_styling_filters_extra_css` | Extra CSS for **`[bec_unit_filters]`** (Design admin). |
 | `bec_kross_sync_booking_engines` | Selected `be_enabled` slugs for **full** sync filtering (empty list ⇒ include all). |
 | `bec_kross_available_booking_engines` | Cached union of slugs seen from Kross room types (populates admin checklist). |
 | `bec_sync_interval_hours` | WP-Cron interval (hours). |

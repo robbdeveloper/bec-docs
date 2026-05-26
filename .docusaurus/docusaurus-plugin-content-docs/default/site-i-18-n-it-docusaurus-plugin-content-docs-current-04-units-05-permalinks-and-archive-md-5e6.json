@@ -1,7 +1,7 @@
 {
   "id": "units/permalinks-and-archive",
   "title": "Permalink e archivio",
-  "description": "Booking Engine Units permalinks — segmento slug URL pubblico e elenco archivio unità opzionale.",
+  "description": "Schermata Booking Engine Units — segmento slug URL pubblico, strutture URL e elenco archivio unità opzionale.",
   "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/04-units/05-permalinks-and-archive.md",
   "sourceDirName": "04-units",
   "slug": "/units/permalinks-and-archive",
@@ -14,11 +14,11 @@
   "frontMatter": {
     "title": "Permalink e archivio",
     "sidebar_label": "Permalink e archivio",
-    "description": "Booking Engine Units permalinks — segmento slug URL pubblico e elenco archivio unità opzionale."
+    "description": "Schermata Booking Engine Units — segmento slug URL pubblico, strutture URL e elenco archivio unità opzionale."
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Immagini gallery",
+    "title": "Immagini galleria",
     "permalink": "/it/docs/units/gallery-images"
   },
   "next": {

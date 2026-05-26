@@ -8,7 +8,7 @@ description: Scheduled sync, batched Run sync now with progress, Kross booking-e
 
 **Sync** means: call the booking provider, fetch the latest inventory, then create or update **Unit** posts in WordPress.
 
-Open **Booking Engine → Sync** for the schedule, Kross-only engine filters, gallery filename settings, **Run sync now**, progress UI, lock management, and bulk gallery rename.
+Open **Booking Engine → Sync & Import** for the schedule, Kross-only engine filters, gallery filename settings, **Run sync now**, progress UI, lock management, and bulk gallery rename.
 
 ---
 
@@ -17,7 +17,7 @@ Open **Booking Engine → Sync** for the schedule, Kross-only engine filters, ga
 | Trigger | Where | What it does |
 |---------|-------|---------------|
 | **Scheduled (WP-Cron)** | Runs in the background | Full sync on the interval set on the **Sync** page (default every **6** hours, configurable **1–168**). Hook name in code: `bec_run_scheduled_sync`. |
-| **Run sync now** | **Booking Engine → Sync** | Immediate **full** sync. With JavaScript enabled, the plugin runs work in **server batches** and streams **Sync progress** (log + status). Without JS, WordPress submits a classic **admin-post** request instead. |
+| **Run sync now** | **Booking Engine → Sync & Import → Tools** | Immediate **full** sync. With JavaScript enabled, the plugin runs work in **server batches** and streams **Sync progress** (log + status). Without JS, WordPress submits a classic **admin-post** request instead. |
 | **Sync now** (row action) | **Units** list | Refresh **one** unit from the provider. |
 | **Bulk: Sync with provider** | **Units** list | Same as row action for many selected rows. |
 

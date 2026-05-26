@@ -1,0 +1,28 @@
+{
+  "id": "shortcodes/bec-unit-filters",
+  "title": "Shortcode '[bec_unit_filters]'",
+  "description": "Shortcode filtri elenco unità — ordine, camere, bagni, servizi via parametri GET; Query ID Elementor bec_available_only e bec_filtered_units.",
+  "source": "@site/i18n/it/docusaurus-plugin-content-docs/current/06-shortcodes/15-bec-unit-filters.md",
+  "sourceDirName": "06-shortcodes",
+  "slug": "/shortcodes/bec-unit-filters",
+  "permalink": "/it/docs/shortcodes/bec-unit-filters",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "Shortcode '[bec_unit_filters]'",
+    "sidebar_label": "bec_unit_filters",
+    "description": "Shortcode filtri elenco unità — ordine, camere, bagni, servizi via parametri GET; Query ID Elementor bec_available_only e bec_filtered_units."
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "bec_unit_gallery",
+    "permalink": "/it/docs/shortcodes/bec-unit-gallery"
+  },
+  "next": {
+    "title": "bec_available_units_count",
+    "permalink": "/it/docs/shortcodes/bec-available-units-count"
+  }
+}

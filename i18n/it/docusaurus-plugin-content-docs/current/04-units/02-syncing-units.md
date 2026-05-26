@@ -8,7 +8,7 @@ description: Sync pianificata, Esegui sync ora in batch con avanzamento, filtri 
 
 **Sync** significa: chiamare il provider di prenotazione, scaricare l’inventario aggiornato, poi creare o aggiornare i post **Unità** in WordPress.
 
-Apri **Booking Engine → Sync** per l’intervallo, i filtri motori solo Kross, i prefissi/suffissi nomi file galleria, **Run sync now**, il pannello avanzamento, la gestione del lock e la rinomina globale galleria.
+Apri **Booking Engine → Sync & Import** per l’intervallo, i filtri motori solo Kross, le impostazioni nomi file galleria, **Run sync now**, il pannello avanzamento, la gestione del lock e la rinomina globale galleria.
 
 ---
 
@@ -17,7 +17,7 @@ Apri **Booking Engine → Sync** per l’intervallo, i filtri motori solo Kross,
 | Trigger | Dove | Cosa fa |
 |---------|------|---------|
 | **Pianificata (WP-Cron)** | In background | Sync completa sull’intervallo impostato nella pagina **Sync** (default **6** ore, configurabile **1–168**). Hook nel codice: `bec_run_scheduled_sync`. |
-| **Run sync now** | **Booking Engine → Sync** | Sync **completa** immediata. Con JavaScript, il lavoro è in **batch** lato server e compare **Sync progress** (log + stato). Senza JS viene usata una richiesta **admin-post** classica. |
+| **Run sync now** | **Booking Engine → Sync & Import → Tools** | Sync **completa** immediata. Con JavaScript, il lavoro è in **batch** lato server e compare **Sync progress** (log + stato). Senza JS viene usata una richiesta **admin-post** classica. |
 | **Sync now** (azione riga) | Elenco **Units** | Aggiorna **una** unità dal provider. |
 | **Bulk: Sync with provider** | Elenco **Units** | Come l’azione riga per più righe selezionate. |
 
@@ -29,7 +29,7 @@ Sui siti molto poco visitati i job pianificati possono aspettare la prossima ric
 
 Con **Kross Booking** attivo, la pagina Sync include **Kross booking engines**:
 
-- **Refresh booking engines list from Kross** unisce nella checklist ogni slug `be_enabled` scoperto da **`/v5/rooms/get-room-types`**.
+- **Refresh booking engines list from Kross** unisce nella checklist ogni slug `be_enabled` scoperto da Kross **`/v5/rooms/get-room-types`**.
 - **Lascia tutto deselezionato** — il plugin sincronizza **ogni** tipo camera restituito per la struttura (comportamento predefinito).
 - **Spunta uno o più slug** — la sync completa **include** righe remote il cui payload normalizzato elenca **`be_enabled`** con **almeno uno** slug selezionato (logica OR).
 
@@ -79,7 +79,7 @@ Dopo una sync completa l’avviso può riportare **created**, **updated**, **ski
 
 - **Created** — Nuova unità WordPress con nuovo ID remoto.
 - **Updated** — Unità esistente aggiornata.
-- **Skipped** — Riga remota ignorata (es. sync disabilitata per quell’unità, o **filtro motori Kross** esclude la riga).
+- **Skipped** — Riga remota ignorata (es. sync disabilitata per quell’unità, o **filtro motori Kross** esclude la riga — vedi sopra).
 
 Gli errori compaiono nello stesso avviso o nel log di avanzamento.
 

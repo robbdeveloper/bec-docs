@@ -3,312 +3,377 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/it/markdown-page',
-    component: ComponentCreator('/it/markdown-page', '7c1'),
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
     exact: true
   },
   {
-    path: '/it/search',
-    component: ComponentCreator('/it/search', 'c8d'),
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
     exact: true
   },
   {
-    path: '/it/docs',
-    component: ComponentCreator('/it/docs', '9ee'),
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    exact: true
+  },
+  {
+    path: '/markdown-page',
+    component: ComponentCreator('/markdown-page', '53a'),
+    exact: true
+  },
+  {
+    path: '/search',
+    component: ComponentCreator('/search', '822'),
+    exact: true
+  },
+  {
+    path: '/docs',
+    component: ComponentCreator('/docs', 'cb9'),
     routes: [
       {
-        path: '/it/docs',
-        component: ComponentCreator('/it/docs', '733'),
+        path: '/docs',
+        component: ComponentCreator('/docs', 'fee'),
         routes: [
           {
-            path: '/it/docs',
-            component: ComponentCreator('/it/docs', 'b1e'),
+            path: '/docs',
+            component: ComponentCreator('/docs', '87b'),
             routes: [
               {
-                path: '/it/docs/',
-                component: ComponentCreator('/it/docs/', '572'),
+                path: '/docs/',
+                component: ComponentCreator('/docs/', 'ec3'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/bookings-and-checkout/availability-and-quotes',
-                component: ComponentCreator('/it/docs/bookings-and-checkout/availability-and-quotes', '05e'),
+                path: '/docs/bookings-and-checkout/availability-and-quotes',
+                component: ComponentCreator('/docs/bookings-and-checkout/availability-and-quotes', '126'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/bookings-and-checkout/checkout-flow',
-                component: ComponentCreator('/it/docs/bookings-and-checkout/checkout-flow', 'b3e'),
+                path: '/docs/bookings-and-checkout/checkout-flow',
+                component: ComponentCreator('/docs/bookings-and-checkout/checkout-flow', 'e77'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/bookings-and-checkout/fallback-mode',
-                component: ComponentCreator('/it/docs/bookings-and-checkout/fallback-mode', '3a7'),
+                path: '/docs/bookings-and-checkout/fallback-mode',
+                component: ComponentCreator('/docs/bookings-and-checkout/fallback-mode', '690'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/bookings-and-checkout/search-context-and-urls',
-                component: ComponentCreator('/it/docs/bookings-and-checkout/search-context-and-urls', 'a5a'),
+                path: '/docs/bookings-and-checkout/search-context-and-urls',
+                component: ComponentCreator('/docs/bookings-and-checkout/search-context-and-urls', 'a62'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/developer-reference/adding-a-provider',
-                component: ComponentCreator('/it/docs/developer-reference/adding-a-provider', 'd55'),
+                path: '/docs/developer-reference/adding-a-provider',
+                component: ComponentCreator('/docs/developer-reference/adding-a-provider', 'e2e'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/developer-reference/architecture',
-                component: ComponentCreator('/it/docs/developer-reference/architecture', 'e8e'),
+                path: '/docs/developer-reference/architecture',
+                component: ComponentCreator('/docs/developer-reference/architecture', '395'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/developer-reference/canonical-unit-fields',
-                component: ComponentCreator('/it/docs/developer-reference/canonical-unit-fields', 'f40'),
+                path: '/docs/developer-reference/canonical-unit-fields',
+                component: ComponentCreator('/docs/developer-reference/canonical-unit-fields', '93e'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/developer-reference/kross-api',
-                component: ComponentCreator('/it/docs/developer-reference/kross-api', '777'),
+                path: '/docs/developer-reference/kross-api',
+                component: ComponentCreator('/docs/developer-reference/kross-api', '3fa'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/developer-reference/post-meta-reference',
-                component: ComponentCreator('/it/docs/developer-reference/post-meta-reference', '070'),
+                path: '/docs/developer-reference/post-meta-reference',
+                component: ComponentCreator('/docs/developer-reference/post-meta-reference', '2cf'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/developer-reference/sync-hooks-and-filters',
-                component: ComponentCreator('/it/docs/developer-reference/sync-hooks-and-filters', '7b9'),
+                path: '/docs/developer-reference/sync-hooks-and-filters',
+                component: ComponentCreator('/docs/developer-reference/sync-hooks-and-filters', '82a'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/developer-reference/unit-info-renderers',
-                component: ComponentCreator('/it/docs/developer-reference/unit-info-renderers', '13b'),
+                path: '/docs/developer-reference/unit-info-renderers',
+                component: ComponentCreator('/docs/developer-reference/unit-info-renderers', 'e3b'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/getting-started/add-search-and-booking-to-pages',
-                component: ComponentCreator('/it/docs/getting-started/add-search-and-booking-to-pages', '7fa'),
+                path: '/docs/getting-started/add-search-and-booking-to-pages',
+                component: ComponentCreator('/docs/getting-started/add-search-and-booking-to-pages', '01b'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/getting-started/connect-your-provider',
-                component: ComponentCreator('/it/docs/getting-started/connect-your-provider', '957'),
+                path: '/docs/getting-started/admin-screens',
+                component: ComponentCreator('/docs/getting-started/admin-screens', '48d'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/getting-started/installation',
-                component: ComponentCreator('/it/docs/getting-started/installation', '5ac'),
+                path: '/docs/getting-started/connect-your-provider',
+                component: ComponentCreator('/docs/getting-started/connect-your-provider', 'e75'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/getting-started/run-your-first-sync',
-                component: ComponentCreator('/it/docs/getting-started/run-your-first-sync', '73d'),
+                path: '/docs/getting-started/frontend-settings',
+                component: ComponentCreator('/docs/getting-started/frontend-settings', '515'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/introduction/how-it-works',
-                component: ComponentCreator('/it/docs/introduction/how-it-works', '4ca'),
+                path: '/docs/getting-started/installation',
+                component: ComponentCreator('/docs/getting-started/installation', '8e2'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/introduction/requirements',
-                component: ComponentCreator('/it/docs/introduction/requirements', 'b43'),
+                path: '/docs/getting-started/run-your-first-sync',
+                component: ComponentCreator('/docs/getting-started/run-your-first-sync', '30b'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/introduction/what-is-bec',
-                component: ComponentCreator('/it/docs/introduction/what-is-bec', '410'),
+                path: '/docs/introduction/how-it-works',
+                component: ComponentCreator('/docs/introduction/how-it-works', 'ea1'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/providers/kross-booking',
-                component: ComponentCreator('/it/docs/providers/kross-booking', '936'),
+                path: '/docs/introduction/requirements',
+                component: ComponentCreator('/docs/introduction/requirements', '666'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/providers/providers-overview',
-                component: ComponentCreator('/it/docs/providers/providers-overview', '0e5'),
+                path: '/docs/introduction/what-is-bec',
+                component: ComponentCreator('/docs/introduction/what-is-bec', 'e39'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-booking-summary',
-                component: ComponentCreator('/it/docs/shortcodes/bec-booking-summary', '720'),
+                path: '/docs/providers/kross-booking',
+                component: ComponentCreator('/docs/providers/kross-booking', '0b8'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-checkout',
-                component: ComponentCreator('/it/docs/shortcodes/bec-checkout', '5c2'),
+                path: '/docs/providers/providers-overview',
+                component: ComponentCreator('/docs/providers/providers-overview', '7ea'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-dates',
-                component: ComponentCreator('/it/docs/shortcodes/bec-dates', '1e2'),
+                path: '/docs/shortcodes/bec-available-units-count',
+                component: ComponentCreator('/docs/shortcodes/bec-available-units-count', 'b14'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-fallback',
-                component: ComponentCreator('/it/docs/shortcodes/bec-fallback', '26a'),
+                path: '/docs/shortcodes/bec-booking-summary',
+                component: ComponentCreator('/docs/shortcodes/bec-booking-summary', 'd21'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-quote',
-                component: ComponentCreator('/it/docs/shortcodes/bec-quote', '2cc'),
+                path: '/docs/shortcodes/bec-checkout',
+                component: ComponentCreator('/docs/shortcodes/bec-checkout', '44e'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-search',
-                component: ComponentCreator('/it/docs/shortcodes/bec-search', '482'),
+                path: '/docs/shortcodes/bec-dates',
+                component: ComponentCreator('/docs/shortcodes/bec-dates', '60d'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-unit-field',
-                component: ComponentCreator('/it/docs/shortcodes/bec-unit-field', '114'),
+                path: '/docs/shortcodes/bec-fallback',
+                component: ComponentCreator('/docs/shortcodes/bec-fallback', 'ab7'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-unit-gallery',
-                component: ComponentCreator('/it/docs/shortcodes/bec-unit-gallery', 'd15'),
+                path: '/docs/shortcodes/bec-quote',
+                component: ComponentCreator('/docs/shortcodes/bec-quote', '2a3'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-unit-info',
-                component: ComponentCreator('/it/docs/shortcodes/bec-unit-info', 'e82'),
+                path: '/docs/shortcodes/bec-search',
+                component: ComponentCreator('/docs/shortcodes/bec-search', '966'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-unit-url',
-                component: ComponentCreator('/it/docs/shortcodes/bec-unit-url', 'c4b'),
+                path: '/docs/shortcodes/bec-unit-field',
+                component: ComponentCreator('/docs/shortcodes/bec-unit-field', '9e0'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/bec-version',
-                component: ComponentCreator('/it/docs/shortcodes/bec-version', 'c90'),
+                path: '/docs/shortcodes/bec-unit-filters',
+                component: ComponentCreator('/docs/shortcodes/bec-unit-filters', '18a'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/elementor-loop-grid-availability-filter',
-                component: ComponentCreator('/it/docs/shortcodes/elementor-loop-grid-availability-filter', '64f'),
+                path: '/docs/shortcodes/bec-unit-gallery',
+                component: ComponentCreator('/docs/shortcodes/bec-unit-gallery', '679'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/elementor-unit-gallery',
-                component: ComponentCreator('/it/docs/shortcodes/elementor-unit-gallery', '1dc'),
+                path: '/docs/shortcodes/bec-unit-info',
+                component: ComponentCreator('/docs/shortcodes/bec-unit-info', '962'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/shortcodes/shortcodes-overview',
-                component: ComponentCreator('/it/docs/shortcodes/shortcodes-overview', '229'),
+                path: '/docs/shortcodes/bec-unit-url',
+                component: ComponentCreator('/docs/shortcodes/bec-unit-url', '2a2'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/styling/booking-summary-presets',
-                component: ComponentCreator('/it/docs/styling/booking-summary-presets', 'd53'),
+                path: '/docs/shortcodes/bec-version',
+                component: ComponentCreator('/docs/shortcodes/bec-version', 'cfa'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/styling/search-form-presets',
-                component: ComponentCreator('/it/docs/styling/search-form-presets', '55d'),
+                path: '/docs/shortcodes/elementor-loop-grid-availability-filter',
+                component: ComponentCreator('/docs/shortcodes/elementor-loop-grid-availability-filter', 'ed8'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/styling/styling-overview',
-                component: ComponentCreator('/it/docs/styling/styling-overview', 'e2f'),
+                path: '/docs/shortcodes/elementor-unit-gallery',
+                component: ComponentCreator('/docs/shortcodes/elementor-unit-gallery', '1d6'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/styling/theme-variables-and-custom-css',
-                component: ComponentCreator('/it/docs/styling/theme-variables-and-custom-css', '320'),
+                path: '/docs/shortcodes/shortcodes-overview',
+                component: ComponentCreator('/docs/shortcodes/shortcodes-overview', '9b1'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/troubleshooting/common-issues',
-                component: ComponentCreator('/it/docs/troubleshooting/common-issues', '80a'),
+                path: '/docs/styling/booking-summary-presets',
+                component: ComponentCreator('/docs/styling/booking-summary-presets', '675'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/troubleshooting/uninstalling',
-                component: ComponentCreator('/it/docs/troubleshooting/uninstalling', '3f5'),
+                path: '/docs/styling/search-form-presets',
+                component: ComponentCreator('/docs/styling/search-form-presets', 'e77'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/troubleshooting/using-the-api-log',
-                component: ComponentCreator('/it/docs/troubleshooting/using-the-api-log', 'e91'),
+                path: '/docs/styling/styling-overview',
+                component: ComponentCreator('/docs/styling/styling-overview', '7e1'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/units/editing-a-unit',
-                component: ComponentCreator('/it/docs/units/editing-a-unit', '96b'),
+                path: '/docs/styling/theme-variables-and-custom-css',
+                component: ComponentCreator('/docs/styling/theme-variables-and-custom-css', '85b'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/units/gallery-images',
-                component: ComponentCreator('/it/docs/units/gallery-images', 'e7a'),
+                path: '/docs/troubleshooting/common-issues',
+                component: ComponentCreator('/docs/troubleshooting/common-issues', '74f'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/units/permalinks-and-archive',
-                component: ComponentCreator('/it/docs/units/permalinks-and-archive', '409'),
+                path: '/docs/troubleshooting/uninstalling',
+                component: ComponentCreator('/docs/troubleshooting/uninstalling', 'd14'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/units/syncing-units',
-                component: ComponentCreator('/it/docs/units/syncing-units', '9ab'),
+                path: '/docs/troubleshooting/using-the-api-log',
+                component: ComponentCreator('/docs/troubleshooting/using-the-api-log', '6c0'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/units/unit-categories',
-                component: ComponentCreator('/it/docs/units/unit-categories', 'ea8'),
+                path: '/docs/units/editing-a-unit',
+                component: ComponentCreator('/docs/units/editing-a-unit', '901'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/it/docs/units/units-overview',
-                component: ComponentCreator('/it/docs/units/units-overview', '5b3'),
+                path: '/docs/units/gallery-images',
+                component: ComponentCreator('/docs/units/gallery-images', '36f'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/units/listing-filters-admin',
+                component: ComponentCreator('/docs/units/listing-filters-admin', 'b21'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/units/permalinks-and-archive',
+                component: ComponentCreator('/docs/units/permalinks-and-archive', 'afe'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/units/syncing-units',
+                component: ComponentCreator('/docs/units/syncing-units', 'dd6'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/units/unit-categories',
+                component: ComponentCreator('/docs/units/unit-categories', '1a0'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/units/units-overview',
+                component: ComponentCreator('/docs/units/units-overview', 'f12'),
                 exact: true,
                 sidebar: "docsSidebar"
               }
@@ -319,8 +384,8 @@ export default [
     ]
   },
   {
-    path: '/it/',
-    component: ComponentCreator('/it/', '211'),
+    path: '/',
+    component: ComponentCreator('/', 'e5f'),
     exact: true
   },
   {

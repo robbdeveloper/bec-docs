@@ -26,6 +26,8 @@ Template singola unità — tipicamente colonna destra / sidebar sticky che i bu
 | **`tax_note`** | *(vuoto)* | Piccolo disclaimer sotto i totali — se vuoto usa default/filtro. |
 | **`show_enquiry`** | `1` | Imposta `0`, `false` o `no` per nascondere il link secondario richiesta. |
 | **`enquiry_label`** | tradotto “Enquiry” | Testo ancora per l’azione secondaria (le impostazioni fallback forniscono URL/testo di riserva). |
+| **`daterange_format`** | *(empty)* | Formato PHP `date_i18n()` per il footer calendario della ricerca incorporata. Sovrascrive **`daterange_preset`** se impostato. |
+| **`daterange_preset`** | `medium` | Preset footer quando **`daterange_format`** è vuoto: `iso`, `short`, `medium`, `long`, o `full`. |
 
 ---
 
@@ -39,7 +41,7 @@ Template singola unità — tipicamente colonna destra / sidebar sticky che i bu
 | **Errore API preventivo** | Messaggistica orientata agli errori — può abbinarsi al **[fallback](../05-bookings-and-checkout/04-fallback-mode.md)** secondo la configurazione. |
 | **Fallback attivato** | Contenuto fallback inline accanto a ricerca/richiesta secondo le regole. |
 
-I layout mobile duplicano i controlli critici (`bec-booking-summary__mobile`, id drawer/backdrop derivati da `form_id`).
+I layout mobile duplicano i controlli critici (`bec-booking-summary__mobile`, id drawer/backdrop derivati da `form_id`). La regione scroll del corpo drawer usa **`bec-booking-summary__drawer-body`**.
 
 {/* SCREENSHOT: Desktop booking summary available state */}
 ![Riepilogo desktop disponibile](/img/bec-screenshot-placeholder.svg)
@@ -78,7 +80,7 @@ I layout mobile duplicano i controlli critici (`bec-booking-summary__mobile`, id
 ```
 
 ```
-[bec_booking_summary tax_note="IVA inclusa." enquiry_label="Scrivici"]
+[bec_booking_summary tax_note="IVA inclusa." enquiry_label="Scrivici" daterange_preset="long"]
 ```
 
 ---
@@ -101,12 +103,12 @@ Regioni:
 - Accordion (rispettano interruttori stile): `bec-booking-summary__accordions`, `__accordion`
 - Dettaglio: `bec-booking-summary__breakdown`, `__row`, `__tax-note`
 - Azioni: `bec-booking-summary__actions`, `__action--primary`, `__action--secondary`
-- Mobile: `bec-booking-summary__mobile`, `__bar`, `__backdrop`, `__drawer`, `__hero`
+- Mobile: `bec-booking-summary__mobile`, `__bar`, `__backdrop`, `__drawer`, `__drawer-body`, `__hero`
 - Messaggi: `bec-booking-summary__message`, `--error`, `--empty`
 
 ---
 
 ## Suggerimenti
 
-- Gli accordion per **inclusioni** / **condizioni** seguono gli interruttori admin in **[Stile](../07-styling/01-styling-overview.md)**.
+- Gli accordion per **inclusioni** / **condizioni** seguono gli interruttori admin in **[Design](../07-styling/01-styling-overview.md)**.
 - Cambiare tariffa scrive **`bec_rate_id`** nell’URL per il checkout a valle.

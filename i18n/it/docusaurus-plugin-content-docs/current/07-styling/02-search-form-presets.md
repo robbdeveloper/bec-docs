@@ -6,7 +6,7 @@ description: Barra di ricerca Enhanced vs Classic, screenshot anteprima, hook CS
 
 # Preset modulo di ricerca
 
-La scelta del preset è in **Booking Engine → Styling → Search bar → Layout style**.
+La scelta del preset è in **Booking Engine → Design → Search bar → Layout style**.
 
 ---
 
@@ -32,6 +32,34 @@ La scelta del preset è in **Booking Engine → Styling → Search bar → Layou
 {/* Intended screenshot (add file at `docs/img/07-styling/search-classic-desktop.png`): search-classic-desktop.png */}
 
 **Scegli Classic quando** il tema stilizza già input discreti o preferisci massima familiarità.
+
+---
+
+## Posizionamento popover (Enhanced)
+
+Su desktop e tablet, i popover data e ospiti rispettano **`popover_placement`** su **`[bec_search]`** (o **`SearchForm::render()`**):
+
+| Valore | Comportamento |
+|--------|----------------|
+| **`auto`** (default) | Si apre sotto il trigger; passa **sopra** se non c’è spazio sotto nel viewport. Si riposiziona su scroll/resize mentre è aperto. |
+| **`top`** | Si apre sempre sopra. |
+| **`bottom`** | Si apre sempre sotto. |
+
+Override filtro: **`bec_search_form_popover_placement`**. Su mobile i popover usano comunque il layout bottom sheet indipendentemente da questa impostazione.
+
+---
+
+## Footer intervallo date (Enhanced)
+
+Il footer calendario (`.drp-selected`, accanto a Cancel/Apply) mostra l’intervallo selezionato con **`daterange_format`** o **`daterange_preset`** da **`[bec_search]`** / **`[bec_booking_summary]`**. Dalla **0.1.36**, il footer usa una griglia responsive così lettura date e pulsanti restano allineati su viewport stretti.
+
+I form Enhanced espongono **`data-bec-daterange-format`** per il picker Moment.js. Filtri: **`bec_search_form_daterange_format`**, **`bec_daterange_moment_format_presets`**, **`bec_php_date_format_to_moment`**.
+
+---
+
+## Backdrop e sincronizzazione overlay
+
+La ricerca Enhanced condividde backdrop/overlay tra picker intervallo date e popover ospiti così solo un pannello risulta “aperto”. Se personalizzi z-index o colore overlay in **Extra CSS**, punta sia agli hook backdrop di `.bec-search-form-wrap--enhanced` sia ai wrapper popover ospiti per coerenza visiva.
 
 ---
 

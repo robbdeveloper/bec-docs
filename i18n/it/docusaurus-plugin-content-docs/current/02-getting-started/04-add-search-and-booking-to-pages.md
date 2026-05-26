@@ -22,7 +22,7 @@ description: Tutorial rapido — posiziona bec_search su una landing e bec_booki
 
 4. **Aggiorna** la pagina.
 
-**Dove arriva la ricerca:** con il semplice **`[bec_search]`**, l’invio va per impostazione predefinita all’**archivio delle unità** (l’elenco pubblico dell’inventario), **non** di nuovo alla homepage — così l’elenco può leggere **`bec_*`** dall’URL. Se l’archivio è disattivato, WordPress usa la **home**; abilita **Unit archive** in **Booking Engine → Units — permalinks** oppure aggiungi **`redirect_url="/tua-pagina/"`** allo shortcode. Dettagli: **[bec_search](../06-shortcodes/02-bec-search.md)**.
+**Dove arriva la ricerca:** con il semplice **`[bec_search]`**, l’invio va per impostazione predefinita all’**archivio delle unità** (l’elenco pubblico dell’inventario), **non** di nuovo alla homepage — così l’elenco può leggere **`bec_*`** dall’URL. Se l’archivio è disattivato, WordPress usa la **home**; abilita **Unit archive** in **Booking Engine → Units** oppure aggiungi **`redirect_url="/tua-pagina/"`** allo shortcode. Dettagli: **[bec_search](../06-shortcodes/02-bec-search.md)**.
 
 Quando un visitatore invia il modulo, il browser carica la destinazione con date e ospiti nell’**URL**. Gli altri shortcode **su quella pagina** leggono gli stessi valori.
 
@@ -85,9 +85,9 @@ Oppure passa un ID post specifico: `[bec_unit_url unit_id="123"]`.
 
 ---
 
-## Stile
+## Design
 
-Modifica l’aspetto in **Booking Engine → Styling** o aggiungi CSS — vedi **[Panoramica stile](../07-styling/01-styling-overview.md)**.
+Modifica l’aspetto in **Booking Engine → Design** o aggiungi CSS — vedi **[Panoramica Design](../07-styling/01-styling-overview.md)**.
 
 ---
 

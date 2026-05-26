@@ -33,7 +33,7 @@ Usa **Verify connection** dopo aver salvato (o anche prima, secondo il comportam
 
 Il comportamento della sync può **limitare quali tipi camera Kross** vengono importati durante una **sync completa**:
 
-1. Vai in **Booking Engine → Sync**.
+1. Vai in **Booking Engine → Sync & Import**.
 2. Sotto **Kross booking engines**, clicca **Refresh booking engines list from Kross** per caricare gli slug `be_enabled` da **`/v5/rooms/get-room-types`** nella checklist.
 3. **Lascia tutte le caselle deselezionate** per sincronizzare l’intero inventario (consigliato salvo esigenze diverse).
 4. Seleziona slug specifici per includere solo i tipi camera il cui elenco **`be_enabled`** normalizzato corrisponde a **almeno uno** slug scelto.

@@ -1,5 +1,5 @@
 ---
-title: Shortcode `[bec_dates]`
+title: Shortcode '[bec_dates]'
 sidebar_label: bec_dates
 description: Date soggiorno leggibili dall’URL, shortcode bec_dates, date_format preset label_style label, CSS bec-shortcode-dates.
 ---
@@ -18,12 +18,12 @@ Intestazioni pagina, riepiloghi fissi, banner di conferma — ovunque già trasp
 
 ## Attributi
 
-| Attributo | Predefinito | Significato |
-|-----------|-------------|-------------|
-| **`date_format`** | *(vuoto)* | Stringa formato PHP `date_i18n()`. Se impostata, sovrascrive **`preset`**. |
-| **`preset`** | `iso` | Formato integrato: `iso`, `short`, `medium`, `long`, `full` (nomi mese/giorno localizzati). |
-| **`label_style`** | `arrow` | Modello intervallo: `arrow` (`%1$s → %2$s`), `from_to`, `from_to_lower`. Ignorato se è impostato **`label`**. |
-| **`label`** | *(vuoto)* | Pattern `sprintf` personalizzato: **`%1$s`** = check-in, **`%2$s`** = check-out (sovrascrive **`label_style`**). |
+| Attribute | Default | Significato |
+|-----------|---------|-------------|
+| **`date_format`** | *(empty)* | Stringa formato PHP `date_i18n()`. Se impostata, sovrascrive **`preset`**. |
+| **`preset`** | `long` | Formato integrato: `iso`, `short`, `medium`, `long`, `full` (nomi mese/giorno localizzati). |
+| **`label_style`** | `from_to` | Modello intervallo: `arrow` (`%1$s → %2$s`), `from_to`, `from_to_lower`. Ignorato se è impostato **`label`**. |
+| **`label`** | *(empty)* | Pattern `sprintf` personalizzato: **`%1$s`** = check-in, **`%2$s`** = check-out (sovrascrive **`label_style`**). |
 
 Predefiniti globali: filtro **`bec_date_format_defaults`** (contesto `bec_dates`).
 
@@ -35,16 +35,16 @@ Altri filtri: **`bec_shortcode_dates_text`**, **`bec_shortcode_dates_html`**, **
 
 ## Esempi
 
-Predefinito (date ISO con freccia):
+Predefinito (formato lungo con “da … a …”):
 
 ```
 [bec_dates]
 ```
 
-Formato lungo con “da … a …”:
+Date ISO con separatore freccia:
 
 ```
-[bec_dates preset="long" label_style="from_to"]
+[bec_dates preset="iso" label_style="arrow"]
 ```
 
 Formato data PHP personalizzato:
@@ -61,13 +61,13 @@ Quando il **[contesto di ricerca](../05-bookings-and-checkout/01-search-context-
 
 Altrimenti i visitatori vedono tipicamente un paragrafo come:
 
-> Lun 1 giu → Lun 8 giu
+> lunedì 1 giugno 2026 a lunedì 8 giugno 2026
 
-(con **`preset="iso"`**)
+(con predefiniti **`preset="long"`** e **`label_style="from_to"`**)
 
-oppure, con **`preset="long"`**:
+oppure, con **`preset="iso"`** e **`label_style="arrow"`**:
 
-> lunedì 1 giugno 2026 → lunedì 8 giugno 2026
+> 2026-06-01 → 2026-06-08
 
 (La formattazione locale segue WordPress e **`preset`** / **`date_format`** scelti.)
 

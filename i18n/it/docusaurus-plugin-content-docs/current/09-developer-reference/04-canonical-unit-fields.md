@@ -16,7 +16,9 @@ Semantica indipendente dal provider per le **Unità** (`bec_unit`), memorizzata 
 |----------|----------|------|
 | `NAME` | `bec_core_name` | Nome visualizzato |
 | `ADDRESS_FULL` | `bec_core_address_full` | Indirizzo formattato su una riga (mappe, SEO) |
+| `CITY` | `bec_core_city` | Nome città; sincronizzato da Kross `city`; modificabile nel meta box; incluso anche in `bec_core_address_full` |
 | `LAT` / `LNG` | `bec_core_lat`, `bec_core_lng` | Coordinate come stringhe |
+| `LAT_LNG` | `bec_core_lat_lng` | Coppia `lat,lng` derivata in sola lettura; aggiornata in sync e al salvataggio admin quando cambiano lat/lng |
 | `OCC_MIN` / `OCC_MAX` | `bec_core_occ_min`, `bec_core_occ_max` | Limiti ospiti |
 | `CHECK_IN_FROM` / `CHECK_IN_TO` | `bec_core_check_in_from`, `bec_core_check_in_to` | Finestra check-in |
 | `CHECK_OUT_UNTIL` | `bec_core_check_out_until` | Scadenza check-out |
@@ -25,7 +27,7 @@ Semantica indipendente dal provider per le **Unità** (`bec_unit`), memorizzata 
 | `DESCRIPTION` | `bec_core_description` | Descrizione principale (locale da `bec_core_unit_locale`). Alla sync questo valore è anche scritto nel **contenuto** del post (`post_content`) dopo `bec_sync_unit_content` e `wp_kses_post`. |
 | `SQM` | `bec_core_sqm` | Superficie in m² |
 | `AMENITIES` | `bec_core_amenities` | Array JSON di elementi normalizzati (vedi sotto) |
-| `GALLERY` | `bec_core_gallery` | Array JSON di **ID allegati** (interi). Alla sync i provider (es. Kross) restituiscono payload gallery; il connector **importa per unità**: ogni file è **posseduto** dall’unità (vedi meta allegati), nominato con impostazioni **Sync** e slug nome unità, salvato qui nell’ordine del provider. Imposta l’**immagine in evidenza** all’immagine `main` Kross se presente, altrimenti al primo elemento dell’elenco ordinato. |
+| `GALLERY` | `bec_core_gallery` | Array JSON di **ID allegati** (interi). Alla sync i provider (es. Kross) restituiscono payload gallery; il connector **importa per unità**: ogni file è **posseduto** dall’unità (vedi meta allegati), nominato con impostazioni **Sync & Import** e slug nome unità, salvato qui nell’ordine del provider. Imposta l’**immagine in evidenza** all’immagine `main` Kross se presente, altrimenti al primo elemento dell’elenco ordinato. |
 | `CIN` | `bec_core_cin` | **Codice Identificativo Nazionale** italiano (identificativo unità alloggio). Sincronizzato da `cin` Kross se presente; modificabile in **Unità — campi core**. Leggibile anche con `[bec_unit_field field="cin"]` da `raw`. |
 
 **Rilevamento modifiche (gallery):** l’unità memorizza:
@@ -73,9 +75,9 @@ I provider possono restituire `GALLERY` come:
 - `['urls' => [ 'https://…', … ], 'featured_url' => 'https://…'|null ]` — `items` e chiavi derivate dall’elenco URL.
 - Lista piatta di stringhe `https://…` — stesso comportamento import (chiavi = SHA-256 di ogni URL normalizzato, con suffissi indice se duplicati).
 
-**Sync → Nomi file immagini gallery (wp-admin → Sync):** le opzioni `bec_sync_gallery_image_prefix` e `bec_sync_gallery_image_suffix` (vedi **[Riferimento post meta](./03-post-meta-reference.md)**) controllano: prefisso + slug nome unità (da `bec_core_name`) + suffisso + `-` + `NN` + estensione file.
+**Sync & Import → Nomi file immagini gallery (wp-admin → Sync & Import):** le opzioni `bec_sync_gallery_image_prefix` e `bec_sync_gallery_image_suffix` (vedi **[Riferimento post meta](./03-post-meta-reference.md)**) controllano: prefisso + slug nome unità (da `bec_core_name`) + suffisso + `-` + `NN` + estensione file.
 
-**Rinominare file esistenti:** la schermata Sync offre anche **Rename all unit gallery files** e azione riga **Rename gallery files** per unità. Riapplicano prefisso/suffisso corrente agli allegati già elencati in `bec_core_gallery` (gli indici seguono l’ordine gallery memorizzato). Allegati referenziati da più `bec_unit` sono **copiati** per l’unità corrente e la gallery dell’unità (e featured image, quando puntava al vecchio allegato) è aggiornata così le altre unità continuano a funzionare. Il **Titolo** Libreria media (`post_title`) coincide col nome base file (senza estensione), anche quando il nome file era già allineato alle impostazioni sync ma il titolo era ancora segnaposto (es. da import). Alt text e altri campi invariati. Rinomina singola unità rigenera miniature dopo lo spostamento del file principale.
+**Rinominare file esistenti:** il tab **Tools** di Sync & Import offre anche **Rename all unit gallery files** e azione riga **Rename gallery files** per unità. Riapplicano prefisso/suffisso corrente agli allegati già elencati in `bec_core_gallery` (gli indici seguono l’ordine gallery memorizzato). Allegati referenziati da più `bec_unit` sono **copiati** per l’unità corrente e la gallery dell’unità (e featured image, quando puntava al vecchio allegato) è aggiornata così le altre unità continuano a funzionare. Il **Titolo** Libreria media (`post_title`) coincide col nome base file (senza estensione), anche quando il nome file era già allineato alle impostazioni sync ma il titolo era ancora segnaposto (es. da import). Alt text e altri campi invariati. Rinomina singola unità rigenera miniature dopo lo spostamento del file principale.
 
 Filtri:
 

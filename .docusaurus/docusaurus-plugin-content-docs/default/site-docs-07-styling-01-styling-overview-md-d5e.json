@@ -1,7 +1,7 @@
 {
   "id": "styling/styling-overview",
-  "title": "Styling overview",
-  "description": "Booking Engine Styling admin page theme variables search and booking summary presets accordions extra CSS screenshots.",
+  "title": "Design overview",
+  "description": "Booking Engine Design admin page theme variables search and booking summary presets accordions extra CSS unit filters screenshots.",
   "source": "@site/docs/07-styling/01-styling-overview.md",
   "sourceDirName": "07-styling",
   "slug": "/styling/styling-overview",
@@ -12,9 +12,9 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
-    "title": "Styling overview",
-    "sidebar_label": "Styling overview",
-    "description": "Booking Engine Styling admin page theme variables search and booking summary presets accordions extra CSS screenshots."
+    "title": "Design overview",
+    "sidebar_label": "Design overview",
+    "description": "Booking Engine Design admin page theme variables search and booking summary presets accordions extra CSS unit filters screenshots."
   },
   "sidebar": "docsSidebar",
   "previous": {

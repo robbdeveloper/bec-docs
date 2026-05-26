@@ -8,7 +8,7 @@ description: Use a custom Query ID on Elementor’s Loop Grid so listing cards o
 
 If you list **Units** in an **Elementor Pro** [Loop Grid](https://elementor.com/help/loop-grid/) and each card includes **`[bec_quote]`**, units without availability still appear in the grid and show text like *“No availability for these dates.”*
 
-Booking Engine Connector registers an **Elementor custom Query ID** that filters the loop **before** cards render: only units that are **available** for the current URL search context are included.
+Booking Engine Connector registers **Elementor custom Query IDs** that filter the loop **before** cards render: only units that match **unit filters** and, when search context is complete, units that are **available** for those dates are included.
 
 ---
 
@@ -30,12 +30,20 @@ Booking Engine Connector registers an **Elementor custom Query ID** that filters
    bec_available_only
    ```
 
+   or the alias:
+
+   ```
+   bec_filtered_units
+   ```
+
 5. Ensure the query source is your **Units** post type (or whatever query already lists `bec_unit` posts).
 6. **Update** / publish.
 
 When a visitor opens the page **with** complete search parameters in the URL (for example after using **`[bec_search]`**), the grid shows **only** units the provider reports as available for those dates. Rows with no availability are omitted entirely—not blank cards.
 
-When the URL has **no** complete search context (no check-in, check-out, and guests yet), the plugin **does not** apply this filter—the grid behaves like a normal listing so landing pages still show all units.
+When the URL has **no** complete search context (no check-in, check-out, and guests yet), the plugin **does not** apply availability filtering—the grid behaves like a normal listing so landing pages still show all units. **Unit filters** (`bec_filter_*` params) still apply when present.
+
+Place **`[bec_unit_filters]`** above the grid and **`[bec_available_units_count]`** in a heading for a complete listing experience. See **[bec_unit_filters](./15-bec-unit-filters.md)**.
 
 ---
 
@@ -44,7 +52,7 @@ When the URL has **no** complete search context (no check-in, check-out, and gue
 | Situation | What happens |
 |-----------|----------------|
 | Search context **complete** (`bec_checkin`, `bec_checkout`, `bec_adults` or your provider’s guest URL pattern) | Loop is restricted to available units only. |
-| Search context **incomplete** | No filtering; all units in the query can appear (same as before). |
+| Search context **incomplete** | No availability filtering; all units in the query can appear (same as before). Unit filters still apply. |
 | **[Fallback mode](../05-bookings-and-checkout/04-fallback-mode.md)** set to always use fallback contact flow | No filtering; all units stay visible so your fallback messaging can apply per card if you use it. |
 | No units match | Elementor shows the grid’s empty / “nothing found” state (no cards). |
 
@@ -58,6 +66,7 @@ Quotes use the same **short-lived cache** as elsewhere—see **[Availability & q
 
 - **[Search context & URLs](../05-bookings-and-checkout/01-search-context-and-urls.md)** — which query parameters the plugin reads.
 - **[bec_quote](./04-bec-quote.md)** — what the quote shortcode shows inside each card.
+- **[bec_unit_filters](./15-bec-unit-filters.md)** — filter form for the same listing.
 - **[Add search & booking to pages](../02-getting-started/04-add-search-and-booking-to-pages.md)** — minimal layout with search + listings.
 
 Customizing the Query ID string or post list requires WordPress **`apply_filters`** hooks (`bec_elementor_availability_query_id`, `bec_elementor_available_post_ids`, `bec_elementor_availability_max_units`)—see **[Developer reference](../09-developer-reference/01-architecture.md)**.

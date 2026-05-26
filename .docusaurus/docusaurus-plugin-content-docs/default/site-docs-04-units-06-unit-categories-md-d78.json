@@ -1,7 +1,7 @@
 {
   "id": "units/unit-categories",
   "title": "Unit categories",
-  "description": "Optional bec_unit_category taxonomy — enable on permalinks screen, URL slug, sync from Kross, public archives and multilingual labels.",
+  "description": "Optional bec_unit_category taxonomy — enable on Units screen, URL slug, URL structure, sync from Kross, public archives and multilingual labels.",
   "source": "@site/docs/04-units/06-unit-categories.md",
   "sourceDirName": "04-units",
   "slug": "/units/unit-categories",
@@ -14,7 +14,7 @@
   "frontMatter": {
     "title": "Unit categories",
     "sidebar_label": "Unit categories",
-    "description": "Optional bec_unit_category taxonomy — enable on permalinks screen, URL slug, sync from Kross, public archives and multilingual labels."
+    "description": "Optional bec_unit_category taxonomy — enable on Units screen, URL slug, URL structure, sync from Kross, public archives and multilingual labels."
   },
   "sidebar": "docsSidebar",
   "previous": {
@@ -22,7 +22,7 @@
     "permalink": "/docs/units/permalinks-and-archive"
   },
   "next": {
-    "title": "Search context & URLs",
-    "permalink": "/docs/bookings-and-checkout/search-context-and-urls"
+    "title": "Listing Filters admin",
+    "permalink": "/docs/units/listing-filters-admin"
   }
 }

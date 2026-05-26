@@ -22,15 +22,19 @@ Compare un nuovo menu di primo livello nella barra laterale di amministrazione: 
 
 I sottomenu includono di solito:
 
-- **Dashboard** — Panoramica e collegamenti alle impostazioni.
-- **Connection** — Provider e credenziali API (più comportamento del modulo di ricerca).
-- **Styling** — Preset e CSS personalizzato.
-- **Sync** — Intervallo, **Kross booking engines** (filtro sync completa), opzioni nomi file galleria, **Run sync now** (avanzamento a batch con JS), **Clear sync lock**, rinomina globale file galleria.
-- **Units — permalinks** — Slug URL pubblico, **archivio unità** e **categorie unità** opzionali (tassonomia + slug URL categoria).
-- **API Log** — Chiamate HTTP recenti al provider.
-- **Checkout & fallback** — URL prenotazione esterna e fallback quando il motore non è disponibile.
+- **Dashboard** — Card di stato e collegamenti rapidi alle attività comuni.
+- **Connection** — Provider e credenziali API.
+- **Frontend** — Campi ospiti del modulo di ricerca e iniezione contenuto singola unità.
+- **Sync & Import** — Intervallo, Kross booking engines, opzioni nomi file galleria; tab **Tools** per run sync, clear lock, rinomina globale galleria.
+- **Units** — Slug URL pubblico, strutture URL, archivio unità e categorie unità opzionali.
+- **Listing Filters** — Cura servizi per `[bec_unit_filters]`.
+- **Design** — Preset, token e Extra CSS (inclusi unit filters).
+- **Checkout & Fallback** — URL prenotazione esterna e fallback quando il motore non è disponibile.
+- **Tools & Logs** — Chiamate HTTP recenti al provider.
 
 Vedrai anche **Units** come menu dedicato per le strutture sincronizzate (separato da **Booking Engine**).
+
+Vedi **[Panoramica schermate admin](./05-admin-screens.md)** per la mappa completa di ogni schermata.
 
 {/* SCREENSHOT: WordPress admin left sidebar with Booking Engine expanded and Units menu visible */}
 ![Barra laterale admin menu Booking Engine](/img/bec-screenshot-placeholder.svg)

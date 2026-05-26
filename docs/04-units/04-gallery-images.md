@@ -12,7 +12,7 @@ During sync the plugin can **download** each unit’s gallery from your provider
 
 ## Filename pattern
 
-Under **Booking Engine → Sync**:
+Under **Booking Engine → Sync & Import**:
 
 - **Filename prefix** — Optional text **before** the unit name slug.
 - **Filename suffix (before index)** — Optional text **between** the slug and the numeric index.
@@ -52,7 +52,7 @@ When the provider marks a **main** image, it becomes the WordPress **featured im
 
 Buttons help when you change prefix/suffix **after** images already imported:
 
-- **Booking Engine → Sync → Rename all unit gallery files**
+- **Booking Engine → Sync & Import → Tools → Rename all unit gallery files**
 - **Units → Row action → Rename gallery files** (one unit)
 
 Images shared across multiple units may be **copied** so other units keep working—large sites should run this during quiet periods.
