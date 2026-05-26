@@ -1,278 +1,278 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/it/docs",
       "versions": [
         {
           "name": "current",
-          "label": "Next",
+          "label": "Attuale",
           "isLast": true,
-          "path": "/docs",
+          "path": "/it/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "bookings-and-checkout/availability-and-quotes",
-              "path": "/docs/bookings-and-checkout/availability-and-quotes",
+              "path": "/it/docs/bookings-and-checkout/availability-and-quotes",
               "sidebar": "docsSidebar"
             },
             {
               "id": "bookings-and-checkout/checkout-flow",
-              "path": "/docs/bookings-and-checkout/checkout-flow",
+              "path": "/it/docs/bookings-and-checkout/checkout-flow",
               "sidebar": "docsSidebar"
             },
             {
               "id": "bookings-and-checkout/fallback-mode",
-              "path": "/docs/bookings-and-checkout/fallback-mode",
+              "path": "/it/docs/bookings-and-checkout/fallback-mode",
               "sidebar": "docsSidebar"
             },
             {
               "id": "bookings-and-checkout/search-context-and-urls",
-              "path": "/docs/bookings-and-checkout/search-context-and-urls",
+              "path": "/it/docs/bookings-and-checkout/search-context-and-urls",
               "sidebar": "docsSidebar"
             },
             {
               "id": "developer-reference/adding-a-provider",
-              "path": "/docs/developer-reference/adding-a-provider",
+              "path": "/it/docs/developer-reference/adding-a-provider",
               "sidebar": "docsSidebar"
             },
             {
               "id": "developer-reference/architecture",
-              "path": "/docs/developer-reference/architecture",
+              "path": "/it/docs/developer-reference/architecture",
               "sidebar": "docsSidebar"
             },
             {
               "id": "developer-reference/canonical-unit-fields",
-              "path": "/docs/developer-reference/canonical-unit-fields",
+              "path": "/it/docs/developer-reference/canonical-unit-fields",
               "sidebar": "docsSidebar"
             },
             {
               "id": "developer-reference/kross-api",
-              "path": "/docs/developer-reference/kross-api",
+              "path": "/it/docs/developer-reference/kross-api",
               "sidebar": "docsSidebar"
             },
             {
               "id": "developer-reference/post-meta-reference",
-              "path": "/docs/developer-reference/post-meta-reference",
+              "path": "/it/docs/developer-reference/post-meta-reference",
               "sidebar": "docsSidebar"
             },
             {
               "id": "developer-reference/sync-hooks-and-filters",
-              "path": "/docs/developer-reference/sync-hooks-and-filters",
+              "path": "/it/docs/developer-reference/sync-hooks-and-filters",
               "sidebar": "docsSidebar"
             },
             {
               "id": "developer-reference/unit-info-renderers",
-              "path": "/docs/developer-reference/unit-info-renderers",
+              "path": "/it/docs/developer-reference/unit-info-renderers",
               "sidebar": "docsSidebar"
             },
             {
               "id": "getting-started/add-search-and-booking-to-pages",
-              "path": "/docs/getting-started/add-search-and-booking-to-pages",
+              "path": "/it/docs/getting-started/add-search-and-booking-to-pages",
               "sidebar": "docsSidebar"
             },
             {
               "id": "getting-started/admin-screens",
-              "path": "/docs/getting-started/admin-screens",
+              "path": "/it/docs/getting-started/admin-screens",
               "sidebar": "docsSidebar"
             },
             {
               "id": "getting-started/connect-your-provider",
-              "path": "/docs/getting-started/connect-your-provider",
+              "path": "/it/docs/getting-started/connect-your-provider",
               "sidebar": "docsSidebar"
             },
             {
               "id": "getting-started/frontend-settings",
-              "path": "/docs/getting-started/frontend-settings",
+              "path": "/it/docs/getting-started/frontend-settings",
               "sidebar": "docsSidebar"
             },
             {
               "id": "getting-started/installation",
-              "path": "/docs/getting-started/installation",
+              "path": "/it/docs/getting-started/installation",
               "sidebar": "docsSidebar"
             },
             {
               "id": "getting-started/run-your-first-sync",
-              "path": "/docs/getting-started/run-your-first-sync",
+              "path": "/it/docs/getting-started/run-your-first-sync",
               "sidebar": "docsSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/",
+              "path": "/it/docs/",
               "sidebar": "docsSidebar"
             },
             {
               "id": "introduction/how-it-works",
-              "path": "/docs/introduction/how-it-works",
+              "path": "/it/docs/introduction/how-it-works",
               "sidebar": "docsSidebar"
             },
             {
               "id": "introduction/requirements",
-              "path": "/docs/introduction/requirements",
+              "path": "/it/docs/introduction/requirements",
               "sidebar": "docsSidebar"
             },
             {
               "id": "introduction/what-is-bec",
-              "path": "/docs/introduction/what-is-bec",
+              "path": "/it/docs/introduction/what-is-bec",
               "sidebar": "docsSidebar"
             },
             {
               "id": "providers/kross-booking",
-              "path": "/docs/providers/kross-booking",
+              "path": "/it/docs/providers/kross-booking",
               "sidebar": "docsSidebar"
             },
             {
               "id": "providers/providers-overview",
-              "path": "/docs/providers/providers-overview",
+              "path": "/it/docs/providers/providers-overview",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-available-units-count",
-              "path": "/docs/shortcodes/bec-available-units-count",
+              "path": "/it/docs/shortcodes/bec-available-units-count",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-booking-summary",
-              "path": "/docs/shortcodes/bec-booking-summary",
+              "path": "/it/docs/shortcodes/bec-booking-summary",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-checkout",
-              "path": "/docs/shortcodes/bec-checkout",
+              "path": "/it/docs/shortcodes/bec-checkout",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-dates",
-              "path": "/docs/shortcodes/bec-dates",
+              "path": "/it/docs/shortcodes/bec-dates",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-fallback",
-              "path": "/docs/shortcodes/bec-fallback",
+              "path": "/it/docs/shortcodes/bec-fallback",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-quote",
-              "path": "/docs/shortcodes/bec-quote",
+              "path": "/it/docs/shortcodes/bec-quote",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-search",
-              "path": "/docs/shortcodes/bec-search",
+              "path": "/it/docs/shortcodes/bec-search",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-unit-field",
-              "path": "/docs/shortcodes/bec-unit-field",
+              "path": "/it/docs/shortcodes/bec-unit-field",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-unit-filters",
-              "path": "/docs/shortcodes/bec-unit-filters",
+              "path": "/it/docs/shortcodes/bec-unit-filters",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-unit-gallery",
-              "path": "/docs/shortcodes/bec-unit-gallery",
+              "path": "/it/docs/shortcodes/bec-unit-gallery",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-unit-info",
-              "path": "/docs/shortcodes/bec-unit-info",
+              "path": "/it/docs/shortcodes/bec-unit-info",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-unit-url",
-              "path": "/docs/shortcodes/bec-unit-url",
+              "path": "/it/docs/shortcodes/bec-unit-url",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/bec-version",
-              "path": "/docs/shortcodes/bec-version",
+              "path": "/it/docs/shortcodes/bec-version",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/elementor-loop-grid-availability-filter",
-              "path": "/docs/shortcodes/elementor-loop-grid-availability-filter",
+              "path": "/it/docs/shortcodes/elementor-loop-grid-availability-filter",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/elementor-unit-gallery",
-              "path": "/docs/shortcodes/elementor-unit-gallery",
+              "path": "/it/docs/shortcodes/elementor-unit-gallery",
               "sidebar": "docsSidebar"
             },
             {
               "id": "shortcodes/shortcodes-overview",
-              "path": "/docs/shortcodes/shortcodes-overview",
+              "path": "/it/docs/shortcodes/shortcodes-overview",
               "sidebar": "docsSidebar"
             },
             {
               "id": "styling/booking-summary-presets",
-              "path": "/docs/styling/booking-summary-presets",
+              "path": "/it/docs/styling/booking-summary-presets",
               "sidebar": "docsSidebar"
             },
             {
               "id": "styling/search-form-presets",
-              "path": "/docs/styling/search-form-presets",
+              "path": "/it/docs/styling/search-form-presets",
               "sidebar": "docsSidebar"
             },
             {
               "id": "styling/styling-overview",
-              "path": "/docs/styling/styling-overview",
+              "path": "/it/docs/styling/styling-overview",
               "sidebar": "docsSidebar"
             },
             {
               "id": "styling/theme-variables-and-custom-css",
-              "path": "/docs/styling/theme-variables-and-custom-css",
+              "path": "/it/docs/styling/theme-variables-and-custom-css",
               "sidebar": "docsSidebar"
             },
             {
               "id": "troubleshooting/common-issues",
-              "path": "/docs/troubleshooting/common-issues",
+              "path": "/it/docs/troubleshooting/common-issues",
               "sidebar": "docsSidebar"
             },
             {
               "id": "troubleshooting/uninstalling",
-              "path": "/docs/troubleshooting/uninstalling",
+              "path": "/it/docs/troubleshooting/uninstalling",
               "sidebar": "docsSidebar"
             },
             {
               "id": "troubleshooting/using-the-api-log",
-              "path": "/docs/troubleshooting/using-the-api-log",
+              "path": "/it/docs/troubleshooting/using-the-api-log",
               "sidebar": "docsSidebar"
             },
             {
               "id": "units/editing-a-unit",
-              "path": "/docs/units/editing-a-unit",
+              "path": "/it/docs/units/editing-a-unit",
               "sidebar": "docsSidebar"
             },
             {
               "id": "units/gallery-images",
-              "path": "/docs/units/gallery-images",
+              "path": "/it/docs/units/gallery-images",
               "sidebar": "docsSidebar"
             },
             {
               "id": "units/listing-filters-admin",
-              "path": "/docs/units/listing-filters-admin",
+              "path": "/it/docs/units/listing-filters-admin",
               "sidebar": "docsSidebar"
             },
             {
               "id": "units/permalinks-and-archive",
-              "path": "/docs/units/permalinks-and-archive",
+              "path": "/it/docs/units/permalinks-and-archive",
               "sidebar": "docsSidebar"
             },
             {
               "id": "units/syncing-units",
-              "path": "/docs/units/syncing-units",
+              "path": "/it/docs/units/syncing-units",
               "sidebar": "docsSidebar"
             },
             {
               "id": "units/unit-categories",
-              "path": "/docs/units/unit-categories",
+              "path": "/it/docs/units/unit-categories",
               "sidebar": "docsSidebar"
             },
             {
               "id": "units/units-overview",
-              "path": "/docs/units/units-overview",
+              "path": "/it/docs/units/units-overview",
               "sidebar": "docsSidebar"
             }
           ],
@@ -280,7 +280,7 @@
           "sidebars": {
             "docsSidebar": {
               "link": {
-                "path": "/docs/",
+                "path": "/it/docs/",
                 "label": "intro"
               }
             }
